@@ -744,6 +744,7 @@
                    FROM_LONG_DOM   Absurdly long From domain name
              FROM_LONG_DOM_MINFP   Absurdly long From domain name, suspicious relays
                  FROM_MISSP_MSFT   From misspaced + supposed Microsoft tool
+                FROM_MISSP_PHISH   Malformed, claims to be from financial organization - possible phish
               FROM_MISSP_REPLYTO   From misspaced, has Reply-To
             FROM_MISSP_TO_UNDISC   From misspaced, To undisclosed
                  FROM_MISSP_USER   From misspaced, from "User"
@@ -1299,6 +1300,7 @@
         __KAM_BODY_LENGTH_LT_128   The length of the body of the email is less than 128 bytes.
         __KAM_BODY_LENGTH_LT_256   The length of the body of the email is less than 256 bytes.
         __KAM_BODY_LENGTH_LT_512   The length of the body of the email is less than 512 bytes.
+                  KHOP_FAKE_EBAY   Sender falsely claims to be from eBay
                 KHOP_HELO_FCRDNS   Relay HELO differs from its IP's reverse DNS
               KOREAN_UCE_SUBJECT   Assunto contém um texto comum de UCE (unsolicited commercial email) em coreano
               KOREAN_UCE_SUBJECT   Betreff enthält koreanische Werbungskennzeichnung
@@ -1307,7 +1309,6 @@
               KOREAN_UCE_SUBJECT   Subject: contains Korean unsolicited email tag
               KOREAN_UCE_SUBJECT   Temat: zawiera koreañski znacznik UCE
       LINKEDIN_IMG_NOT_RCVD_LNKN   Linkedin hosted image but message not from Linkedin
-                    LIST_PARTIAL   Has incomplete List-* header set
               LIST_PRTL_PUMPDUMP   Incomplete List-* headers and stock pump-and-dump
              LIST_PRTL_SAME_USER   Incomplete List-* headers and from+to user the same
                        LIVE_PORN   Dikke kans op porno - Rechtstreekse Porno uitzending
@@ -1343,6 +1344,7 @@
                   MALWARE_NORDNS   Malware bragging + no rDNS
                 MALWARE_PASSWORD   Malware bragging + "password"
                      MALW_ATTACH   Attachment filename suspicious, probable malware exploit
+                 MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                MANY_SPAN_IN_TEXT   Many <SPAN> tags embedded within text
                      MANY_SUBDOM   Lots and lots of subdomain parts in a URI
               MARKETING_PARTNERS   Afirma que você se cadastrou com um parceiro
@@ -1492,6 +1494,7 @@
                       MONEY_BACK   Money back guarantee
                       MONEY_BACK   Niet-goed-geld-terug garantie
                       MONEY_BACK   Vous garantit un "remboursement si insatisfait" (en anglais)
+                 MONEY_BARRISTER   Lots of money from a UK lawyer
                       MONEY_FORM   Lots of money if you fill out a form
                 MONEY_FORM_SHORT   Lots of money if you fill out a short form
                    MONEY_FRAUD_3   Lots of money and several fraud phrases
@@ -1657,7 +1660,6 @@
                OOOBOUNCE_MESSAGE   Out Of Office bounce message
                   PART_CID_STOCK   Has a spammy image attachment (by Content-ID)
              PART_CID_STOCK_LESS   Has a spammy image attachment (by Content-ID, more specific)
-                 PAYPAL_PHISH_06   Paypal mail passed through both paypal and MSFT infrastructure, has obfuscated phone number; VERY high fraud probability
                  PAYPAL_PHISH_07   Paypal mail passed through both paypal and MSFT infrastructure; high fraud probability
             PDS_BAD_THREAD_QP_64   Bad thread header - short QP
                       PDS_BTC_ID   FP reduced Bitcoin ID
@@ -2002,7 +2004,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
              RUSSIAN_UCE_SUBJECT   Subject contains a Russian UCE tag
                  SCC_BOGUS_CTE_1   Bogus Content-Transfer-Encoding header
                    SCC_CANSPAM_2   Interesting compliance language
-               _SCC_HTML_ODDDIV8   Idiosyncratic HTML structure used by spammers
                 SCC_ISEMM_LID_1B   Genericized spammer fingerprint
                  SCC_ISEMM_LID_1   Fingerprint of a particular spammer using an old spamware
                 SCC_SPECIAL_GUID   Unique in a similar way
@@ -2148,6 +2149,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               SUBJ_ILLEGAL_CHARS   Subject: contient trop de caractères bruts invalides
               SUBJ_ILLEGAL_CHARS   Subject: has too many raw illegal characters
               SUBJ_ILLEGAL_CHARS   Temat: zawiera zbyt wiele niedozwolonych znaków
+              SUBJ_UNNEEDED_HTML   Unneeded HTML formatting in Subject:
                   SUBJ_YOUR_DEBT   Assunto contém "Your Bills" ou algo parecido
                   SUBJ_YOUR_DEBT   Betreff dreht sich um Rechnungen oder Kredite
                   SUBJ_YOUR_DEBT   Le sujet contient "Your Bills" (vos factures) ou similaire
@@ -2167,7 +2169,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                SUSPICIOUS_RECIPS   Lista de destinatários possui endereços semelhantes
                SUSPICIOUS_RECIPS   Similar addresses in recipient list
                SUSPICIOUS_RECIPS   Vergelijkbare adressen in de ontvangerslijst
-            SUSP_UTF8_WORD_COMBO   Words using only suspicious UTF-8 characters + other signs
              SUSP_UTF8_WORD_FROM   Word in From name using only suspicious UTF-8 characters
              SUSP_UTF8_WORD_SUBJ   Word in Subject using only suspicious UTF-8 characters
                         SYSADMIN   Supposedly from your IT department
@@ -2216,7 +2217,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                 T_LOTTO_AGENT_FM   Claims Agent
               T_LOTTO_AGENT_RPLY   Claims Agent
                      T_LOTTO_URI   Claims Department URL
-               T_MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                T_MANY_PILL_PRICE   Prices for many pills
                      T_MIME_MALF   Malformed MIME: headers in body
                  T_MONEY_PERCENT   X% of a lot of money for you
@@ -2230,6 +2230,8 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                T_OBFU_JPG_ATTACH   JPG attachment with generic MIME type
                T_OBFU_PDF_ATTACH   PDF attachment with generic MIME type
               TO_EQ_FM_DIRECT_MX   To == From and direct-to-MX
+           TO_EQ_FM_DOM_HTML_IMG   To domain == From domain and HTML image link
+          TO_EQ_FM_DOM_HTML_ONLY   To domain == From domain and HTML only
            TO_EQ_FM_DOM_SPF_FAIL   To domain == From domain and external SPF failed
               TO_EQ_FM_HTML_ONLY   To == From and HTML only
                TO_EQ_FM_SPF_FAIL   To == From and external SPF failed
@@ -2593,7 +2595,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                    WEIRD_QUOTING   Utilisation étrange de symboles de citations
                    WEIRD_QUOTING   Vreemde herhaalde dubbel aanhalingsteken
                    WEIRD_QUOTING   Weird repeated double-quotation marks
-                        WIKI_IMG   Image from wikipedia
                     WITH_LC_SMTP   Cabeçalho Received contém um indício de spam ("smtp" em caixa baixa)
                     WITH_LC_SMTP   Kopfzeilen mit "smtp" in Kleinschreibung
                     WITH_LC_SMTP   Linia 'Received' zawiera spamerski podpis (smtp)
