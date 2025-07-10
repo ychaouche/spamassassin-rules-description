@@ -5,6 +5,7 @@
                         ACCESSDB   Message would have been caught by accessdb
                         ACCESSDB   Nachricht wäre von access.db erkannt worden
                         ACCESSDB   Wiadomo¶æ zosta³aby przechwycona przez accessdb
+              ACCT_PHISHING_MANY   Phishing for account information
                   AC_DIV_BONANZA   Too many divs in a row... spammy template
                AC_FROM_MANY_DOTS   Multiple periods in From user name
            AC_HTML_NONSENSE_TAGS   Many consecutive multi-letter HTML tags, likely nonsense/spam
@@ -1299,7 +1300,6 @@
         __KAM_BODY_LENGTH_LT_128   The length of the body of the email is less than 128 bytes.
         __KAM_BODY_LENGTH_LT_256   The length of the body of the email is less than 256 bytes.
         __KAM_BODY_LENGTH_LT_512   The length of the body of the email is less than 512 bytes.
-                  KHOP_FAKE_EBAY   Sender falsely claims to be from eBay
                 KHOP_HELO_FCRDNS   Relay HELO differs from its IP's reverse DNS
               KOREAN_UCE_SUBJECT   Assunto contém um texto comum de UCE (unsolicited commercial email) em coreano
               KOREAN_UCE_SUBJECT   Betreff enthält koreanische Werbungskennzeichnung
@@ -1343,7 +1343,6 @@
                   MALWARE_NORDNS   Malware bragging + no rDNS
                 MALWARE_PASSWORD   Malware bragging + "password"
                      MALW_ATTACH   Attachment filename suspicious, probable malware exploit
-                 MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                MANY_SPAN_IN_TEXT   Many <SPAN> tags embedded within text
               MARKETING_PARTNERS   Afirma que você se cadastrou com um parceiro
               MARKETING_PARTNERS   Angeblich haben Sie sich bei einem Partnerunternehmen registriert
@@ -1351,7 +1350,6 @@
               MARKETING_PARTNERS   Prétend que vous vous êtes enregistré auprès d'un "partenaire" quelconque
               MARKETING_PARTNERS   Twierdzi, ¿e jeste¶ zarejestrowany jako partner
               MARKETING_PARTNERS   Zegt dat je je bij een partner bedrijf hebt geregistreerd
-                   MAY_BE_FORGED   Relay IP's reverse DNS does not resolve to IP
             MICROSOFT_EXECUTABLE   Mensagem contém um programa executável Microsoft
             MICROSOFT_EXECUTABLE   Message includes Microsoft executable program
                  MILLION_HUNDRED   Million "One to Nine" Hundred
@@ -1500,7 +1498,6 @@
                    MONEY_FRAUD_8   Lots of money and very many fraud phrases
             MONEY_FREEMAIL_REPTO   Lots of money from someone using free email?
                    MONEY_FROM_41   Lots of money from Africa
-                MONEY_FROM_MISSP   Lots of money and misspaced From
                     MONEY_NOHTML   Lots of money in plain text
                         MORE_SEX   Fala sobre um maior desejo por sexo
                         MORE_SEX   Parle d'augmenter le désir sexuel
@@ -2089,6 +2086,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                     SUBJ_AS_SEEN   Subject contains "As Seen"
                     SUBJ_AS_SEEN   Temat: zawiera "Jak pokazywano"
               SUBJ_BRKN_WORDNUMS   Subject contains odd word breaks and numbers
+                SUBJ_BROKEN_WORD   Subject contains odd word break
                         SUBJ_BUY   Assunto começa com "Buy" ou "Buying"
                         SUBJ_BUY   Betreff dreht sich ums Kaufen ("buy...")
                         SUBJ_BUY   Le sujet commence par "Buy, Buying" (achetez, achat)
@@ -2148,7 +2146,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               SUBJ_ILLEGAL_CHARS   Subject: contient trop de caractères bruts invalides
               SUBJ_ILLEGAL_CHARS   Subject: has too many raw illegal characters
               SUBJ_ILLEGAL_CHARS   Temat: zawiera zbyt wiele niedozwolonych znaków
-              SUBJ_UNNEEDED_HTML   Unneeded HTML formatting in Subject:
                   SUBJ_YOUR_DEBT   Assunto contém "Your Bills" ou algo parecido
                   SUBJ_YOUR_DEBT   Betreff dreht sich um Rechnungen oder Kredite
                   SUBJ_YOUR_DEBT   Le sujet contient "Your Bills" (vos factures) ou similaire
@@ -2216,6 +2213,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                 T_LOTTO_AGENT_FM   Claims Agent
               T_LOTTO_AGENT_RPLY   Claims Agent
                      T_LOTTO_URI   Claims Department URL
+               T_MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                T_MANY_PILL_PRICE   Prices for many pills
                      T_MIME_MALF   Malformed MIME: headers in body
                  T_MONEY_PERCENT   X% of a lot of money for you
@@ -2229,7 +2227,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                T_OBFU_JPG_ATTACH   JPG attachment with generic MIME type
                T_OBFU_PDF_ATTACH   PDF attachment with generic MIME type
               TO_EQ_FM_DIRECT_MX   To == From and direct-to-MX
-          TO_EQ_FM_DOM_HTML_ONLY   To domain == From domain and HTML only
            TO_EQ_FM_DOM_SPF_FAIL   To domain == From domain and external SPF failed
               TO_EQ_FM_HTML_ONLY   To == From and HTML only
                TO_EQ_FM_SPF_FAIL   To == From and external SPF failed
