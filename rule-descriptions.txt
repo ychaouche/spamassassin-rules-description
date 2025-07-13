@@ -372,7 +372,6 @@
                 DC_PNG_UNO_LARGO   Message contains a single large inline gif
                 DC_PNG_UNO_LARGO   Message contains a single large png image
                DC_SCREENSHOT_JPG   Contains image matching common screen resolution
-                DEAR_BENEFICIARY   Dear Beneficiary:
                      DEAR_FRIEND   Anonyme Anrede ("dear friend")
                      DEAR_FRIEND   Beste vriend, klinkt niet erg bekend...
                      DEAR_FRIEND   Contient la formule "Dear friend"
@@ -550,7 +549,6 @@
                        FBI_MONEY   The FBI wants to give you lots of money?
                        FBI_SPOOF   Claims to be FBI, but not from FBI domain
                   FILL_THIS_FORM   Fill in a form with personal information
-             FILL_THIS_FORM_LOAN   Answer loan question(s)
              FILL_THIS_FORM_LONG   Fill in a form with personal information
                         FIN_FREE   Contém: "Freedom of a financial nature"
                         FIN_FREE   Finanzielle Unabhängigkeit
@@ -744,6 +742,7 @@
               FROM_LOCAL_NOVOWEL   Usuário do From: contém uma série de consoantes
                    FROM_LONG_DOM   Absurdly long From domain name
              FROM_LONG_DOM_MINFP   Absurdly long From domain name, suspicious relays
+             FROM_MISSP_FREEMAIL   From misspaced + freemail provider
                  FROM_MISSP_MSFT   From misspaced + supposed Microsoft tool
                 FROM_MISSP_PHISH   Malformed, claims to be from financial organization - possible phish
               FROM_MISSP_REPLYTO   From misspaced, has Reply-To
@@ -780,6 +779,7 @@
                   FROM_WSP_TRAIL   Trailing whitespace before '>' in From header field
                     FSL_BULK_SIG   Bulk signature with no Unsubscribe
                FSL_CTYPE_WIN1251   Content-Type only seen in 419 spam
+             FSL_LINK_AWS_S3_WEB   Contains a link to Amazon S3 website
                FSL_NEW_HELO_USER   Spam's using Helo and User
                 FUZZY_AFFORDABLE   Attempt to obfuscate words in spam
                 FUZZY_AFFORDABLE   Tentativa de esconder palavras na mensagem
@@ -1344,6 +1344,7 @@
                 MALWARE_PASSWORD   Malware bragging + "password"
                      MALW_ATTACH   Attachment filename suspicious, probable malware exploit
                MANY_SPAN_IN_TEXT   Many <SPAN> tags embedded within text
+                     MANY_SUBDOM   Lots and lots of subdomain parts in a URI
               MARKETING_PARTNERS   Afirma que você se cadastrou com um parceiro
               MARKETING_PARTNERS   Angeblich haben Sie sich bei einem Partnerunternehmen registriert
               MARKETING_PARTNERS   Claims you registered with a partner
@@ -1483,7 +1484,6 @@
                 MONERO_EXTORT_01   Extortion spam, pay via Monero cryptocurrency
                   MONERO_MALWARE   Monero cryptocurrency + malware bragging
                    MONERO_PAY_ME   Pay me via Monero cryptocurrency
-                  MONEY_ATM_CARD   Lots of money on an ATM card
                       MONEY_BACK   Contém: "Money back guarantee"
                       MONEY_BACK   Gwarancja zwrotu pieniêdzy
                       MONEY_BACK   Mit Geld-zurück Garantie
@@ -1663,6 +1663,7 @@
                     PDS_BTC_NTLD   Bitcoin suspect NTLD
          PDS_FRNOM_TODOM_DBL_URL   From Name to domain, double URL
         PDS_FRNOM_TODOM_NAKED_TO   Naked to From name equals to Domain
+               PDS_FROM_2_EMAILS   From header has multiple different addresses
          PDS_FROM_NAME_TO_DOMAIN   From:name looks like To:domain
                PDS_HELO_SPF_FAIL   High profile HELO that fails SPF
              PDS_NAKED_TO_NUMERO   Naked-to, numberonly domain
@@ -2178,6 +2179,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                     T_CTYPE_NULL   Malformed Content-Type header
            T_DATE_IN_FUTURE_96_Q   Date: is 4 days to 4 months after Received: date
          T_DATE_IN_FUTURE_Q_PLUS   Date: is over 4 months after Received: date
+              T_DEAR_BENEFICIARY   Dear Beneficiary:
              T_DOC_ATTACH_NO_EXT   Document attachment with suspicious name
        T_DOS_OUTLOOK_TO_MX_IMAGE   Direct to MX with Outlook headers and an image
               T_DOS_ZIP_HARDCORE   hardcore.zip file attached; quite certainly a virus
@@ -2187,12 +2189,12 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
              TEQF_USR_MSGID_MALF   To and from user nearly same + malformed message ID
                  TEQF_USR_POLITE   To and from user nearly same + polite greeting
     T_FILL_THIS_FORM_FRAUD_PHISH   Answer suspicious question(s)
+           T_FILL_THIS_FORM_LOAN   Answer loan question(s)
           T_FILL_THIS_FORM_SHORT   Fill in a short form with personal information
          T_FORGED_TBIRD_IMG_SIZE   Likely forged Thunderbird image spam
           T_FREEMAIL_DOC_PDF_BCC   MS document or PDF attachment, from freemail, all recipients hidden
               T_FREEMAIL_DOC_PDF   MS document or PDF attachment, from freemail
             T_FREEMAIL_RVW_ATTCH   Please review attached document, from freemail
-           T_FROM_MISSP_FREEMAIL   From misspaced + freemail provider
              T_FROM_MULTI_NORDNS   Multiple From addresses + no rDNS
           T_FROM_MULTI_SHORT_IMG   Multiple From addresses + short message with image
             T_FROMNAME_EQUALS_TO   From:name matches To:
@@ -2227,8 +2229,8 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                T_OBFU_JPG_ATTACH   JPG attachment with generic MIME type
                T_OBFU_PDF_ATTACH   PDF attachment with generic MIME type
               TO_EQ_FM_DIRECT_MX   To == From and direct-to-MX
+          TO_EQ_FM_DOM_HTML_ONLY   To domain == From domain and HTML only
            TO_EQ_FM_DOM_SPF_FAIL   To domain == From domain and external SPF failed
-              TO_EQ_FM_HTML_ONLY   To == From and HTML only
                TO_EQ_FM_SPF_FAIL   To == From and external SPF failed
                 __TO_EQ_FROM_DOM   To: domain same as From: domain
                     __TO_EQ_FROM   To: same as From:
@@ -2256,7 +2258,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                 T_PDS_BTC_HACKER   Bitcoin Hacker
          T_PDS_EMPTYSUBJ_URISHRT   Empty subject with little more than URI shortener
   T_PDS_FREEMAIL_REPLYTO_URISHRT   Freemail replyto with URI shortener
-             T_PDS_FROM_2_EMAILS   From header has multiple different addresses
      T_PDS_FROM_2_EMAILS_SHRTNER   From 2 emails short email with little more than a URI shortener
                T_PDS_LTC_AHACKER   Litecoin Hacker
                 T_PDS_LTC_HACKER   Litecoin Hacker
@@ -2447,7 +2448,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               URI_EXCESS_SLASHES   Too many slashes in URI, possible attempt to bypass spam filtering
                  URI_FIREBASEAPP   Link to hosted firebase web application, possible phishing
               URI_FLKIPFSXYZIPFS   References Interplanetary File System PtP content via flk-ipfs.xyz, likely phishing
-                    URI_GLITCHME   References glitch.me content, possible phishing
              URI_GOOGDRAWPREVIEW   Link to image at Google Docs, possible phishing
        URI_GOOGDRAWPREVIEW_MINFP   Link to image at Google Docs, probable phishing
                 URI_GOOGLE_PROXY   Accessing a blacklisted URI or obscuring source of phish via Google proxy?
