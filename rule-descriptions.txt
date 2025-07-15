@@ -1666,7 +1666,6 @@
                     PDS_BTC_NTLD   Bitcoin suspect NTLD
          PDS_FRNOM_TODOM_DBL_URL   From Name to domain, double URL
         PDS_FRNOM_TODOM_NAKED_TO   Naked to From name equals to Domain
-               PDS_FROM_2_EMAILS   From header has multiple different addresses
          PDS_FROM_NAME_TO_DOMAIN   From:name looks like To:domain
                PDS_HELO_SPF_FAIL   High profile HELO that fails SPF
              PDS_NAKED_TO_NUMERO   Naked-to, numberonly domain
@@ -2233,8 +2232,8 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                T_OBFU_PDF_ATTACH   PDF attachment with generic MIME type
               TO_EQ_FM_DIRECT_MX   To == From and direct-to-MX
            TO_EQ_FM_DOM_HTML_IMG   To domain == From domain and HTML image link
-          TO_EQ_FM_DOM_HTML_ONLY   To domain == From domain and HTML only
            TO_EQ_FM_DOM_SPF_FAIL   To domain == From domain and external SPF failed
+              TO_EQ_FM_HTML_ONLY   To == From and HTML only
                TO_EQ_FM_SPF_FAIL   To == From and external SPF failed
                 __TO_EQ_FROM_DOM   To: domain same as From: domain
                     __TO_EQ_FROM   To: same as From:
@@ -2262,6 +2261,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                 T_PDS_BTC_HACKER   Bitcoin Hacker
          T_PDS_EMPTYSUBJ_URISHRT   Empty subject with little more than URI shortener
   T_PDS_FREEMAIL_REPLYTO_URISHRT   Freemail replyto with URI shortener
+             T_PDS_FROM_2_EMAILS   From header has multiple different addresses
      T_PDS_FROM_2_EMAILS_SHRTNER   From 2 emails short email with little more than a URI shortener
                T_PDS_LTC_AHACKER   Litecoin Hacker
                 T_PDS_LTC_HACKER   Litecoin Hacker
