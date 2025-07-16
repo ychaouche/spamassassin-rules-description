@@ -1666,6 +1666,7 @@
                     PDS_BTC_NTLD   Bitcoin suspect NTLD
          PDS_FRNOM_TODOM_DBL_URL   From Name to domain, double URL
         PDS_FRNOM_TODOM_NAKED_TO   Naked to From name equals to Domain
+               PDS_FROM_2_EMAILS   From header has multiple different addresses
          PDS_FROM_NAME_TO_DOMAIN   From:name looks like To:domain
                PDS_HELO_SPF_FAIL   High profile HELO that fails SPF
              PDS_NAKED_TO_NUMERO   Naked-to, numberonly domain
@@ -2008,6 +2009,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                 SCC_SPECIAL_GUID   Unique in a similar way
             SENDGRID_REDIR_PHISH   Redirect URI via Sendgrid + phishing signs
                    SEO_SUSP_NTLD   SEO offer from suspicious TLD
+                     SHARE_50_50   Share the money 50/50
         SHOPIFY_IMG_NOT_RCVD_SFY   Shopify hosted image but message not from Shopify
                     SHORTCIRCUIT   Nem todas as regras foram executadas por causa de um problema em uma delas
                     SHORTCIRCUIT   Not all rules were run, due to a shortcircuited rule
@@ -2149,7 +2151,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               SUBJ_ILLEGAL_CHARS   Subject: contient trop de caractères bruts invalides
               SUBJ_ILLEGAL_CHARS   Subject: has too many raw illegal characters
               SUBJ_ILLEGAL_CHARS   Temat: zawiera zbyt wiele niedozwolonych znaków
-              SUBJ_UNNEEDED_HTML   Unneeded HTML formatting in Subject:
                   SUBJ_YOUR_DEBT   Assunto contém "Your Bills" ou algo parecido
                   SUBJ_YOUR_DEBT   Betreff dreht sich um Rechnungen oder Kredite
                   SUBJ_YOUR_DEBT   Le sujet contient "Your Bills" (vos factures) ou similaire
@@ -2261,7 +2262,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                 T_PDS_BTC_HACKER   Bitcoin Hacker
          T_PDS_EMPTYSUBJ_URISHRT   Empty subject with little more than URI shortener
   T_PDS_FREEMAIL_REPLYTO_URISHRT   Freemail replyto with URI shortener
-             T_PDS_FROM_2_EMAILS   From header has multiple different addresses
      T_PDS_FROM_2_EMAILS_SHRTNER   From 2 emails short email with little more than a URI shortener
                T_PDS_LTC_AHACKER   Litecoin Hacker
                 T_PDS_LTC_HACKER   Litecoin Hacker
@@ -2286,7 +2286,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                T_SCC_BOGUS_CTE_1   Bogus Content-Transfer-Encoding header
                      T_SCC_CTMPP   Uncommon Content-Type
             T_SENT_TO_EMAIL_ADDR   Email was sent to email address
-                   T_SHARE_50_50   Share the money 50/50
                 T_SHORT_SHORTNER   Short body with little more than a link to a shortener
             T_SPF_HELO_PERMERROR   SPF: test of HELO record failed (permerror)
             T_SPF_HELO_TEMPERROR   SPF: test of HELO record failed (temperror)
@@ -2383,6 +2382,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                 UPPERCASE_75_100   Message composé de 75 à 100% de majuscules
                 UPPERCASE_75_100   Nachrichtentext besteht zu 75-100% aus Großbuchstaben
                 UPPERCASE_75_100   Tre¶æ jest w 75-100% wielkimi literami
+                   UPPERCASE_URI   Link protocol has unexpected mixed case
                          URG_BIZ   Contains urgent matter
                          URG_BIZ   Contient la formule "urgent business"
                          URG_BIZ   Contém: "urgent matter"
