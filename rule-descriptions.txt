@@ -1341,6 +1341,7 @@
                   MALWARE_NORDNS   Malware bragging + no rDNS
                 MALWARE_PASSWORD   Malware bragging + "password"
                      MALW_ATTACH   Attachment filename suspicious, probable malware exploit
+                 MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                MANY_SPAN_IN_TEXT   Many <SPAN> tags embedded within text
                      MANY_SUBDOM   Lots and lots of subdomain parts in a URI
               MARKETING_PARTNERS   Afirma que você se cadastrou com um parceiro
@@ -1491,7 +1492,6 @@
                       MONEY_BACK   Niet-goed-geld-terug garantie
                       MONEY_BACK   Vous garantit un "remboursement si insatisfait" (en anglais)
                  MONEY_BARRISTER   Lots of money from a UK lawyer
-                      MONEY_FORM   Lots of money if you fill out a form
                 MONEY_FORM_SHORT   Lots of money if you fill out a short form
                    MONEY_FRAUD_3   Lots of money and several fraud phrases
                    MONEY_FRAUD_5   Lots of money and many fraud phrases
@@ -2087,6 +2087,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                     SUBJ_AS_SEEN   Onderwerp bevat "As Seen"
                     SUBJ_AS_SEEN   Subject contains "As Seen"
                     SUBJ_AS_SEEN   Temat: zawiera "Jak pokazywano"
+                  SUBJ_ATTENTION   ATTENTION in Subject
               SUBJ_BRKN_WORDNUMS   Subject contains odd word breaks and numbers
                 SUBJ_BROKEN_WORD   Subject contains odd word break
                         SUBJ_BUY   Assunto começa com "Buy" ou "Buying"
@@ -2148,6 +2149,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               SUBJ_ILLEGAL_CHARS   Subject: contient trop de caractères bruts invalides
               SUBJ_ILLEGAL_CHARS   Subject: has too many raw illegal characters
               SUBJ_ILLEGAL_CHARS   Temat: zawiera zbyt wiele niedozwolonych znaków
+              SUBJ_UNNEEDED_HTML   Unneeded HTML formatting in Subject:
                   SUBJ_YOUR_DEBT   Assunto contém "Your Bills" ou algo parecido
                   SUBJ_YOUR_DEBT   Betreff dreht sich um Rechnungen oder Kredite
                   SUBJ_YOUR_DEBT   Le sujet contient "Your Bills" (vos factures) ou similaire
@@ -2216,7 +2218,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                 T_LOTTO_AGENT_FM   Claims Agent
               T_LOTTO_AGENT_RPLY   Claims Agent
                      T_LOTTO_URI   Claims Department URL
-               T_MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                T_MANY_PILL_PRICE   Prices for many pills
                      T_MIME_MALF   Malformed MIME: headers in body
                  T_MONEY_PERCENT   X% of a lot of money for you
@@ -2233,6 +2234,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
            TO_EQ_FM_DOM_HTML_IMG   To domain == From domain and HTML image link
           TO_EQ_FM_DOM_HTML_ONLY   To domain == From domain and HTML only
            TO_EQ_FM_DOM_SPF_FAIL   To domain == From domain and external SPF failed
+              TO_EQ_FM_HTML_ONLY   To == From and HTML only
                TO_EQ_FM_SPF_FAIL   To == From and external SPF failed
                 __TO_EQ_FROM_DOM   To: domain same as From: domain
                     __TO_EQ_FROM   To: same as From:
@@ -2447,6 +2449,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               URI_EXCESS_SLASHES   Too many slashes in URI, possible attempt to bypass spam filtering
                  URI_FIREBASEAPP   Link to hosted firebase web application, possible phishing
               URI_FLKIPFSXYZIPFS   References Interplanetary File System PtP content via flk-ipfs.xyz, likely phishing
+                    URI_GLITCHME   References glitch.me content, possible phishing
              URI_GOOGDRAWPREVIEW   Link to image at Google Docs, possible phishing
        URI_GOOGDRAWPREVIEW_MINFP   Link to image at Google Docs, probable phishing
                 URI_GOOGLE_PROXY   Accessing a blacklisted URI or obscuring source of phish via Google proxy?
