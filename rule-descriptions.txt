@@ -2234,7 +2234,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
            TO_EQ_FM_DOM_HTML_IMG   To domain == From domain and HTML image link
           TO_EQ_FM_DOM_HTML_ONLY   To domain == From domain and HTML only
            TO_EQ_FM_DOM_SPF_FAIL   To domain == From domain and external SPF failed
-              TO_EQ_FM_HTML_ONLY   To == From and HTML only
                TO_EQ_FM_SPF_FAIL   To == From and external SPF failed
                 __TO_EQ_FROM_DOM   To: domain same as From: domain
                     __TO_EQ_FROM   To: same as From:
@@ -2355,6 +2354,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                 UNICODE_OBFU_ASC   Obfuscating text with unicode
             UNICODE_OBFU_ZW_MANY   Heavily obfuscating text with hidden characters
                  UNICODE_OBFU_ZW   Obfuscating text with hidden characters
+                UNICODE_RTL_OBFU   Word obfuscation using Unicode right-to-left markers
                UNPARSEABLE_RELAY   Info: mensagem possui dados de relay que não puderam ser lidos
                UNPARSEABLE_RELAY   Informational: message has unparseable relay lines
              UNRESOLVED_TEMPLATE   Cabeçalho contém um template não substituído
