@@ -234,6 +234,7 @@
                  CHARSET_FARAWAY   Message utilisant un jeu de caractères exotique
                  CHARSET_FARAWAY   Zeichensatz deutet auf fremde Sprache hin
                   CN_B2B_SPAMMER   Chinese company introducing itself
+                  CN_PHISH_JP_01   Apparent Chinese phishing of Japanese target
                COMMENT_GIBBERISH   Nonsense in long HTML comment
                     COMPENSATION   "Compensation"
                 CONFIRMED_FORGED   Cabeçalho Received é forjado
@@ -371,7 +372,6 @@
                 DC_PNG_UNO_LARGO   Message contains a single large png image
                DC_SCREENSHOT_JPG   Contains image matching common screen resolution
                 DEAR_BENEFICIARY   Dear Beneficiary:
-                      DEAR_EMAIL   Message contains Dear email address
                      DEAR_FRIEND   Anonyme Anrede ("dear friend")
                      DEAR_FRIEND   Beste vriend, klinkt niet erg bekend...
                      DEAR_FRIEND   Contient la formule "Dear friend"
@@ -747,6 +747,7 @@
               FROM_MISSP_REPLYTO   From misspaced, has Reply-To
             FROM_MISSP_TO_UNDISC   From misspaced, To undisclosed
                  FROM_MISSP_USER   From misspaced, from "User"
+                FROM_MISSP_XPRIO   Misspaced FROM + X-Priority
                  FROM_NEWDOM_BTC   Newdomain with Bitcoin ID
                     FROM_NO_USER   Adressteil vor dem @-Zeichen fehlt im Absender
                     FROM_NO_USER   From: has no local-part before @ sign
@@ -774,7 +775,6 @@
          FROM_SUSPICIOUS_NTLD_FP   From abused NTLD
             FROM_SUSPICIOUS_NTLD   From abused NTLD
                      FROM_UNBAL1   From with unbalanced angle brackets, '>' missing
-                   FROM_WSP_LEAD   Leading whitespace after '<' in From header field
                   FROM_WSP_TRAIL   Trailing whitespace before '>' in From header field
                     FSL_BULK_SIG   Bulk signature with no Unsubscribe
                FSL_CTYPE_WIN1251   Content-Type only seen in 419 spam
@@ -1342,6 +1342,7 @@
                   MALWARE_NORDNS   Malware bragging + no rDNS
                 MALWARE_PASSWORD   Malware bragging + "password"
                      MALW_ATTACH   Attachment filename suspicious, probable malware exploit
+                 MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                MANY_SPAN_IN_TEXT   Many <SPAN> tags embedded within text
                      MANY_SUBDOM   Lots and lots of subdomain parts in a URI
               MARKETING_PARTNERS   Afirma que você se cadastrou com um parceiro
@@ -1350,7 +1351,6 @@
               MARKETING_PARTNERS   Prétend que vous vous êtes enregistré auprès d'un "partenaire" quelconque
               MARKETING_PARTNERS   Twierdzi, ¿e jeste¶ zarejestrowany jako partner
               MARKETING_PARTNERS   Zegt dat je je bij een partner bedrijf hebt geregistreerd
-                   MAY_BE_FORGED   Relay IP's reverse DNS does not resolve to IP
             MICROSOFT_EXECUTABLE   Mensagem contém um programa executável Microsoft
             MICROSOFT_EXECUTABLE   Message includes Microsoft executable program
                  MILLION_HUNDRED   Million "One to Nine" Hundred
@@ -1492,7 +1492,6 @@
                       MONEY_BACK   Money back guarantee
                       MONEY_BACK   Niet-goed-geld-terug garantie
                       MONEY_BACK   Vous garantit un "remboursement si insatisfait" (en anglais)
-                 MONEY_BARRISTER   Lots of money from a UK lawyer
                 MONEY_FORM_SHORT   Lots of money if you fill out a short form
                    MONEY_FRAUD_3   Lots of money and several fraud phrases
                    MONEY_FRAUD_5   Lots of money and many fraud phrases
@@ -1550,7 +1549,6 @@
                     MULTI_FORGED   Nag³ówki Received: wykazuj± wielokrotne fa³szowanie
                     MULTI_FORGED   Received headers indicate multiple forgeries
                     MULTI_FORGED   Received headers wijzen op meerdere vervalsingen
-                  MXG_EMAIL_FRAG   URI with email in fragment
                  __MXG_LOWER_HDR   lower case header
                 __MXG_PHONE_OBFU   Has an obfuscated phone number
                 __MXG_UNSUB_LINK   Contains an unsubscribe link
@@ -1663,13 +1661,14 @@
                       PDS_BTC_ID   FP reduced Bitcoin ID
                    PDS_BTC_MSGID   Bitcoin ID with T_MSGID_NOFQDN2
         PDS_FRNOM_TODOM_NAKED_TO   Naked to From name equals to Domain
+               PDS_FROM_2_EMAILS   From header has multiple different addresses
          PDS_FROM_NAME_TO_DOMAIN   From:name looks like To:domain
                PDS_HELO_SPF_FAIL   High profile HELO that fails SPF
              PDS_NAKED_TO_NUMERO   Naked-to, numberonly domain
+    PDS_NO_FULL_NAME_SPOOFED_URL   HTML message short, T_SPOOFED_URL and T_KHOP_NO_FULL_NAME
                PDS_OTHER_BAD_TLD   Untrustworthy TLDs
-                    PDS_PHP_EVAL   PHP header shows eval'd code
                      PDS_PRO_TLD   .pro TLD
-             PDS_TO_EQ_FROM_NAME   From: name same as To: address
+           PDS_SHORT_SPOOFED_URL   HTML message short and T_SPOOFED_URL (S_U_FP)
 PDS_TONAME_EQ_TOLOCAL_FREEM_FORGE   Forged replyto and __PDS_TONAME_EQ_TOLOCAL
                   PERCENT_RANDOM   Mensagem contém uma macro randômica
                   PERCENT_RANDOM   Message has a random macro in it
@@ -1677,7 +1676,6 @@ PDS_TONAME_EQ_TOLOCAL_FREEM_FORGE   Forged replyto and __PDS_TONAME_EQ_TOLOCAL
             PHISH_AZURE_CLOUDAPP   Link to known phishing web application
                   PHISH_FBASEAPP   Probable phishing via hosted web app
                    PHP_NOVER_MUA   Mail from PHP with no version number
-            PHP_ORIG_SCRIPT_EVAL   From suspicious PHP source
                  PHP_ORIG_SCRIPT   Sent by bot & other signs
                   PHP_SCRIPT_MUA   Sent by PHP script, no version number
                       PHP_SCRIPT   Sent by PHP script
@@ -1693,6 +1691,7 @@ PDS_TONAME_EQ_TOLOCAL_FREEM_FORGE   Forged replyto and __PDS_TONAME_EQ_TOLOCAL
         POSSIBLE_PAYPAL_PHISH_02   Claims to be from paypal but not processed by any paypal MTA
         POSSIBLE_PAYPAL_PHISH_04   Claims to be from paypal, greets email address rather than full name
         POSSIBLE_PAYPAL_PHISH_10   Claims to be from paypal but not processed by any paypal MTA, yet has paypal authentication headers
+          PP_CROSSTALK_GOOG_MSFT   MTA GOOG but Repto MSFT - possible phishing
          PP_MIME_FAKE_ASCII_TEXT   MIME text/plain claims to be ASCII but isn't
            PP_TOO_MUCH_UNICODE02   Is text/plain but has many unicode escapes
            PP_TOO_MUCH_UNICODE05   Is text/plain but has many unicode escapes
@@ -2000,14 +1999,13 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                        RUDE_HTML   Mensagem diz que seu cliente de email não suporta HTML
                        RUDE_HTML   Spammer message says you need an HTML mailer
              RUSSIAN_UCE_SUBJECT   Subject contains a Russian UCE tag
-                   SCC_CANSPAM_2   Interesting compliance language
+                 SCC_BOGUS_CTE_1   Bogus Content-Transfer-Encoding header
                 SCC_ISEMM_LID_1A   Fingerprint of a particular spammer using an old spamware
                 SCC_ISEMM_LID_1B   Genericized spammer fingerprint
                  SCC_ISEMM_LID_1   Fingerprint of a particular spammer using an old spamware
                 SCC_SPECIAL_GUID   Unique in a similar way
             SENDGRID_REDIR_PHISH   Redirect URI via Sendgrid + phishing signs
                    SEO_SUSP_NTLD   SEO offer from suspicious TLD
-                     SHARE_50_50   Share the money 50/50
         SHOPIFY_IMG_NOT_RCVD_SFY   Shopify hosted image but message not from Shopify
                     SHORTCIRCUIT   Nem todas as regras foram executadas por causa de um problema em uma delas
                     SHORTCIRCUIT   Not all rules were run, due to a shortcircuited rule
@@ -2090,7 +2088,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                     SUBJ_AS_SEEN   Temat: zawiera "Jak pokazywano"
                   SUBJ_ATTENTION   ATTENTION in Subject
               SUBJ_BRKN_WORDNUMS   Subject contains odd word breaks and numbers
-                SUBJ_BROKEN_WORD   Subject contains odd word break
                         SUBJ_BUY   Assunto começa com "Buy" ou "Buying"
                         SUBJ_BUY   Betreff dreht sich ums Kaufen ("buy...")
                         SUBJ_BUY   Le sujet commence par "Buy, Buying" (achetez, achat)
@@ -2218,11 +2215,11 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                 T_LOTTO_AGENT_FM   Claims Agent
               T_LOTTO_AGENT_RPLY   Claims Agent
                      T_LOTTO_URI   Claims Department URL
-               T_MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                T_MANY_PILL_PRICE   Prices for many pills
                      T_MIME_MALF   Malformed MIME: headers in body
                  T_MONEY_PERCENT   X% of a lot of money for you
            T_MXG_BING_REDIR_SUSP   Suspicious Bing redirect
+                T_MXG_EMAIL_FRAG   URI with email in fragment
             T_MXG_LOWER_HDR_SPAM   Lower case header spam
              T_OBFU_ATTACH_MISSP   Obfuscated attachment type and misspaced From
                T_OBFU_DOC_ATTACH   MS Document attachment with generic MIME type
@@ -2261,16 +2258,14 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                   T_PDS_BTC_NTLD   Bitcoin suspect NTLD
          T_PDS_EMPTYSUBJ_URISHRT   Empty subject with little more than URI shortener
   T_PDS_FREEMAIL_REPLYTO_URISHRT   Freemail replyto with URI shortener
-             T_PDS_FROM_2_EMAILS   From header has multiple different addresses
      T_PDS_FROM_2_EMAILS_SHRTNER   From 2 emails short email with little more than a URI shortener
                T_PDS_LTC_AHACKER   Litecoin Hacker
                 T_PDS_LTC_HACKER   Litecoin Hacker
-  T_PDS_NO_FULL_NAME_SPOOFED_URL   HTML message short, T_SPOOFED_URL and T_KHOP_NO_FULL_NAME
        T_PDS_SHORTFWD_URISHRT_FP   Apparently a short fwd/re with URI shortener
        T_PDS_SHORTFWD_URISHRT_QP   Apparently a short fwd/re with URI shortener
           T_PDS_SHORTFWD_URISHRT   Threaded email with URI shortener
-         T_PDS_SHORT_SPOOFED_URL   HTML message short and T_SPOOFED_URL (S_U_FP)
           T_PDS_TINYSUBJ_URISHRT   Short subject with URL shortener
+           T_PDS_TO_EQ_FROM_NAME   From: name same as To: address
     T_PDS_URISHRT_LOCALPART_SUBJ   Localpart of To in subject
           T_PHOTO_EDITING_DIRECT   Image editing service, direct to MX
            T_PHOTO_EDITING_FREEM   Image editing service, freemail or CHN replyto
@@ -2281,9 +2276,9 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                       TRACKER_ID   Mensagem contém um código rastramento
                       TRACKER_ID   Zawiera numer identyfikacyjny
                   T_REMOTE_IMAGE   Message contains an external image
-               T_SCC_BOGUS_CTE_1   Bogus Content-Transfer-Encoding header
                      T_SCC_CTMPP   Uncommon Content-Type
             T_SENT_TO_EMAIL_ADDR   Email was sent to email address
+                   T_SHARE_50_50   Share the money 50/50
                 T_SHORT_SHORTNER   Short body with little more than a link to a shortener
             T_SPF_HELO_PERMERROR   SPF: test of HELO record failed (permerror)
             T_SPF_HELO_TEMPERROR   SPF: test of HELO record failed (temperror)
@@ -2442,6 +2437,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               URI_CLOUDFLAREIPFS   References Interplanetary File System PtP content via CloudFlare, likely phishing
                   URI_DASHGOVEDU   Suspicious domain name
                         URI_DATA   "data:" URI - possible malware or phish
+                 URI_DOTCN_LOGIN   Login page in .cn subdomain - possible Chinese phishing
                URI_DOTEDU_ENTITY   Via .edu MTA + suspicious HTML content
                       URI_DOTEDU   Has .edu URI
                    URI_DOTTY_HEX   Suspicious URI format
