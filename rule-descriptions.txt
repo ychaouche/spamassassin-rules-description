@@ -550,6 +550,7 @@
                        FBI_MONEY   The FBI wants to give you lots of money?
                        FBI_SPOOF   Claims to be FBI, but not from FBI domain
                   FILL_THIS_FORM   Fill in a form with personal information
+             FILL_THIS_FORM_LOAN   Answer loan question(s)
                         FIN_FREE   Contém: "Freedom of a financial nature"
                         FIN_FREE   Finanzielle Unabhängigkeit
                         FIN_FREE   Freedom of a financial nature
@@ -1343,7 +1344,6 @@
                   MALWARE_NORDNS   Malware bragging + no rDNS
                 MALWARE_PASSWORD   Malware bragging + "password"
                      MALW_ATTACH   Attachment filename suspicious, probable malware exploit
-                 MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                MANY_SPAN_IN_TEXT   Many <SPAN> tags embedded within text
                      MANY_SUBDOM   Lots and lots of subdomain parts in a URI
               MARKETING_PARTNERS   Afirma que você se cadastrou com um parceiro
@@ -1598,6 +1598,7 @@
              NO_RDNS_DOTCOM_HELO   Host HELO'd als een grote internet provider ISP, maar heeft geen rDNS
              NO_RDNS_DOTCOM_HELO   Host HELO'd as a big ISP, but had no rDNS
              NO_RDNS_DOTCOM_HELO   Odpowied¼ HELO hosta pokazuje wielkiego ISP, lecz brakuje rDNS
+             NORDNS_LOW_CONTRAST   No rDNS + hidden text
                      NO_RECEIVED   Informação: mensagem não possui cabeçalho Received:
                      NO_RECEIVED   Informational: message has no Received headers
                        NO_RELAYS   Informação: mensagem não foi recebida via SMTP
@@ -1977,6 +1978,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
              REPTO_419_FRAUD_CNS   Reply-To is known advance fee fraud collector mailbox
         REPTO_419_FRAUD_GM_LOOSE   Ends-in-digits Reply-To is similar to known advance fee fraud collector mailbox
               REPTO_419_FRAUD_GM   Reply-To is known advance fee fraud collector mailbox
+        REPTO_419_FRAUD_HM_LOOSE   Ends-in-digits Reply-To is similar to known advance fee fraud collector mailbox
               REPTO_419_FRAUD_HM   Reply-To is known advance fee fraud collector mailbox
               REPTO_419_FRAUD_OL   Reply-To is known advance fee fraud collector mailbox
               REPTO_419_FRAUD_PM   Reply-To is known advance fee fraud collector mailbox
@@ -2189,7 +2191,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
              TEQF_USR_MSGID_MALF   To and from user nearly same + malformed message ID
                  TEQF_USR_POLITE   To and from user nearly same + polite greeting
     T_FILL_THIS_FORM_FRAUD_PHISH   Answer suspicious question(s)
-           T_FILL_THIS_FORM_LOAN   Answer loan question(s)
            T_FILL_THIS_FORM_LONG   Fill in a form with personal information
           T_FILL_THIS_FORM_SHORT   Fill in a short form with personal information
          T_FORGED_TBIRD_IMG_SIZE   Likely forged Thunderbird image spam
@@ -2215,6 +2216,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                 T_LOTTO_AGENT_FM   Claims Agent
               T_LOTTO_AGENT_RPLY   Claims Agent
                      T_LOTTO_URI   Claims Department URL
+               T_MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                T_MANY_PILL_PRICE   Prices for many pills
                      T_MIME_MALF   Malformed MIME: headers in body
                  T_MONEY_PERCENT   X% of a lot of money for you
@@ -2292,6 +2294,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               TT_OBSCURED_VIAGRA   Scora: obscured "VIAGRA" in subject
   T_TONOM_EQ_TOLOC_SHRT_PSHRTNER   Short subject with potential shortener and To:name eq To:local
    T_TONOM_EQ_TOLOC_SHRT_SHRTNER   Short email with shortener and To:name eq To:local
+               T_URI_DOTCN_SPOOF   .CN TLD for non-.CN visible URL - possible Chinese phishing
       T_URI_GOOG_STO_SUBD_SPAMMY   Link to spammy content hosted by google storage
                   T_US_DOLLARS_3   Mentions millions of $ ($NN,NNN,NNN.NN)
                      TVD_ACT_193   Message refers to an act passed in the 1930s
