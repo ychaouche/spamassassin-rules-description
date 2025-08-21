@@ -159,7 +159,6 @@
                  BILLION_DOLLARS   Spreekt van heeel veel geld
                  BILLION_DOLLARS   Talks about lots of money
                  BILLION_DOLLARS   Tre¶æ: o niesamowitej ilo¶ci pieniêdzy
-                 BILLION_OVERLAP   Reducing score for overlap of similar rules
                     BITCOIN_BOMB   BitCoin + bomb
                 BITCOIN_DEADLINE   BitCoin with a deadline
                BITCOIN_EXTORT_01   Extortion spam, pay via BitCoin
@@ -236,6 +235,7 @@
                  CHARSET_FARAWAY   Zeichensatz deutet auf fremde Sprache hin
                   CN_B2B_SPAMMER   Chinese company introducing itself
                   CN_PHISH_JP_01   Apparent Chinese phishing of Japanese target
+                  CN_PHISH_JP_02   JP "password" + .cn URL - possible Chinese phishing
                COMMENT_GIBBERISH   Nonsense in long HTML comment
                     COMPENSATION   "Compensation"
                 CONFIRMED_FORGED   Cabeçalho Received é forjado
@@ -775,7 +775,6 @@
            FROM_STARTS_WITH_NUMS   Van: begint met nummers
          FROM_SUSPICIOUS_NTLD_FP   From abused NTLD
             FROM_SUSPICIOUS_NTLD   From abused NTLD
-                     FROM_UNBAL1   From with unbalanced angle brackets, '>' missing
                      FROM_UNBAL2   From with unbalanced angle brackets, '<' missing
                   FROM_WSP_TRAIL   Trailing whitespace before '>' in From header field
                     FSL_BULK_SIG   Bulk signature with no Unsubscribe
@@ -2294,9 +2293,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               TT_OBSCURED_VIAGRA   Scora: obscured "VIAGRA" in subject
   T_TONOM_EQ_TOLOC_SHRT_PSHRTNER   Short subject with potential shortener and To:name eq To:local
    T_TONOM_EQ_TOLOC_SHRT_SHRTNER   Short email with shortener and To:name eq To:local
-               T_URI_DOTCN_SPOOF   .CN TLD for non-.CN visible URL - possible Chinese phishing
       T_URI_GOOG_STO_SUBD_SPAMMY   Link to spammy content hosted by google storage
-                  T_US_DOLLARS_3   Mentions millions of $ ($NN,NNN,NNN.NN)
                      TVD_ACT_193   Message refers to an act passed in the 1930s
                     TVD_APPROVED   Body states that the recipient has been approved
               TVD_DEAR_HOMEOWNER   Spam with generic salutation of "dear homeowner"
@@ -2443,6 +2440,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                   URI_DASHGOVEDU   Suspicious domain name
                         URI_DATA   "data:" URI - possible malware or phish
                  URI_DOTCN_LOGIN   Login page in .cn subdomain - possible Chinese phishing
+                 URI_DOTCN_SPOOF   .CN TLD for non-.CN visible URL - possible Chinese phishing
                URI_DOTEDU_ENTITY   Via .edu MTA + suspicious HTML content
                       URI_DOTEDU   Has .edu URI
                    URI_DOTTY_HEX   Suspicious URI format
@@ -2595,6 +2593,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                    WEIRD_QUOTING   Utilisation étrange de symboles de citations
                    WEIRD_QUOTING   Vreemde herhaalde dubbel aanhalingsteken
                    WEIRD_QUOTING   Weird repeated double-quotation marks
+                        WIKI_IMG   Image from wikipedia
                     WITH_LC_SMTP   Cabeçalho Received contém um indício de spam ("smtp" em caixa baixa)
                     WITH_LC_SMTP   Kopfzeilen mit "smtp" in Kleinschreibung
                     WITH_LC_SMTP   Linia 'Received' zawiera spamerski podpis (smtp)
