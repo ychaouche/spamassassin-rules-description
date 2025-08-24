@@ -5,6 +5,7 @@
                         ACCESSDB   Message would have been caught by accessdb
                         ACCESSDB   Nachricht wäre von access.db erkannt worden
                         ACCESSDB   Wiadomo¶æ zosta³aby przechwycona przez accessdb
+              ACCT_PHISHING_MANY   Phishing for account information
                   AC_DIV_BONANZA   Too many divs in a row... spammy template
                AC_FROM_MANY_DOTS   Multiple periods in From user name
            AC_HTML_NONSENSE_TAGS   Many consecutive multi-letter HTML tags, likely nonsense/spam
@@ -65,7 +66,6 @@
                              AWL   Adjusted score from AWL reputation of From: address
                              AWL   Endereço do From: está na auto welcomelist
     AXB_XMAILER_MIMEOLE_OL_024C2   Yet another X header trait
-    AXB_XMAILER_MIMEOLE_OL_1ECD5   Yet another X header trait##} AXB_XMAILER_MIMEOLE_OL_1ECD5
                       BAD_CREDIT   Contient "Eliminate Bad Credit"
                       BAD_CREDIT   Contém: "Eliminate Bad Credit"
                       BAD_CREDIT   Eliminate Bad Credit
@@ -209,6 +209,7 @@
                 BODY_ENHANCEMENT   Informatie over het vergroten van lichaamsdelen
                 BODY_ENHANCEMENT   Informationen zur Penis-/Brustvergrößerung
                 BODY_ENHANCEMENT   Information on growing body parts
+                 BODY_SINGLE_URI   Message body is only a URI
                    BODY_URI_ONLY   Message body is only a URI in one line of text or for an image
               BOGUS_MIME_VERSION   Mime version header is bogus
                   BOGUS_MSM_HDRS   Apparently bogus Microsoft email headers
@@ -858,6 +859,7 @@
                 FUZZY_WELLSFARGO   Obfuscated "Wells Fargo"
                      FUZZY_XPILL   Attempt to obfuscate words in spam
                      FUZZY_XPILL   Tentativa de esconder palavras na mensagem
+                      GAPPY_HTML   HTML body with much useless whitespace
          GAPPY_SALES_LEADS_FREEM   Obfuscated marketing text, freemail or CHN replyto
                    GAPPY_SUBJECT   Assunto contém T.e.x.t.o-E.s.t.r.a.n.h.o
                    GAPPY_SUBJECT   Betreff enthält Text mit "L.ü.c.k.e.n"
@@ -1597,7 +1599,6 @@
              NO_RDNS_DOTCOM_HELO   Host HELO'd als een grote internet provider ISP, maar heeft geen rDNS
              NO_RDNS_DOTCOM_HELO   Host HELO'd as a big ISP, but had no rDNS
              NO_RDNS_DOTCOM_HELO   Odpowied¼ HELO hosta pokazuje wielkiego ISP, lecz brakuje rDNS
-             NORDNS_LOW_CONTRAST   No rDNS + hidden text
                      NO_RECEIVED   Informação: mensagem não possui cabeçalho Received:
                      NO_RECEIVED   Informational: message has no Received headers
                        NO_RELAYS   Informação: mensagem não foi recebida via SMTP
@@ -1668,7 +1669,6 @@
                PDS_FROM_2_EMAILS   From header has multiple different addresses
          PDS_FROM_NAME_TO_DOMAIN   From:name looks like To:domain
                PDS_HELO_SPF_FAIL   High profile HELO that fails SPF
-             PDS_NAKED_TO_NUMERO   Naked-to, numberonly domain
     PDS_NO_FULL_NAME_SPOOFED_URL   HTML message short, T_SPOOFED_URL and T_KHOP_NO_FULL_NAME
                PDS_OTHER_BAD_TLD   Untrustworthy TLDs
                      PDS_PRO_TLD   .pro TLD
