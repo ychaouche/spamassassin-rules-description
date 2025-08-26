@@ -432,7 +432,6 @@
                       DMARC_QUAR   DMARC quarantine policy
                     DMARC_REJECT   DMARC reject policy
             DOS_ANAL_SPAM_MAILER   X-mailer pattern common to anal porn site spam
-            DOS_BODY_HIGH_NO_MID   High bit body and no message ID header
                   DOS_FIX_MY_URI   Looks like a "fix my obfu'd URI please" spam
               DOS_HIGH_BAT_TO_MX   The Bat! Direct to MX with High Bits
                   DOS_LET_GO_JOB   Let go from their job and now makes lots of dough!
@@ -552,6 +551,7 @@
                        FBI_SPOOF   Claims to be FBI, but not from FBI domain
                   FILL_THIS_FORM   Fill in a form with personal information
              FILL_THIS_FORM_LOAN   Answer loan question(s)
+             FILL_THIS_FORM_LONG   Fill in a form with personal information
                         FIN_FREE   Contém: "Freedom of a financial nature"
                         FIN_FREE   Finanzielle Unabhängigkeit
                         FIN_FREE   Freedom of a financial nature
@@ -1301,7 +1301,6 @@
         __KAM_BODY_LENGTH_LT_128   The length of the body of the email is less than 128 bytes.
         __KAM_BODY_LENGTH_LT_256   The length of the body of the email is less than 256 bytes.
         __KAM_BODY_LENGTH_LT_512   The length of the body of the email is less than 512 bytes.
-                  KHOP_FAKE_EBAY   Sender falsely claims to be from eBay
                 KHOP_HELO_FCRDNS   Relay HELO differs from its IP's reverse DNS
               KOREAN_UCE_SUBJECT   Assunto contém um texto comum de UCE (unsolicited commercial email) em coreano
               KOREAN_UCE_SUBJECT   Betreff enthält koreanische Werbungskennzeichnung
@@ -1982,6 +1981,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               REPTO_419_FRAUD_GM   Reply-To is known advance fee fraud collector mailbox
         REPTO_419_FRAUD_HM_LOOSE   Ends-in-digits Reply-To is similar to known advance fee fraud collector mailbox
               REPTO_419_FRAUD_HM   Reply-To is known advance fee fraud collector mailbox
+        REPTO_419_FRAUD_OL_LOOSE   Ends-in-digits Reply-To is similar to known advance fee fraud collector mailbox
               REPTO_419_FRAUD_OL   Reply-To is known advance fee fraud collector mailbox
               REPTO_419_FRAUD_PM   Reply-To is known advance fee fraud collector mailbox
               REPTO_419_FRAUD_QQ   Reply-To is known advance fee fraud collector mailbox
@@ -2194,7 +2194,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
              TEQF_USR_MSGID_MALF   To and from user nearly same + malformed message ID
                  TEQF_USR_POLITE   To and from user nearly same + polite greeting
     T_FILL_THIS_FORM_FRAUD_PHISH   Answer suspicious question(s)
-           T_FILL_THIS_FORM_LONG   Fill in a form with personal information
           T_FILL_THIS_FORM_SHORT   Fill in a short form with personal information
          T_FORGED_TBIRD_IMG_SIZE   Likely forged Thunderbird image spam
           T_FREEMAIL_DOC_PDF_BCC   MS document or PDF attachment, from freemail, all recipients hidden
@@ -2326,7 +2325,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               TVD_SILLY_URI_OBFU   URI obfuscation that can fool a URIBL or a uri rule
         TVD_SPACED_SUBJECT_WORD3   Entire subject is "UPPERlowerUPPER" with no whitespace
                TVD_SPACE_ENCODED   Space ratio & encoded subject
-           TVD_SPACE_RATIO_MINFP   Space ratio (vertical text obfuscation?)
                       TVD_STOCK1   Spam related to stock trading
                 TVD_SUBJ_ACC_NUM   Subject has spammy looking monetary reference
               TVD_SUBJ_FINGER_03   Entire subject is enclosed in asterisks "* like so *"
