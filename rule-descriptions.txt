@@ -66,6 +66,7 @@
                              AWL   Adjusted score from AWL reputation of From: address
                              AWL   Endereço do From: está na auto welcomelist
     AXB_XMAILER_MIMEOLE_OL_024C2   Yet another X header trait
+    AXB_XMAILER_MIMEOLE_OL_1ECD5   Yet another X header trait##} AXB_XMAILER_MIMEOLE_OL_1ECD5
                       BAD_CREDIT   Contient "Eliminate Bad Credit"
                       BAD_CREDIT   Contém: "Eliminate Bad Credit"
                       BAD_CREDIT   Eliminate Bad Credit
@@ -199,7 +200,6 @@
                       BODY_8BITS   Contient plusieurs caractères 8-bits consécutifs
                       BODY_8BITS   Nachrichtentext enthält Folge von 8 oder mehr 8-Bit-Zeichen
                       BODY_8BITS   Tre¶æ zawiera 8 kolejnych 8mio bitowych znaków
-         BODY_EMAIL_419_FRAUD_GM   Email address in body is likely advance fee fraud collector mailbox
                BODY_ENHANCEMENT2   Arnaque prétendant augmenter la taile de votre pénis
                BODY_ENHANCEMENT2   Informação sobre como aumentar partes do corpo
                BODY_ENHANCEMENT2   Informatie over het vergroten van lichaamsdelen
@@ -241,7 +241,6 @@
                   CN_PHISH_JP_03   JP "invoice" + .cn URL - possible Chinese phishing
                   CN_PHISH_JP_04   JP "payment" + .cn URL - possible Chinese phishing
                COMMENT_GIBBERISH   Nonsense in long HTML comment
-                    COMPENSATION   "Compensation"
                 CONFIRMED_FORGED   Cabeçalho Received é forjado
                 CONFIRMED_FORGED   Gefälschte "Received"-Kopfzeilen
                 CONFIRMED_FORGED   Les en-têtes "Received:" ont été falsifiés
@@ -1344,7 +1343,6 @@
                   MALWARE_NORDNS   Malware bragging + no rDNS
                 MALWARE_PASSWORD   Malware bragging + "password"
                      MALW_ATTACH   Attachment filename suspicious, probable malware exploit
-                 MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                MANY_SPAN_IN_TEXT   Many <SPAN> tags embedded within text
                      MANY_SUBDOM   Lots and lots of subdomain parts in a URI
               MARKETING_PARTNERS   Afirma que você se cadastrou com um parceiro
@@ -1353,7 +1351,6 @@
               MARKETING_PARTNERS   Prétend que vous vous êtes enregistré auprès d'un "partenaire" quelconque
               MARKETING_PARTNERS   Twierdzi, ¿e jeste¶ zarejestrowany jako partner
               MARKETING_PARTNERS   Zegt dat je je bij een partner bedrijf hebt geregistreerd
-                   MAY_BE_FORGED   Relay IP's reverse DNS does not resolve to IP
             MICROSOFT_EXECUTABLE   Mensagem contém um programa executável Microsoft
             MICROSOFT_EXECUTABLE   Message includes Microsoft executable program
                  MILLION_HUNDRED   Million "One to Nine" Hundred
@@ -2151,7 +2148,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               SUBJ_ILLEGAL_CHARS   Subject: contient trop de caractères bruts invalides
               SUBJ_ILLEGAL_CHARS   Subject: has too many raw illegal characters
               SUBJ_ILLEGAL_CHARS   Temat: zawiera zbyt wiele niedozwolonych znaków
-              SUBJ_UNNEEDED_HTML   Unneeded HTML formatting in Subject:
                   SUBJ_YOUR_DEBT   Assunto contém "Your Bills" ou algo parecido
                   SUBJ_YOUR_DEBT   Betreff dreht sich um Rechnungen oder Kredite
                   SUBJ_YOUR_DEBT   Le sujet contient "Your Bills" (vos factures) ou similaire
@@ -2180,6 +2176,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
       TARINGANET_IMG_NOT_RCVD_TN   media.taringa.net hosted image but message not from taringa.net
             TBIRD_SUSP_MIME_BDRY   Unlikely Thunderbird MIME boundary
                  T_CDISP_SZ_MANY   Suspicious MIME header
+                  T_COMPENSATION   "Compensation"
                      T_CTE_BAS64   Malformated Content-Type-Encoding
                     T_CTYPE_NULL   Malformed Content-Type header
            T_DATE_IN_FUTURE_96_Q   Date: is 4 days to 4 months after Received: date
@@ -2219,6 +2216,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                 T_LOTTO_AGENT_FM   Claims Agent
               T_LOTTO_AGENT_RPLY   Claims Agent
                      T_LOTTO_URI   Claims Department URL
+               T_MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                T_MANY_PILL_PRICE   Prices for many pills
                      T_MIME_MALF   Malformed MIME: headers in body
                  T_MONEY_PERCENT   X% of a lot of money for you
@@ -2355,6 +2353,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                 UNICODE_OBFU_ASC   Obfuscating text with unicode
             UNICODE_OBFU_ZW_MANY   Heavily obfuscating text with hidden characters
                  UNICODE_OBFU_ZW   Obfuscating text with hidden characters
+                UNICODE_RTL_OBFU   Word obfuscation using Unicode right-to-left markers
                UNPARSEABLE_RELAY   Info: mensagem possui dados de relay que não puderam ser lidos
                UNPARSEABLE_RELAY   Informational: message has unparseable relay lines
              UNRESOLVED_TEMPLATE   Cabeçalho contém um template não substituído
