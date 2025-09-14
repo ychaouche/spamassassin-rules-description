@@ -200,6 +200,7 @@
                       BODY_8BITS   Contient plusieurs caractères 8-bits consécutifs
                       BODY_8BITS   Nachrichtentext enthält Folge von 8 oder mehr 8-Bit-Zeichen
                       BODY_8BITS   Tre¶æ zawiera 8 kolejnych 8mio bitowych znaków
+         BODY_EMAIL_419_FRAUD_GM   Email address in body is likely advance fee fraud collector mailbox
                BODY_ENHANCEMENT2   Arnaque prétendant augmenter la taile de votre pénis
                BODY_ENHANCEMENT2   Informação sobre como aumentar partes do corpo
                BODY_ENHANCEMENT2   Informatie over het vergroten van lichaamsdelen
@@ -211,6 +212,7 @@
                 BODY_ENHANCEMENT   Informationen zur Penis-/Brustvergrößerung
                 BODY_ENHANCEMENT   Information on growing body parts
                  BODY_SINGLE_URI   Message body is only a URI
+                BODY_SINGLE_WORD   Message body is only one word (no spaces)
                    BODY_URI_ONLY   Message body is only a URI in one line of text or for an image
               BOGUS_MIME_VERSION   Mime version header is bogus
                   BOGUS_MSM_HDRS   Apparently bogus Microsoft email headers
@@ -241,6 +243,7 @@
                   CN_PHISH_JP_03   JP "invoice" + .cn URL - possible Chinese phishing
                   CN_PHISH_JP_04   JP "payment" + .cn URL - possible Chinese phishing
                COMMENT_GIBBERISH   Nonsense in long HTML comment
+                    COMPENSATION   "Compensation"
                 CONFIRMED_FORGED   Cabeçalho Received é forjado
                 CONFIRMED_FORGED   Gefälschte "Received"-Kopfzeilen
                 CONFIRMED_FORGED   Les en-têtes "Received:" ont été falsifiés
@@ -434,6 +437,7 @@
                       DMARC_QUAR   DMARC quarantine policy
                     DMARC_REJECT   DMARC reject policy
             DOS_ANAL_SPAM_MAILER   X-mailer pattern common to anal porn site spam
+            DOS_BODY_HIGH_NO_MID   High bit body and no message ID header
                   DOS_FIX_MY_URI   Looks like a "fix my obfu'd URI please" spam
               DOS_HIGH_BAT_TO_MX   The Bat! Direct to MX with High Bits
                   DOS_LET_GO_JOB   Let go from their job and now makes lots of dough!
@@ -747,7 +751,6 @@
              FROM_LONG_DOM_MINFP   Absurdly long From domain name, suspicious relays
              FROM_MISSP_FREEMAIL   From misspaced + freemail provider
                  FROM_MISSP_MSFT   From misspaced + supposed Microsoft tool
-                FROM_MISSP_PHISH   Malformed, claims to be from financial organization - possible phish
               FROM_MISSP_REPLYTO   From misspaced, has Reply-To
                  FROM_MISSP_USER   From misspaced, from "User"
                  FROM_NEWDOM_BTC   Newdomain with Bitcoin ID
@@ -777,6 +780,8 @@
          FROM_SUSPICIOUS_NTLD_FP   From abused NTLD
             FROM_SUSPICIOUS_NTLD   From abused NTLD
                      FROM_UNBAL2   From with unbalanced angle brackets, '<' missing
+                   FROM_WSP_LEAD   Leading whitespace after '<' in From header field
+                  FROM_WSP_TRAIL   Trailing whitespace before '>' in From header field
                     FSL_BULK_SIG   Bulk signature with no Unsubscribe
                FSL_CTYPE_WIN1251   Content-Type only seen in 419 spam
                FSL_NEW_HELO_USER   Spam's using Helo and User
@@ -1322,6 +1327,7 @@
                     LONG_HEX_URI   Very long purely hexadecimal URI
                     LONG_IMG_URI   Image URI with very long path component - web bug?
              LONG_INVISIBLE_TEXT   Long block of hidden text - bayes poison?
+             LONGLN_LOW_CONTRAST   Excessively long line + hidden text
                        LONGWORDS   Contém trechos longos de palavras extensas
                        LONGWORDS   Eine Reihe von langen Wörtern hintereinander
                        LONGWORDS   Long string of long words
@@ -1343,6 +1349,7 @@
                   MALWARE_NORDNS   Malware bragging + no rDNS
                 MALWARE_PASSWORD   Malware bragging + "password"
                      MALW_ATTACH   Attachment filename suspicious, probable malware exploit
+                 MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                MANY_SPAN_IN_TEXT   Many <SPAN> tags embedded within text
                      MANY_SUBDOM   Lots and lots of subdomain parts in a URI
               MARKETING_PARTNERS   Afirma que você se cadastrou com um parceiro
@@ -1351,6 +1358,7 @@
               MARKETING_PARTNERS   Prétend que vous vous êtes enregistré auprès d'un "partenaire" quelconque
               MARKETING_PARTNERS   Twierdzi, ¿e jeste¶ zarejestrowany jako partner
               MARKETING_PARTNERS   Zegt dat je je bij een partner bedrijf hebt geregistreerd
+                   MAY_BE_FORGED   Relay IP's reverse DNS does not resolve to IP
             MICROSOFT_EXECUTABLE   Mensagem contém um programa executável Microsoft
             MICROSOFT_EXECUTABLE   Message includes Microsoft executable program
                  MILLION_HUNDRED   Million "One to Nine" Hundred
@@ -1739,7 +1747,6 @@ PDS_TONAME_EQ_TOLOCAL_FREEM_FORGE   Forged replyto and __PDS_TONAME_EQ_TOLOCAL
                  RATWARE_MS_HASH   Detectado como email em massa já conhecido (msgid ms hash)
                  RATWARE_NAME_ID   Bulk email fingerprint (msgid from) found
                  RATWARE_NAME_ID   Detectado como email em massa já conhecido (msgid from)
-                 RATWARE_NO_RDNS   Suspicious MsgID and MIME boundary + no rDNS
             RATWARE_OE_MALFORMED   En-tête X-Mailer indique No de version Outlook Express malformé
             RATWARE_OE_MALFORMED   Kopfzeilen enthalten gefälschte Hinweise auf Outlook Express
             RATWARE_OE_MALFORMED   Nag³ówek X-Mailer podaje z³± wersjê Outlook Express
@@ -2148,6 +2155,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               SUBJ_ILLEGAL_CHARS   Subject: contient trop de caractères bruts invalides
               SUBJ_ILLEGAL_CHARS   Subject: has too many raw illegal characters
               SUBJ_ILLEGAL_CHARS   Temat: zawiera zbyt wiele niedozwolonych znaków
+              SUBJ_UNNEEDED_HTML   Unneeded HTML formatting in Subject:
                   SUBJ_YOUR_DEBT   Assunto contém "Your Bills" ou algo parecido
                   SUBJ_YOUR_DEBT   Betreff dreht sich um Rechnungen oder Kredite
                   SUBJ_YOUR_DEBT   Le sujet contient "Your Bills" (vos factures) ou similaire
@@ -2176,7 +2184,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
       TARINGANET_IMG_NOT_RCVD_TN   media.taringa.net hosted image but message not from taringa.net
             TBIRD_SUSP_MIME_BDRY   Unlikely Thunderbird MIME boundary
                  T_CDISP_SZ_MANY   Suspicious MIME header
-                  T_COMPENSATION   "Compensation"
                      T_CTE_BAS64   Malformated Content-Type-Encoding
                     T_CTYPE_NULL   Malformed Content-Type header
            T_DATE_IN_FUTURE_96_Q   Date: is 4 days to 4 months after Received: date
@@ -2216,7 +2223,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                 T_LOTTO_AGENT_FM   Claims Agent
               T_LOTTO_AGENT_RPLY   Claims Agent
                      T_LOTTO_URI   Claims Department URL
-               T_MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                T_MANY_PILL_PRICE   Prices for many pills
                      T_MIME_MALF   Malformed MIME: headers in body
                  T_MONEY_PERCENT   X% of a lot of money for you
