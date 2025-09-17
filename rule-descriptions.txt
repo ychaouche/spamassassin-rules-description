@@ -1355,7 +1355,6 @@
               MARKETING_PARTNERS   Prétend que vous vous êtes enregistré auprès d'un "partenaire" quelconque
               MARKETING_PARTNERS   Twierdzi, ¿e jeste¶ zarejestrowany jako partner
               MARKETING_PARTNERS   Zegt dat je je bij een partner bedrijf hebt geregistreerd
-                   MAY_BE_FORGED   Relay IP's reverse DNS does not resolve to IP
             MICROSOFT_EXECUTABLE   Mensagem contém um programa executável Microsoft
             MICROSOFT_EXECUTABLE   Message includes Microsoft executable program
                  MILLION_HUNDRED   Million "One to Nine" Hundred
@@ -1999,12 +1998,10 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
             REPTO_QUOTE_QUALCOMM   Qualcomm/Eudora não usa o formato de citação usado no email
                REPTO_QUOTE_YAHOO   Yahoo! doesn't do quoting like this
                REPTO_QUOTE_YAHOO   Yahoo! não usa o formato de citação usado no email
-                       RISK_FREE   No risk!
                        RUDE_HTML   Mensagem diz que seu cliente de email não suporta HTML
                        RUDE_HTML   Spammer message says you need an HTML mailer
              RUSSIAN_UCE_SUBJECT   Subject contains a Russian UCE tag
                  SCC_BOGUS_CTE_1   Bogus Content-Transfer-Encoding header
-                   SCC_CANSPAM_2   Interesting compliance language
                        SCC_CTMPP   Uncommon Content-Type
                 SCC_ISEMM_LID_1A   Fingerprint of a particular spammer using an old spamware
                 SCC_ISEMM_LID_1B   Genericized spammer fingerprint
@@ -2329,7 +2326,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               TVD_SILLY_URI_OBFU   URI obfuscation that can fool a URIBL or a uri rule
         TVD_SPACED_SUBJECT_WORD3   Entire subject is "UPPERlowerUPPER" with no whitespace
                TVD_SPACE_ENCODED   Space ratio & encoded subject
-           TVD_SPACE_RATIO_MINFP   Space ratio (vertical text obfuscation?)
                       TVD_STOCK1   Spam related to stock trading
                 TVD_SUBJ_ACC_NUM   Subject has spammy looking monetary reference
               TVD_SUBJ_FINGER_03   Entire subject is enclosed in asterisks "* like so *"
@@ -2475,6 +2471,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
            URI_HOST_IN_WHITELIST   DEPRECATED: See URI_HOST_IN_WELCOMELIST
              URI_IMG_CWINDOWSNET   Non-MSFT image hosted by Microsoft Azure infra, possible phishing
                 URI_IMG_WP_REDIR   Image via WordPress "accelerator" proxy
+                URI_INFURAIPFSIO   References Interplanetary File System PtP content via infura-ipfs.io, likely phishing
                       URI_IPFSIO   References Interplanetary File System PtP content via ipfs.io, likely phishing
                         URI_IPFS   References Interplanetary File System PtP content, probable phishing
                  URI_LONG_REPEAT   Long identical host+domain
