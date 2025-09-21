@@ -378,6 +378,7 @@
                 DC_PNG_UNO_LARGO   Message contains a single large png image
                DC_SCREENSHOT_JPG   Contains image matching common screen resolution
                 DEAR_BENEFICIARY   Dear Beneficiary:
+                      DEAR_EMAIL   Message contains Dear email address
                      DEAR_FRIEND   Anonyme Anrede ("dear friend")
                      DEAR_FRIEND   Beste vriend, klinkt niet erg bekend...
                      DEAR_FRIEND   Contient la formule "Dear friend"
@@ -1214,7 +1215,6 @@
            HTML_TAG_BALANCE_BODY   HTML posiada niepozamykane znaczniki w "body"
            HTML_TAG_BALANCE_BODY   HTML possui uma tag "body" que não foi aberta ou fechada
            HTML_TAG_BALANCE_BODY   Le tag de fermeture de "body" HTML est manquant
-         HTML_TAG_BALANCE_CENTER   Malformatted HTML
            HTML_TAG_BALANCE_HEAD   Anzahl "head"-Tags nicht ausgeglichen
            HTML_TAG_BALANCE_HEAD   HTML bevat ongebalanceerde "head" tags
            HTML_TAG_BALANCE_HEAD   HTML has unbalanced "head" tags
@@ -1306,7 +1306,6 @@
         __KAM_BODY_LENGTH_LT_128   The length of the body of the email is less than 128 bytes.
         __KAM_BODY_LENGTH_LT_256   The length of the body of the email is less than 256 bytes.
         __KAM_BODY_LENGTH_LT_512   The length of the body of the email is less than 512 bytes.
-                  KHOP_FAKE_EBAY   Sender falsely claims to be from eBay
                 KHOP_HELO_FCRDNS   Relay HELO differs from its IP's reverse DNS
               KOREAN_UCE_SUBJECT   Assunto contém um texto comum de UCE (unsolicited commercial email) em coreano
               KOREAN_UCE_SUBJECT   Betreff enthält koreanische Werbungskennzeichnung
@@ -2216,6 +2215,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                          THIS_AD   "This ad" and variants
            THIS_IS_ADV_SUSP_NTLD   This is an advertisement from a suspicious TLD
                    T_HTML_ATTACH   HTML attachment to bypass scanning?
+       T_HTML_TAG_BALANCE_CENTER   Malformatted HTML
                     T_ISO_ATTACH   ISO attachment - possible malware delivery
          T_KAM_HTML_FONT_INVALID   Test for Invalidly Named or Formatted Colors in HTML
           T_LARGE_PCT_AFTER_MANY   Many large percentages after...
@@ -2456,7 +2456,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                  URI_FIREBASEAPP   Link to hosted firebase web application, possible phishing
               URI_FLKIPFSXYZIPFS   References Interplanetary File System PtP content via flk-ipfs.xyz, likely phishing
                     URI_GLITCHME   References glitch.me content, possible phishing
-             URI_GOOGDRAWPREVIEW   Link to image at Google Docs, possible phishing
        URI_GOOGDRAWPREVIEW_MINFP   Link to image at Google Docs, probable phishing
                 URI_GOOGLE_PROXY   Accessing a blacklisted URI or obscuring source of phish via Google proxy?
              URI_GOOG_STO_SPAMMY   Link to spammy content hosted by google storage
