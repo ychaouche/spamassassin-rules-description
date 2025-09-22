@@ -243,6 +243,7 @@
                   CN_PHISH_JP_03   JP "invoice" + .cn URL - possible Chinese phishing
                   CN_PHISH_JP_04   JP "payment" + .cn URL - possible Chinese phishing
                COMMENT_GIBBERISH   Nonsense in long HTML comment
+                    COMPENSATION   "Compensation"
                 CONFIRMED_FORGED   Cabeçalho Received é forjado
                 CONFIRMED_FORGED   Gefälschte "Received"-Kopfzeilen
                 CONFIRMED_FORGED   Les en-têtes "Received:" ont été falsifiés
@@ -1306,6 +1307,7 @@
         __KAM_BODY_LENGTH_LT_128   The length of the body of the email is less than 128 bytes.
         __KAM_BODY_LENGTH_LT_256   The length of the body of the email is less than 256 bytes.
         __KAM_BODY_LENGTH_LT_512   The length of the body of the email is less than 512 bytes.
+                  KHOP_FAKE_EBAY   Sender falsely claims to be from eBay
                 KHOP_HELO_FCRDNS   Relay HELO differs from its IP's reverse DNS
               KOREAN_UCE_SUBJECT   Assunto contém um texto comum de UCE (unsolicited commercial email) em coreano
               KOREAN_UCE_SUBJECT   Betreff enthält koreanische Werbungskennzeichnung
@@ -2182,7 +2184,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
       TARINGANET_IMG_NOT_RCVD_TN   media.taringa.net hosted image but message not from taringa.net
             TBIRD_SUSP_MIME_BDRY   Unlikely Thunderbird MIME boundary
                  T_CDISP_SZ_MANY   Suspicious MIME header
-                  T_COMPENSATION   "Compensation"
                      T_CTE_BAS64   Malformated Content-Type-Encoding
                     T_CTYPE_NULL   Malformed Content-Type header
            T_DATE_IN_FUTURE_96_Q   Date: is 4 days to 4 months after Received: date
