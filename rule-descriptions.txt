@@ -293,6 +293,7 @@
             DATE_IN_FUTURE_48_96   Date: est 48 à 96 heures après la date de l'en-tête Received:
             DATE_IN_FUTURE_48_96   Date: is 48 to 96 hours after Received: date
             DATE_IN_FUTURE_48_96   Date: is 48 tot 96 uur na Received: datum
+             DATE_IN_FUTURE_96_Q   Date: is 4 days to 4 months after Received: date
             DATE_IN_FUTURE_96_XX   Absendezeit mehr als 96 Stunden nach Datum in "Received"-Kopfzeilen
             DATE_IN_FUTURE_96_XX   Data: jest od 96 lub wiêcej godzin po dacie z Received:
             DATE_IN_FUTURE_96_XX   Date: é 96 horas ou mais depois do Received:
@@ -1360,9 +1361,9 @@
               MARKETING_PARTNERS   Prétend que vous vous êtes enregistré auprès d'un "partenaire" quelconque
               MARKETING_PARTNERS   Twierdzi, ¿e jeste¶ zarejestrowany jako partner
               MARKETING_PARTNERS   Zegt dat je je bij een partner bedrijf hebt geregistreerd
-                   MAY_BE_FORGED   Relay IP's reverse DNS does not resolve to IP
             MICROSOFT_EXECUTABLE   Mensagem contém um programa executável Microsoft
             MICROSOFT_EXECUTABLE   Message includes Microsoft executable program
+                     MILLION_EUR   Talks about millions of euros
                  MILLION_HUNDRED   Million "One to Nine" Hundred
                      MILLION_USD   Erwähnt Millonen von Dollar
                      MILLION_USD   Fala sobre milhões de dólares
@@ -1668,6 +1669,7 @@
              PART_CID_STOCK_LESS   Has a spammy image attachment (by Content-ID, more specific)
                  PAYPAL_PHISH_06   Paypal mail passed through both paypal and MSFT infrastructure, has obfuscated phone number; VERY high fraud probability
                  PAYPAL_PHISH_07   Paypal mail passed through both paypal and MSFT infrastructure; high fraud probability
+            PDS_BAD_THREAD_QP_64   Bad thread header - short QP
                       PDS_BTC_ID   FP reduced Bitcoin ID
                    PDS_BTC_MSGID   Bitcoin ID with T_MSGID_NOFQDN2
          PDS_FRNOM_TODOM_DBL_URL   From Name to domain, double URL
@@ -2156,6 +2158,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               SUBJ_ILLEGAL_CHARS   Subject: contient trop de caractères bruts invalides
               SUBJ_ILLEGAL_CHARS   Subject: has too many raw illegal characters
               SUBJ_ILLEGAL_CHARS   Temat: zawiera zbyt wiele niedozwolonych znaków
+              SUBJ_UNNEEDED_HTML   Unneeded HTML formatting in Subject:
                   SUBJ_YOUR_DEBT   Assunto contém "Your Bills" ou algo parecido
                   SUBJ_YOUR_DEBT   Betreff dreht sich um Rechnungen oder Kredite
                   SUBJ_YOUR_DEBT   Le sujet contient "Your Bills" (vos factures) ou similaire
@@ -2186,7 +2189,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                  T_CDISP_SZ_MANY   Suspicious MIME header
                      T_CTE_BAS64   Malformated Content-Type-Encoding
                     T_CTYPE_NULL   Malformed Content-Type header
-           T_DATE_IN_FUTURE_96_Q   Date: is 4 days to 4 months after Received: date
          T_DATE_IN_FUTURE_Q_PLUS   Date: is over 4 months after Received: date
              T_DOC_ATTACH_NO_EXT   Document attachment with suspicious name
        T_DOS_OUTLOOK_TO_MX_IMAGE   Direct to MX with Outlook headers and an image
