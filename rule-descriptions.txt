@@ -201,6 +201,7 @@
                       BODY_8BITS   Nachrichtentext enthält Folge von 8 oder mehr 8-Bit-Zeichen
                       BODY_8BITS   Tre¶æ zawiera 8 kolejnych 8mio bitowych znaków
          BODY_EMAIL_419_FRAUD_GM   Email address in body is likely advance fee fraud collector mailbox
+   BODY_EMAIL_419_FRAUD_GM_LOOSE   Ends-in-digits email address in body is likely advance fee fraud collector mailbox
                BODY_ENHANCEMENT2   Arnaque prétendant augmenter la taile de votre pénis
                BODY_ENHANCEMENT2   Informação sobre como aumentar partes do corpo
                BODY_ENHANCEMENT2   Informatie over het vergroten van lichaamsdelen
@@ -212,7 +213,6 @@
                 BODY_ENHANCEMENT   Informationen zur Penis-/Brustvergrößerung
                 BODY_ENHANCEMENT   Information on growing body parts
                  BODY_SINGLE_URI   Message body is only a URI
-                BODY_SINGLE_WORD   Message body is only one word (no spaces)
                    BODY_URI_ONLY   Message body is only a URI in one line of text or for an image
               BOGUS_MIME_VERSION   Mime version header is bogus
                   BOGUS_MSM_HDRS   Apparently bogus Microsoft email headers
@@ -755,6 +755,7 @@
                  FROM_MISSP_MSFT   From misspaced + supposed Microsoft tool
               FROM_MISSP_REPLYTO   From misspaced, has Reply-To
                  FROM_MISSP_USER   From misspaced, from "User"
+                FROM_MISSP_XPRIO   Misspaced FROM + X-Priority
                  FROM_NEWDOM_BTC   Newdomain with Bitcoin ID
                     FROM_NO_USER   Adressteil vor dem @-Zeichen fehlt im Absender
                     FROM_NO_USER   From: has no local-part before @ sign
@@ -865,7 +866,6 @@
                 FUZZY_WELLSFARGO   Obfuscated "Wells Fargo"
                      FUZZY_XPILL   Attempt to obfuscate words in spam
                      FUZZY_XPILL   Tentativa de esconder palavras na mensagem
-                      GAPPY_HTML   HTML body with much useless whitespace
          GAPPY_SALES_LEADS_FREEM   Obfuscated marketing text, freemail or CHN replyto
                    GAPPY_SUBJECT   Assunto contém T.e.x.t.o-E.s.t.r.a.n.h.o
                    GAPPY_SUBJECT   Betreff enthält Text mit "L.ü.c.k.e.n"
@@ -1079,7 +1079,6 @@
             HTML_FONT_SIZE_LARGE   HTML font size is large
             HTML_FONT_SIZE_LARGE   HTML-Schriftgröße ist sehr groß
             HTML_FONT_SIZE_LARGE   O HTML contém fonte de tamanho grande
-           HTML_FONT_TINY_NORDNS   Font too small to read, no rDNS
           HTML_FORMACTION_MAILTO   czê¶æ HTML zawiera formularz, który wysy³a pocztê
           HTML_FORMACTION_MAILTO   HTML bevat een formulier dat email verstuurd
           HTML_FORMACTION_MAILTO   HTML-Formular in Nachricht verschickt E-mail
@@ -1330,7 +1329,6 @@
                     LONG_HEX_URI   Very long purely hexadecimal URI
                     LONG_IMG_URI   Image URI with very long path component - web bug?
              LONG_INVISIBLE_TEXT   Long block of hidden text - bayes poison?
-             LONGLN_LOW_CONTRAST   Excessively long line + hidden text
                        LONGWORDS   Contém trechos longos de palavras extensas
                        LONGWORDS   Eine Reihe von langen Wörtern hintereinander
                        LONGWORDS   Long string of long words
@@ -1683,7 +1681,6 @@
                      PDS_PRO_TLD   .pro TLD
            PDS_SHORT_SPOOFED_URL   HTML message short and T_SPOOFED_URL (S_U_FP)
 PDS_TONAME_EQ_TOLOCAL_FREEM_FORGE   Forged replyto and __PDS_TONAME_EQ_TOLOCAL
-    PDS_TONAME_EQ_TOLOCAL_VSHORT   Very short body and From looks like 2 different emails
                   PERCENT_RANDOM   Mensagem contém uma macro randômica
                   PERCENT_RANDOM   Message has a random macro in it
                     PHISH_ATTACH   Attachment filename suspicious, probable phishing
@@ -2017,6 +2014,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                  SCC_ISEMM_LID_1   Fingerprint of a particular spammer using an old spamware
              SCC_NEWBIE_HASBEENS   Abused gTLDs seen in spam from Google Apps.
                 SCC_SPECIAL_GUID   Unique in a similar way
+            SCC_THREE_WORD_MONTY   Are you POTUS or a mass murderer?
             SENDGRID_REDIR_PHISH   Redirect URI via Sendgrid + phishing signs
                    SEO_SUSP_NTLD   SEO offer from suspicious TLD
         SHOPIFY_IMG_NOT_RCVD_SFY   Shopify hosted image but message not from Shopify
@@ -2099,6 +2097,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                     SUBJ_AS_SEEN   Onderwerp bevat "As Seen"
                     SUBJ_AS_SEEN   Subject contains "As Seen"
                     SUBJ_AS_SEEN   Temat: zawiera "Jak pokazywano"
+                  SUBJ_ATTENTION   ATTENTION in Subject
               SUBJ_BRKN_WORDNUMS   Subject contains odd word breaks and numbers
                         SUBJ_BUY   Assunto começa com "Buy" ou "Buying"
                         SUBJ_BUY   Betreff dreht sich ums Kaufen ("buy...")
@@ -2605,6 +2604,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                    WEIRD_QUOTING   Utilisation étrange de symboles de citations
                    WEIRD_QUOTING   Vreemde herhaalde dubbel aanhalingsteken
                    WEIRD_QUOTING   Weird repeated double-quotation marks
+                        WIKI_IMG   Image from wikipedia
                     WITH_LC_SMTP   Cabeçalho Received contém um indício de spam ("smtp" em caixa baixa)
                     WITH_LC_SMTP   Kopfzeilen mit "smtp" in Kleinschreibung
                     WITH_LC_SMTP   Linia 'Received' zawiera spamerski podpis (smtp)
