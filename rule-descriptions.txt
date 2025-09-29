@@ -2004,6 +2004,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
             REPTO_QUOTE_QUALCOMM   Qualcomm/Eudora não usa o formato de citação usado no email
                REPTO_QUOTE_YAHOO   Yahoo! doesn't do quoting like this
                REPTO_QUOTE_YAHOO   Yahoo! não usa o formato de citação usado no email
+                       RISK_FREE   No risk!
                        RUDE_HTML   Mensagem diz que seu cliente de email não suporta HTML
                        RUDE_HTML   Spammer message says you need an HTML mailer
              RUSSIAN_UCE_SUBJECT   Subject contains a Russian UCE tag
@@ -2158,7 +2159,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               SUBJ_ILLEGAL_CHARS   Subject: contient trop de caractères bruts invalides
               SUBJ_ILLEGAL_CHARS   Subject: has too many raw illegal characters
               SUBJ_ILLEGAL_CHARS   Temat: zawiera zbyt wiele niedozwolonych znaków
-              SUBJ_UNNEEDED_HTML   Unneeded HTML formatting in Subject:
                   SUBJ_YOUR_DEBT   Assunto contém "Your Bills" ou algo parecido
                   SUBJ_YOUR_DEBT   Betreff dreht sich um Rechnungen oder Kredite
                   SUBJ_YOUR_DEBT   Le sujet contient "Your Bills" (vos factures) ou similaire
@@ -2179,7 +2179,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                SUSPICIOUS_RECIPS   Similar addresses in recipient list
                SUSPICIOUS_RECIPS   Vergelijkbare adressen in de ontvangerslijst
              SUSP_UTF8_WORD_FROM   Word in From name using only suspicious UTF-8 characters
-             SUSP_UTF8_WORD_SUBJ   Word in Subject using only suspicious UTF-8 characters
                         SYSADMIN   Supposedly from your IT department
              T_ACH_CANCELLED_EXE   "ACH cancelled" probable malware
        TAGSTAT_IMG_NOT_RCVD_TGST   Tagstat hosted image but message not from Tagstat
