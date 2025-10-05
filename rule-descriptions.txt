@@ -882,6 +882,7 @@
                 GB_FROM_METAMASK   Metamask spam
                  GB_GOOGLE_OBFUR   Obfuscate url through Google redirect
                    GB_HASHBL_BTC   Message contains BTC address found on BTCBL
+         GB_STORAGE_GOOGLE_EMAIL   Google storage cloud abuse
                  __GEN_REDIR_URL   Message has one or more redirected URLs
                 GMD_AUTHOR_COLET   PDF author was 'colet'
               GMD_AUTHOR_HPADMIN   PDF author was 'HP_Administrator'
@@ -1330,6 +1331,7 @@
                     LONG_HEX_URI   Very long purely hexadecimal URI
                     LONG_IMG_URI   Image URI with very long path component - web bug?
              LONG_INVISIBLE_TEXT   Long block of hidden text - bayes poison?
+             LONGLN_LOW_CONTRAST   Excessively long line + hidden text
                        LONGWORDS   Contém trechos longos de palavras extensas
                        LONGWORDS   Eine Reihe von langen Wörtern hintereinander
                        LONGWORDS   Long string of long words
@@ -1360,6 +1362,7 @@
               MARKETING_PARTNERS   Prétend que vous vous êtes enregistré auprès d'un "partenaire" quelconque
               MARKETING_PARTNERS   Twierdzi, ¿e jeste¶ zarejestrowany jako partner
               MARKETING_PARTNERS   Zegt dat je je bij een partner bedrijf hebt geregistreerd
+                   MAY_BE_FORGED   Relay IP's reverse DNS does not resolve to IP
             MICROSOFT_EXECUTABLE   Mensagem contém um programa executável Microsoft
             MICROSOFT_EXECUTABLE   Message includes Microsoft executable program
                      MILLION_EUR   Talks about millions of euros
@@ -1672,12 +1675,9 @@
                       PDS_BTC_ID   FP reduced Bitcoin ID
                    PDS_BTC_MSGID   Bitcoin ID with T_MSGID_NOFQDN2
         PDS_FRNOM_TODOM_NAKED_TO   Naked to From name equals to Domain
-               PDS_FROM_2_EMAILS   From header has multiple different addresses
          PDS_FROM_NAME_TO_DOMAIN   From:name looks like To:domain
                PDS_HELO_SPF_FAIL   High profile HELO that fails SPF
-    PDS_NO_FULL_NAME_SPOOFED_URL   HTML message short, T_SPOOFED_URL and T_KHOP_NO_FULL_NAME
                PDS_OTHER_BAD_TLD   Untrustworthy TLDs
-                     PDS_PRO_TLD   .pro TLD
            PDS_SHORT_SPOOFED_URL   HTML message short and T_SPOOFED_URL (S_U_FP)
 PDS_TONAME_EQ_TOLOCAL_FREEM_FORGE   Forged replyto and __PDS_TONAME_EQ_TOLOCAL
                   PERCENT_RANDOM   Mensagem contém uma macro randômica
@@ -2210,7 +2210,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
         T_FROMNAME_SPOOFED_EMAIL   From:name looks like a spoofed email
                   T_FUZZY_OPTOUT   Obfuscated opt-out text
   T_GB_FROMNAME_SPOOFED_EMAIL_IP   From:name looks like a spoofed email from a spoofed ip
-       T_GB_STORAGE_GOOGLE_EMAIL   Google storage cloud abuse
                     T_GB_WEBFORM   Webform with url shortener
               T_GB_YOUTUBE_EMAIL   Youtube attribution links abuse
                          THIS_AD   "This ad" and variants
@@ -2268,9 +2267,12 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                   T_PDS_BTC_NTLD   Bitcoin suspect NTLD
          T_PDS_EMPTYSUBJ_URISHRT   Empty subject with little more than URI shortener
   T_PDS_FREEMAIL_REPLYTO_URISHRT   Freemail replyto with URI shortener
+             T_PDS_FROM_2_EMAILS   From header has multiple different addresses
      T_PDS_FROM_2_EMAILS_SHRTNER   From 2 emails short email with little more than a URI shortener
                T_PDS_LTC_AHACKER   Litecoin Hacker
                 T_PDS_LTC_HACKER   Litecoin Hacker
+  T_PDS_NO_FULL_NAME_SPOOFED_URL   HTML message short, T_SPOOFED_URL and T_KHOP_NO_FULL_NAME
+                   T_PDS_PRO_TLD   .pro TLD
        T_PDS_SHORTFWD_URISHRT_FP   Apparently a short fwd/re with URI shortener
        T_PDS_SHORTFWD_URISHRT_QP   Apparently a short fwd/re with URI shortener
           T_PDS_SHORTFWD_URISHRT   Threaded email with URI shortener
@@ -2329,6 +2331,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               TVD_SILLY_URI_OBFU   URI obfuscation that can fool a URIBL or a uri rule
         TVD_SPACED_SUBJECT_WORD3   Entire subject is "UPPERlowerUPPER" with no whitespace
                TVD_SPACE_ENCODED   Space ratio & encoded subject
+           TVD_SPACE_RATIO_MINFP   Space ratio (vertical text obfuscation?)
                       TVD_STOCK1   Spam related to stock trading
                 TVD_SUBJ_ACC_NUM   Subject has spammy looking monetary reference
               TVD_SUBJ_FINGER_03   Entire subject is enclosed in asterisks "* like so *"
@@ -2484,12 +2487,12 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               URI_NO_WWW_BIZ_CGI   Domínio .biz possui string suspeita ao invés de "www"
              URI_NO_WWW_INFO_CGI   CGI in .info TLD other than third-level "www"
              URI_NO_WWW_INFO_CGI   Domínio .info possui string suspeita ao invés de "www"
-                    URI_OBFU_DOM   URI pretending to be different domain
              URI_ONLY_MSGID_MALF   URI only + malformed message ID
                   URI_OPTOUT_3LD   Opt-out URI, suspicious hostname
                  URI_OPTOUT_USME   Opt-out URI, unusual TLD
                        URI_PHISH   Phishing using web form
                    URI_PHP_REDIR   PHP redirect to different URL (link obfuscation)
+                     URI_SNIP_LY   snip.ly URI: third-party website rewriting, possible phishing
                    URI_TRUNCATED   Mensagem possui uma URI que foi truncada
                    URI_TRUNCATED   Message contained a URI which was truncated
                      URI_TRY_3LD   "Try it" URI, suspicious hostname
