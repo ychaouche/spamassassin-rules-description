@@ -213,6 +213,7 @@
                 BODY_ENHANCEMENT   Informationen zur Penis-/Brustvergrößerung
                 BODY_ENHANCEMENT   Information on growing body parts
                  BODY_SINGLE_URI   Message body is only a URI
+                BODY_SINGLE_WORD   Message body is only one word (no spaces)
                    BODY_URI_ONLY   Message body is only a URI in one line of text or for an image
               BOGUS_MIME_VERSION   Mime version header is bogus
                   BOGUS_MSM_HDRS   Apparently bogus Microsoft email headers
@@ -753,6 +754,7 @@
              FROM_LONG_DOM_MINFP   Absurdly long From domain name, suspicious relays
              FROM_MISSP_FREEMAIL   From misspaced + freemail provider
                  FROM_MISSP_MSFT   From misspaced + supposed Microsoft tool
+                FROM_MISSP_PHISH   Malformed, claims to be from financial organization - possible phish
               FROM_MISSP_REPLYTO   From misspaced, has Reply-To
                  FROM_MISSP_USER   From misspaced, from "User"
                 FROM_MISSP_XPRIO   Misspaced FROM + X-Priority
@@ -867,6 +869,7 @@
                 FUZZY_WELLSFARGO   Obfuscated "Wells Fargo"
                      FUZZY_XPILL   Attempt to obfuscate words in spam
                      FUZZY_XPILL   Tentativa de esconder palavras na mensagem
+                      GAPPY_HTML   HTML body with much useless whitespace
          GAPPY_SALES_LEADS_FREEM   Obfuscated marketing text, freemail or CHN replyto
                    GAPPY_SUBJECT   Assunto contém T.e.x.t.o-E.s.t.r.a.n.h.o
                    GAPPY_SUBJECT   Betreff enthält Text mit "L.ü.c.k.e.n"
@@ -879,7 +882,6 @@
            GB_FORGED_MUA_POSTFIX   Forged Postfix mua headers
               GB_FREEMAIL_DISPTO   Disposition-Notification-To/From or Disposition-Notification-To/body contain different freemails
      GB_FREEMAIL_DISPTO_NOTFREEM   Disposition-Notification-To/From contain different freemails but mailfrom is not a freemail
-                GB_FROM_METAMASK   Metamask spam
                  GB_GOOGLE_OBFUR   Obfuscate url through Google redirect
                    GB_HASHBL_BTC   Message contains BTC address found on BTCBL
          GB_STORAGE_GOOGLE_EMAIL   Google storage cloud abuse
@@ -1361,7 +1363,6 @@
               MARKETING_PARTNERS   Prétend que vous vous êtes enregistré auprès d'un "partenaire" quelconque
               MARKETING_PARTNERS   Twierdzi, ¿e jeste¶ zarejestrowany jako partner
               MARKETING_PARTNERS   Zegt dat je je bij een partner bedrijf hebt geregistreerd
-                   MAY_BE_FORGED   Relay IP's reverse DNS does not resolve to IP
             MICROSOFT_EXECUTABLE   Mensagem contém um programa executável Microsoft
             MICROSOFT_EXECUTABLE   Message includes Microsoft executable program
                      MILLION_EUR   Talks about millions of euros
@@ -1673,8 +1674,6 @@
             PDS_BAD_THREAD_QP_64   Bad thread header - short QP
                       PDS_BTC_ID   FP reduced Bitcoin ID
                    PDS_BTC_MSGID   Bitcoin ID with T_MSGID_NOFQDN2
-        PDS_FRNOM_TODOM_NAKED_TO   Naked to From name equals to Domain
-         PDS_FROM_NAME_TO_DOMAIN   From:name looks like To:domain
                PDS_HELO_SPF_FAIL   High profile HELO that fails SPF
                PDS_OTHER_BAD_TLD   Untrustworthy TLDs
            PDS_SHORT_SPOOFED_URL   HTML message short and T_SPOOFED_URL (S_U_FP)
@@ -2157,7 +2156,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               SUBJ_ILLEGAL_CHARS   Subject: contient trop de caractères bruts invalides
               SUBJ_ILLEGAL_CHARS   Subject: has too many raw illegal characters
               SUBJ_ILLEGAL_CHARS   Temat: zawiera zbyt wiele niedozwolonych znaków
-              SUBJ_UNNEEDED_HTML   Unneeded HTML formatting in Subject:
                   SUBJ_YOUR_DEBT   Assunto contém "Your Bills" ou algo parecido
                   SUBJ_YOUR_DEBT   Betreff dreht sich um Rechnungen oder Kredite
                   SUBJ_YOUR_DEBT   Le sujet contient "Your Bills" (vos factures) ou similaire
@@ -2178,6 +2176,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                SUSPICIOUS_RECIPS   Similar addresses in recipient list
                SUSPICIOUS_RECIPS   Vergelijkbare adressen in de ontvangerslijst
              SUSP_UTF8_WORD_FROM   Word in From name using only suspicious UTF-8 characters
+             SUSP_UTF8_WORD_SUBJ   Word in Subject using only suspicious UTF-8 characters
                         SYSADMIN   Supposedly from your IT department
              T_ACH_CANCELLED_EXE   "ACH cancelled" probable malware
        TAGSTAT_IMG_NOT_RCVD_TGST   Tagstat hosted image but message not from Tagstat
@@ -2208,6 +2207,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
             T_FROMNAME_EQUALS_TO   From:name matches To:
         T_FROMNAME_SPOOFED_EMAIL   From:name looks like a spoofed email
                   T_FUZZY_OPTOUT   Obfuscated opt-out text
+              T_GB_FROM_METAMASK   Metamask spam
   T_GB_FROMNAME_SPOOFED_EMAIL_IP   From:name looks like a spoofed email from a spoofed ip
                     T_GB_WEBFORM   Webform with url shortener
               T_GB_YOUTUBE_EMAIL   Youtube attribution links abuse
@@ -2330,6 +2330,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               TVD_SILLY_URI_OBFU   URI obfuscation that can fool a URIBL or a uri rule
         TVD_SPACED_SUBJECT_WORD3   Entire subject is "UPPERlowerUPPER" with no whitespace
                TVD_SPACE_ENCODED   Space ratio & encoded subject
+           TVD_SPACE_RATIO_MINFP   Space ratio (vertical text obfuscation?)
                       TVD_STOCK1   Spam related to stock trading
                 TVD_SUBJ_ACC_NUM   Subject has spammy looking monetary reference
               TVD_SUBJ_FINGER_03   Entire subject is enclosed in asterisks "* like so *"
