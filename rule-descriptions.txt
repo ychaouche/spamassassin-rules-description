@@ -784,6 +784,7 @@
            FROM_STARTS_WITH_NUMS   Van: begint met nummers
          FROM_SUSPICIOUS_NTLD_FP   From abused NTLD
             FROM_SUSPICIOUS_NTLD   From abused NTLD
+                     FROM_UNBAL1   From with unbalanced angle brackets, '>' missing
                      FROM_UNBAL2   From with unbalanced angle brackets, '<' missing
                    FROM_WSP_LEAD   Leading whitespace after '<' in From header field
                   FROM_WSP_TRAIL   Trailing whitespace before '>' in From header field
@@ -884,7 +885,6 @@
      GB_FREEMAIL_DISPTO_NOTFREEM   Disposition-Notification-To/From contain different freemails but mailfrom is not a freemail
                  GB_GOOGLE_OBFUR   Obfuscate url through Google redirect
                    GB_HASHBL_BTC   Message contains BTC address found on BTCBL
-         GB_STORAGE_GOOGLE_EMAIL   Google storage cloud abuse
                  __GEN_REDIR_URL   Message has one or more redirected URLs
                 GMD_AUTHOR_COLET   PDF author was 'colet'
               GMD_AUTHOR_HPADMIN   PDF author was 'HP_Administrator'
@@ -1311,6 +1311,7 @@
         __KAM_BODY_LENGTH_LT_128   The length of the body of the email is less than 128 bytes.
         __KAM_BODY_LENGTH_LT_256   The length of the body of the email is less than 256 bytes.
         __KAM_BODY_LENGTH_LT_512   The length of the body of the email is less than 512 bytes.
+                  KHOP_FAKE_EBAY   Sender falsely claims to be from eBay
                 KHOP_HELO_FCRDNS   Relay HELO differs from its IP's reverse DNS
               KOREAN_UCE_SUBJECT   Assunto contém um texto comum de UCE (unsolicited commercial email) em coreano
               KOREAN_UCE_SUBJECT   Betreff enthält koreanische Werbungskennzeichnung
@@ -1354,7 +1355,6 @@
                   MALWARE_NORDNS   Malware bragging + no rDNS
                 MALWARE_PASSWORD   Malware bragging + "password"
                      MALW_ATTACH   Attachment filename suspicious, probable malware exploit
-                 MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                MANY_SPAN_IN_TEXT   Many <SPAN> tags embedded within text
                      MANY_SUBDOM   Lots and lots of subdomain parts in a URI
               MARKETING_PARTNERS   Afirma que você se cadastrou com um parceiro
@@ -1363,6 +1363,7 @@
               MARKETING_PARTNERS   Prétend que vous vous êtes enregistré auprès d'un "partenaire" quelconque
               MARKETING_PARTNERS   Twierdzi, ¿e jeste¶ zarejestrowany jako partner
               MARKETING_PARTNERS   Zegt dat je je bij een partner bedrijf hebt geregistreerd
+                   MAY_BE_FORGED   Relay IP's reverse DNS does not resolve to IP
             MICROSOFT_EXECUTABLE   Mensagem contém um programa executável Microsoft
             MICROSOFT_EXECUTABLE   Message includes Microsoft executable program
                      MILLION_EUR   Talks about millions of euros
@@ -2156,6 +2157,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               SUBJ_ILLEGAL_CHARS   Subject: contient trop de caractères bruts invalides
               SUBJ_ILLEGAL_CHARS   Subject: has too many raw illegal characters
               SUBJ_ILLEGAL_CHARS   Temat: zawiera zbyt wiele niedozwolonych znaków
+              SUBJ_UNNEEDED_HTML   Unneeded HTML formatting in Subject:
                   SUBJ_YOUR_DEBT   Assunto contém "Your Bills" ou algo parecido
                   SUBJ_YOUR_DEBT   Betreff dreht sich um Rechnungen oder Kredite
                   SUBJ_YOUR_DEBT   Le sujet contient "Your Bills" (vos factures) ou similaire
@@ -2209,6 +2211,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                   T_FUZZY_OPTOUT   Obfuscated opt-out text
               T_GB_FROM_METAMASK   Metamask spam
   T_GB_FROMNAME_SPOOFED_EMAIL_IP   From:name looks like a spoofed email from a spoofed ip
+       T_GB_STORAGE_GOOGLE_EMAIL   Google storage cloud abuse
                     T_GB_WEBFORM   Webform with url shortener
               T_GB_YOUTUBE_EMAIL   Youtube attribution links abuse
                          THIS_AD   "This ad" and variants
@@ -2221,6 +2224,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                 T_LOTTO_AGENT_FM   Claims Agent
               T_LOTTO_AGENT_RPLY   Claims Agent
                      T_LOTTO_URI   Claims Department URL
+               T_MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                T_MANY_PILL_PRICE   Prices for many pills
                      T_MIME_MALF   Malformed MIME: headers in body
                  T_MONEY_PERCENT   X% of a lot of money for you
@@ -2330,7 +2334,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               TVD_SILLY_URI_OBFU   URI obfuscation that can fool a URIBL or a uri rule
         TVD_SPACED_SUBJECT_WORD3   Entire subject is "UPPERlowerUPPER" with no whitespace
                TVD_SPACE_ENCODED   Space ratio & encoded subject
-           TVD_SPACE_RATIO_MINFP   Space ratio (vertical text obfuscation?)
                       TVD_STOCK1   Spam related to stock trading
                 TVD_SUBJ_ACC_NUM   Subject has spammy looking monetary reference
               TVD_SUBJ_FINGER_03   Entire subject is enclosed in asterisks "* like so *"
