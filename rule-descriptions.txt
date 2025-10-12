@@ -1220,6 +1220,7 @@
            HTML_TAG_BALANCE_BODY   HTML posiada niepozamykane znaczniki w "body"
            HTML_TAG_BALANCE_BODY   HTML possui uma tag "body" que não foi aberta ou fechada
            HTML_TAG_BALANCE_BODY   Le tag de fermeture de "body" HTML est manquant
+         HTML_TAG_BALANCE_CENTER   Malformatted HTML
            HTML_TAG_BALANCE_HEAD   Anzahl "head"-Tags nicht ausgeglichen
            HTML_TAG_BALANCE_HEAD   HTML bevat ongebalanceerde "head" tags
            HTML_TAG_BALANCE_HEAD   HTML has unbalanced "head" tags
@@ -1352,9 +1353,11 @@
                     MALE_ENHANCE   Mensagem fala sobre melhorar a masculinidade
                     MALE_ENHANCE   Message talks about enhancing men
                    MALF_HTML_B64   Malformatted base64-encoded HTML content
+              MALFORMED_FREEMAIL   Bad headers on message from free email service
                   MALWARE_NORDNS   Malware bragging + no rDNS
                 MALWARE_PASSWORD   Malware bragging + "password"
                      MALW_ATTACH   Attachment filename suspicious, probable malware exploit
+                 MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                MANY_SPAN_IN_TEXT   Many <SPAN> tags embedded within text
                      MANY_SUBDOM   Lots and lots of subdomain parts in a URI
               MARKETING_PARTNERS   Afirma que você se cadastrou com um parceiro
@@ -1675,9 +1678,11 @@
             PDS_BAD_THREAD_QP_64   Bad thread header - short QP
                       PDS_BTC_ID   FP reduced Bitcoin ID
                    PDS_BTC_MSGID   Bitcoin ID with T_MSGID_NOFQDN2
+        PDS_FRNOM_TODOM_NAKED_TO   Naked to From name equals to Domain
+               PDS_FROM_2_EMAILS   From header has multiple different addresses
+         PDS_FROM_NAME_TO_DOMAIN   From:name looks like To:domain
                PDS_HELO_SPF_FAIL   High profile HELO that fails SPF
                PDS_OTHER_BAD_TLD   Untrustworthy TLDs
-           PDS_SHORT_SPOOFED_URL   HTML message short and T_SPOOFED_URL (S_U_FP)
 PDS_TONAME_EQ_TOLOCAL_FREEM_FORGE   Forged replyto and __PDS_TONAME_EQ_TOLOCAL
                   PERCENT_RANDOM   Mensagem contém uma macro randômica
                   PERCENT_RANDOM   Message has a random macro in it
@@ -2177,6 +2182,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                SUSPICIOUS_RECIPS   Lista de destinatários possui endereços semelhantes
                SUSPICIOUS_RECIPS   Similar addresses in recipient list
                SUSPICIOUS_RECIPS   Vergelijkbare adressen in de ontvangerslijst
+            SUSP_UTF8_WORD_COMBO   Words using only suspicious UTF-8 characters + other signs
              SUSP_UTF8_WORD_FROM   Word in From name using only suspicious UTF-8 characters
              SUSP_UTF8_WORD_SUBJ   Word in Subject using only suspicious UTF-8 characters
                         SYSADMIN   Supposedly from your IT department
@@ -2217,14 +2223,12 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                          THIS_AD   "This ad" and variants
            THIS_IS_ADV_SUSP_NTLD   This is an advertisement from a suspicious TLD
                    T_HTML_ATTACH   HTML attachment to bypass scanning?
-       T_HTML_TAG_BALANCE_CENTER   Malformatted HTML
                     T_ISO_ATTACH   ISO attachment - possible malware delivery
          T_KAM_HTML_FONT_INVALID   Test for Invalidly Named or Formatted Colors in HTML
           T_LARGE_PCT_AFTER_MANY   Many large percentages after...
                 T_LOTTO_AGENT_FM   Claims Agent
               T_LOTTO_AGENT_RPLY   Claims Agent
                      T_LOTTO_URI   Claims Department URL
-               T_MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                T_MANY_PILL_PRICE   Prices for many pills
                      T_MIME_MALF   Malformed MIME: headers in body
                  T_MONEY_PERCENT   X% of a lot of money for you
@@ -2270,7 +2274,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                   T_PDS_BTC_NTLD   Bitcoin suspect NTLD
          T_PDS_EMPTYSUBJ_URISHRT   Empty subject with little more than URI shortener
   T_PDS_FREEMAIL_REPLYTO_URISHRT   Freemail replyto with URI shortener
-             T_PDS_FROM_2_EMAILS   From header has multiple different addresses
      T_PDS_FROM_2_EMAILS_SHRTNER   From 2 emails short email with little more than a URI shortener
                T_PDS_LTC_AHACKER   Litecoin Hacker
                 T_PDS_LTC_HACKER   Litecoin Hacker
@@ -2279,6 +2282,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
        T_PDS_SHORTFWD_URISHRT_FP   Apparently a short fwd/re with URI shortener
        T_PDS_SHORTFWD_URISHRT_QP   Apparently a short fwd/re with URI shortener
           T_PDS_SHORTFWD_URISHRT   Threaded email with URI shortener
+         T_PDS_SHORT_SPOOFED_URL   HTML message short and T_SPOOFED_URL (S_U_FP)
           T_PDS_TINYSUBJ_URISHRT   Short subject with URL shortener
            T_PDS_TO_EQ_FROM_NAME   From: name same as To: address
     T_PDS_URISHRT_LOCALPART_SUBJ   Localpart of To in subject
@@ -2334,6 +2338,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               TVD_SILLY_URI_OBFU   URI obfuscation that can fool a URIBL or a uri rule
         TVD_SPACED_SUBJECT_WORD3   Entire subject is "UPPERlowerUPPER" with no whitespace
                TVD_SPACE_ENCODED   Space ratio & encoded subject
+           TVD_SPACE_RATIO_MINFP   Space ratio (vertical text obfuscation?)
                       TVD_STOCK1   Spam related to stock trading
                 TVD_SUBJ_ACC_NUM   Subject has spammy looking monetary reference
               TVD_SUBJ_FINGER_03   Entire subject is enclosed in asterisks "* like so *"
