@@ -301,6 +301,7 @@
             DATE_IN_FUTURE_96_XX   Date: est plus de 96 heures après la date de l'en-tête Received:
             DATE_IN_FUTURE_96_XX   Date: is 96 hours or more after Received: date
             DATE_IN_FUTURE_96_XX   Date: is 96 of meer uur na Received: datum
+           DATE_IN_FUTURE_Q_PLUS   Date: is over 4 months after Received: date
               DATE_IN_PAST_03_06   Absendezeit 3 bis 6 Stunden vor Datum in "Received"-Kopfzeilen
               DATE_IN_PAST_03_06   Data: jest od 3 do 6 godzin przed dat± z Received:
               DATE_IN_PAST_03_06   Date: é 3 a 6 horas antes da data do Received:
@@ -1357,6 +1358,7 @@
                   MALWARE_NORDNS   Malware bragging + no rDNS
                 MALWARE_PASSWORD   Malware bragging + "password"
                      MALW_ATTACH   Attachment filename suspicious, probable malware exploit
+                 MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                MANY_SPAN_IN_TEXT   Many <SPAN> tags embedded within text
                      MANY_SUBDOM   Lots and lots of subdomain parts in a URI
               MARKETING_PARTNERS   Afirma que você se cadastrou com um parceiro
@@ -1677,6 +1679,7 @@
             PDS_BAD_THREAD_QP_64   Bad thread header - short QP
                       PDS_BTC_ID   FP reduced Bitcoin ID
                    PDS_BTC_MSGID   Bitcoin ID with T_MSGID_NOFQDN2
+         PDS_FRNOM_TODOM_DBL_URL   From Name to domain, double URL
         PDS_FRNOM_TODOM_NAKED_TO   Naked to From name equals to Domain
          PDS_FROM_NAME_TO_DOMAIN   From:name looks like To:domain
                PDS_HELO_SPF_FAIL   High profile HELO that fails SPF
@@ -1750,6 +1753,7 @@ PDS_TONAME_EQ_TOLOCAL_FREEM_FORGE   Forged replyto and __PDS_TONAME_EQ_TOLOCAL
                  RATWARE_MS_HASH   Detectado como email em massa já conhecido (msgid ms hash)
                  RATWARE_NAME_ID   Bulk email fingerprint (msgid from) found
                  RATWARE_NAME_ID   Detectado como email em massa já conhecido (msgid from)
+                 RATWARE_NO_RDNS   Suspicious MsgID and MIME boundary + no rDNS
             RATWARE_OE_MALFORMED   En-tête X-Mailer indique No de version Outlook Express malformé
             RATWARE_OE_MALFORMED   Kopfzeilen enthalten gefälschte Hinweise auf Outlook Express
             RATWARE_OE_MALFORMED   Nag³ówek X-Mailer podaje z³± wersjê Outlook Express
@@ -2019,6 +2023,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
             SCC_THREE_WORD_MONTY   Are you POTUS or a mass murderer?
             SENDGRID_REDIR_PHISH   Redirect URI via Sendgrid + phishing signs
                    SEO_SUSP_NTLD   SEO offer from suspicious TLD
+         SERGIO_SUBJECT_VIAGRA01   Viagra garbled subject
         SHOPIFY_IMG_NOT_RCVD_SFY   Shopify hosted image but message not from Shopify
                     SHORTCIRCUIT   Nem todas as regras foram executadas por causa de um problema em uma delas
                     SHORTCIRCUIT   Not all rules were run, due to a shortcircuited rule
@@ -2191,7 +2196,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                  T_CDISP_SZ_MANY   Suspicious MIME header
                      T_CTE_BAS64   Malformated Content-Type-Encoding
                     T_CTYPE_NULL   Malformed Content-Type header
-         T_DATE_IN_FUTURE_Q_PLUS   Date: is over 4 months after Received: date
              T_DOC_ATTACH_NO_EXT   Document attachment with suspicious name
        T_DOS_OUTLOOK_TO_MX_IMAGE   Direct to MX with Outlook headers and an image
               T_DOS_ZIP_HARDCORE   hardcore.zip file attached; quite certainly a virus
@@ -2226,7 +2230,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                 T_LOTTO_AGENT_FM   Claims Agent
               T_LOTTO_AGENT_RPLY   Claims Agent
                      T_LOTTO_URI   Claims Department URL
-               T_MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                T_MANY_PILL_PRICE   Prices for many pills
                      T_MIME_MALF   Malformed MIME: headers in body
                  T_MONEY_PERCENT   X% of a lot of money for you
@@ -2337,7 +2340,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               TVD_SILLY_URI_OBFU   URI obfuscation that can fool a URIBL or a uri rule
         TVD_SPACED_SUBJECT_WORD3   Entire subject is "UPPERlowerUPPER" with no whitespace
                TVD_SPACE_ENCODED   Space ratio & encoded subject
-           TVD_SPACE_RATIO_MINFP   Space ratio (vertical text obfuscation?)
                       TVD_STOCK1   Spam related to stock trading
                 TVD_SUBJ_ACC_NUM   Subject has spammy looking monetary reference
               TVD_SUBJ_FINGER_03   Entire subject is enclosed in asterisks "* like so *"
