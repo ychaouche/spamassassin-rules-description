@@ -200,7 +200,6 @@
                       BODY_8BITS   Contient plusieurs caractères 8-bits consécutifs
                       BODY_8BITS   Nachrichtentext enthält Folge von 8 oder mehr 8-Bit-Zeichen
                       BODY_8BITS   Tre¶æ zawiera 8 kolejnych 8mio bitowych znaków
-         BODY_EMAIL_419_FRAUD_GM   Email address in body is likely advance fee fraud collector mailbox
    BODY_EMAIL_419_FRAUD_GM_LOOSE   Ends-in-digits email address in body is likely advance fee fraud collector mailbox
                BODY_ENHANCEMENT2   Arnaque prétendant augmenter la taile de votre pénis
                BODY_ENHANCEMENT2   Informação sobre como aumentar partes do corpo
@@ -1021,8 +1020,6 @@
          HOSTED_IMG_MULTI_PUB_01   Multiple hosted images at public site
                HREF_EMPTY_NORDNS   Empty href + no rDNS
               HREF_EMPTY_PHPMAIL   Empty href + PHP Mailer
-           HREF_EMPTY_XANTIABUSE   Empty href + X-AntiAbuse
-              HREF_EMPTY_XAUTHED   Empty href + X-Authenticated-Sender
                     HTML_BADATTR   Illegal char in HTML attribute name
                HTML_BADTAG_40_50   HTML bericht bevat 40% tot 50% foute tags
                HTML_BADTAG_40_50   HTML da mensagem possui de 40% a 50% de tags inválidas
@@ -1367,7 +1364,6 @@
               MARKETING_PARTNERS   Prétend que vous vous êtes enregistré auprès d'un "partenaire" quelconque
               MARKETING_PARTNERS   Twierdzi, ¿e jeste¶ zarejestrowany jako partner
               MARKETING_PARTNERS   Zegt dat je je bij een partner bedrijf hebt geregistreerd
-                   MAY_BE_FORGED   Relay IP's reverse DNS does not resolve to IP
             MICROSOFT_EXECUTABLE   Mensagem contém um programa executável Microsoft
             MICROSOFT_EXECUTABLE   Message includes Microsoft executable program
                      MILLION_EUR   Talks about millions of euros
@@ -1683,6 +1679,7 @@
         PDS_FRNOM_TODOM_NAKED_TO   Naked to From name equals to Domain
          PDS_FROM_NAME_TO_DOMAIN   From:name looks like To:domain
                PDS_HELO_SPF_FAIL   High profile HELO that fails SPF
+             PDS_NAKED_TO_NUMERO   Naked-to, numberonly domain
                PDS_OTHER_BAD_TLD   Untrustworthy TLDs
 PDS_TONAME_EQ_TOLOCAL_FREEM_FORGE   Forged replyto and __PDS_TONAME_EQ_TOLOCAL
                   PERCENT_RANDOM   Mensagem contém uma macro randômica
@@ -2165,6 +2162,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               SUBJ_ILLEGAL_CHARS   Subject: contient trop de caractères bruts invalides
               SUBJ_ILLEGAL_CHARS   Subject: has too many raw illegal characters
               SUBJ_ILLEGAL_CHARS   Temat: zawiera zbyt wiele niedozwolonych znaków
+              SUBJ_UNNEEDED_HTML   Unneeded HTML formatting in Subject:
                   SUBJ_YOUR_DEBT   Assunto contém "Your Bills" ou algo parecido
                   SUBJ_YOUR_DEBT   Betreff dreht sich um Rechnungen oder Kredite
                   SUBJ_YOUR_DEBT   Le sujet contient "Your Bills" (vos factures) ou similaire
@@ -2340,6 +2338,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               TVD_SILLY_URI_OBFU   URI obfuscation that can fool a URIBL or a uri rule
         TVD_SPACED_SUBJECT_WORD3   Entire subject is "UPPERlowerUPPER" with no whitespace
                TVD_SPACE_ENCODED   Space ratio & encoded subject
+           TVD_SPACE_RATIO_MINFP   Space ratio (vertical text obfuscation?)
                       TVD_STOCK1   Spam related to stock trading
                 TVD_SUBJ_ACC_NUM   Subject has spammy looking monetary reference
               TVD_SUBJ_FINGER_03   Entire subject is enclosed in asterisks "* like so *"
