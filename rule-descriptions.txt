@@ -211,7 +211,6 @@
                 BODY_ENHANCEMENT   Informatie over het vergroten van lichaamsdelen
                 BODY_ENHANCEMENT   Informationen zur Penis-/Brustvergrößerung
                 BODY_ENHANCEMENT   Information on growing body parts
-                 BODY_SINGLE_URI   Message body is only a URI
                 BODY_SINGLE_WORD   Message body is only one word (no spaces)
                    BODY_URI_ONLY   Message body is only a URI in one line of text or for an image
               BOGUS_MIME_VERSION   Mime version header is bogus
@@ -300,7 +299,6 @@
             DATE_IN_FUTURE_96_XX   Date: est plus de 96 heures après la date de l'en-tête Received:
             DATE_IN_FUTURE_96_XX   Date: is 96 hours or more after Received: date
             DATE_IN_FUTURE_96_XX   Date: is 96 of meer uur na Received: datum
-           DATE_IN_FUTURE_Q_PLUS   Date: is over 4 months after Received: date
               DATE_IN_PAST_03_06   Absendezeit 3 bis 6 Stunden vor Datum in "Received"-Kopfzeilen
               DATE_IN_PAST_03_06   Data: jest od 3 do 6 godzin przed dat± z Received:
               DATE_IN_PAST_03_06   Date: é 3 a 6 horas antes da data do Received:
@@ -559,6 +557,7 @@
                        FBI_MONEY   The FBI wants to give you lots of money?
                        FBI_SPOOF   Claims to be FBI, but not from FBI domain
                   FILL_THIS_FORM   Fill in a form with personal information
+             FILL_THIS_FORM_LOAN   Answer loan question(s)
              FILL_THIS_FORM_LONG   Fill in a form with personal information
                         FIN_FREE   Contém: "Freedom of a financial nature"
                         FIN_FREE   Finanzielle Unabhängigkeit
@@ -1218,7 +1217,6 @@
            HTML_TAG_BALANCE_BODY   HTML posiada niepozamykane znaczniki w "body"
            HTML_TAG_BALANCE_BODY   HTML possui uma tag "body" que não foi aberta ou fechada
            HTML_TAG_BALANCE_BODY   Le tag de fermeture de "body" HTML est manquant
-         HTML_TAG_BALANCE_CENTER   Malformatted HTML
            HTML_TAG_BALANCE_HEAD   Anzahl "head"-Tags nicht ausgeglichen
            HTML_TAG_BALANCE_HEAD   HTML bevat ongebalanceerde "head" tags
            HTML_TAG_BALANCE_HEAD   HTML has unbalanced "head" tags
@@ -1310,7 +1308,6 @@
         __KAM_BODY_LENGTH_LT_128   The length of the body of the email is less than 128 bytes.
         __KAM_BODY_LENGTH_LT_256   The length of the body of the email is less than 256 bytes.
         __KAM_BODY_LENGTH_LT_512   The length of the body of the email is less than 512 bytes.
-                  KHOP_FAKE_EBAY   Sender falsely claims to be from eBay
                 KHOP_HELO_FCRDNS   Relay HELO differs from its IP's reverse DNS
               KOREAN_UCE_SUBJECT   Assunto contém um texto comum de UCE (unsolicited commercial email) em coreano
               KOREAN_UCE_SUBJECT   Betreff enthält koreanische Werbungskennzeichnung
@@ -1351,7 +1348,6 @@
                     MALE_ENHANCE   Mensagem fala sobre melhorar a masculinidade
                     MALE_ENHANCE   Message talks about enhancing men
                    MALF_HTML_B64   Malformatted base64-encoded HTML content
-              MALFORMED_FREEMAIL   Bad headers on message from free email service
                   MALWARE_NORDNS   Malware bragging + no rDNS
                 MALWARE_PASSWORD   Malware bragging + "password"
                      MALW_ATTACH   Attachment filename suspicious, probable malware exploit
@@ -1364,6 +1360,7 @@
               MARKETING_PARTNERS   Prétend que vous vous êtes enregistré auprès d'un "partenaire" quelconque
               MARKETING_PARTNERS   Twierdzi, ¿e jeste¶ zarejestrowany jako partner
               MARKETING_PARTNERS   Zegt dat je je bij een partner bedrijf hebt geregistreerd
+                   MAY_BE_FORGED   Relay IP's reverse DNS does not resolve to IP
             MICROSOFT_EXECUTABLE   Mensagem contém um programa executável Microsoft
             MICROSOFT_EXECUTABLE   Message includes Microsoft executable program
                      MILLION_EUR   Talks about millions of euros
@@ -1564,6 +1561,7 @@
                     MULTI_FORGED   Nag³ówki Received: wykazuj± wielokrotne fa³szowanie
                     MULTI_FORGED   Received headers indicate multiple forgeries
                     MULTI_FORGED   Received headers wijzen op meerdere vervalsingen
+                  MXG_EMAIL_FRAG   URI with email in fragment
                  __MXG_LOWER_HDR   lower case header
                 __MXG_PHONE_OBFU   Has an obfuscated phone number
                 __MXG_UNSUB_LINK   Contains an unsubscribe link
@@ -1675,8 +1673,10 @@
             PDS_BAD_THREAD_QP_64   Bad thread header - short QP
                       PDS_BTC_ID   FP reduced Bitcoin ID
                    PDS_BTC_MSGID   Bitcoin ID with T_MSGID_NOFQDN2
+                    PDS_BTC_NTLD   Bitcoin suspect NTLD
          PDS_FRNOM_TODOM_DBL_URL   From Name to domain, double URL
         PDS_FRNOM_TODOM_NAKED_TO   Naked to From name equals to Domain
+               PDS_FROM_2_EMAILS   From header has multiple different addresses
          PDS_FROM_NAME_TO_DOMAIN   From:name looks like To:domain
                PDS_HELO_SPF_FAIL   High profile HELO that fails SPF
              PDS_NAKED_TO_NUMERO   Naked-to, numberonly domain
@@ -1699,6 +1699,7 @@ PDS_TONAME_EQ_TOLOCAL_FREEM_FORGE   Forged replyto and __PDS_TONAME_EQ_TOLOCAL
                      PLING_QUERY   Temat zawiera wykrzyknik i pytajnik
          POSSIBLE_APPLE_PHISH_02   Claims to be from apple but not processed by any apple MTA
           POSSIBLE_EBAY_PHISH_02   Claims to be from ebay but not processed by any ebay MTA
+          POSSIBLE_GMAIL_PHISHER   Apparent phishing email sent from a gmail account
         POSSIBLE_PAYPAL_PHISH_01   Claims to be from paypal but has non-paypal from email address
         POSSIBLE_PAYPAL_PHISH_02   Claims to be from paypal but not processed by any paypal MTA
           PP_CROSSTALK_GOOG_MSFT   MTA GOOG but Repto MSFT - possible phishing
@@ -2012,7 +2013,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
              RUSSIAN_UCE_SUBJECT   Subject contains a Russian UCE tag
                  SCC_BOGUS_CTE_1   Bogus Content-Transfer-Encoding header
                        SCC_CTMPP   Uncommon Content-Type
-                SCC_ISEMM_LID_1A   Fingerprint of a particular spammer using an old spamware
                 SCC_ISEMM_LID_1B   Genericized spammer fingerprint
                  SCC_ISEMM_LID_1   Fingerprint of a particular spammer using an old spamware
              SCC_NEWBIE_HASBEENS   Abused gTLDs seen in spam from Google Apps.
@@ -2194,6 +2194,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                  T_CDISP_SZ_MANY   Suspicious MIME header
                      T_CTE_BAS64   Malformated Content-Type-Encoding
                     T_CTYPE_NULL   Malformed Content-Type header
+         T_DATE_IN_FUTURE_Q_PLUS   Date: is over 4 months after Received: date
              T_DOC_ATTACH_NO_EXT   Document attachment with suspicious name
        T_DOS_OUTLOOK_TO_MX_IMAGE   Direct to MX with Outlook headers and an image
               T_DOS_ZIP_HARDCORE   hardcore.zip file attached; quite certainly a virus
@@ -2203,7 +2204,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
              TEQF_USR_MSGID_MALF   To and from user nearly same + malformed message ID
                  TEQF_USR_POLITE   To and from user nearly same + polite greeting
     T_FILL_THIS_FORM_FRAUD_PHISH   Answer suspicious question(s)
-           T_FILL_THIS_FORM_LOAN   Answer loan question(s)
           T_FILL_THIS_FORM_SHORT   Fill in a short form with personal information
          T_FORGED_TBIRD_IMG_SIZE   Likely forged Thunderbird image spam
           T_FREEMAIL_DOC_PDF_BCC   MS document or PDF attachment, from freemail, all recipients hidden
@@ -2222,6 +2222,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                          THIS_AD   "This ad" and variants
            THIS_IS_ADV_SUSP_NTLD   This is an advertisement from a suspicious TLD
                    T_HTML_ATTACH   HTML attachment to bypass scanning?
+       T_HTML_TAG_BALANCE_CENTER   Malformatted HTML
                     T_ISO_ATTACH   ISO attachment - possible malware delivery
          T_KAM_HTML_FONT_INVALID   Test for Invalidly Named or Formatted Colors in HTML
           T_LARGE_PCT_AFTER_MANY   Many large percentages after...
@@ -2232,7 +2233,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                      T_MIME_MALF   Malformed MIME: headers in body
                  T_MONEY_PERCENT   X% of a lot of money for you
            T_MXG_BING_REDIR_SUSP   Suspicious Bing redirect
-                T_MXG_EMAIL_FRAG   URI with email in fragment
             T_MXG_LOWER_HDR_SPAM   Lower case header spam
              T_OBFU_ATTACH_MISSP   Obfuscated attachment type and misspaced From
                T_OBFU_DOC_ATTACH   MS Document attachment with generic MIME type
@@ -2270,10 +2270,8 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               TO_TOO_MANY_WFH_01   Work-from-Home + many recipients
                T_PDS_BTC_AHACKER   Bitcoin Hacker
                 T_PDS_BTC_HACKER   Bitcoin Hacker
-                  T_PDS_BTC_NTLD   Bitcoin suspect NTLD
          T_PDS_EMPTYSUBJ_URISHRT   Empty subject with little more than URI shortener
   T_PDS_FREEMAIL_REPLYTO_URISHRT   Freemail replyto with URI shortener
-             T_PDS_FROM_2_EMAILS   From header has multiple different addresses
      T_PDS_FROM_2_EMAILS_SHRTNER   From 2 emails short email with little more than a URI shortener
                T_PDS_LTC_AHACKER   Litecoin Hacker
                 T_PDS_LTC_HACKER   Litecoin Hacker
