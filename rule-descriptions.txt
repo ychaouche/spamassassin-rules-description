@@ -1674,9 +1674,7 @@
                    PDS_BTC_MSGID   Bitcoin ID with T_MSGID_NOFQDN2
                     PDS_BTC_NTLD   Bitcoin suspect NTLD
          PDS_FRNOM_TODOM_DBL_URL   From Name to domain, double URL
-        PDS_FRNOM_TODOM_NAKED_TO   Naked to From name equals to Domain
                PDS_FROM_2_EMAILS   From header has multiple different addresses
-         PDS_FROM_NAME_TO_DOMAIN   From:name looks like To:domain
                PDS_HELO_SPF_FAIL   High profile HELO that fails SPF
              PDS_NAKED_TO_NUMERO   Naked-to, numberonly domain
                PDS_OTHER_BAD_TLD   Untrustworthy TLDs
@@ -2162,7 +2160,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               SUBJ_ILLEGAL_CHARS   Subject: has too many raw illegal characters
               SUBJ_ILLEGAL_CHARS   Temat: zawiera zbyt wiele niedozwolonych znaków
                    SUBJ_ODD_CASE   Oddly mixed-case Subject: header
-              SUBJ_UNNEEDED_HTML   Unneeded HTML formatting in Subject:
                   SUBJ_YOUR_DEBT   Assunto contém "Your Bills" ou algo parecido
                   SUBJ_YOUR_DEBT   Betreff dreht sich um Rechnungen oder Kredite
                   SUBJ_YOUR_DEBT   Le sujet contient "Your Bills" (vos factures) ou similaire
@@ -2274,6 +2271,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
          T_PDS_EMPTYSUBJ_URISHRT   Empty subject with little more than URI shortener
   T_PDS_FREEMAIL_REPLYTO_URISHRT   Freemail replyto with URI shortener
      T_PDS_FROM_2_EMAILS_SHRTNER   From 2 emails short email with little more than a URI shortener
+       T_PDS_FROM_NAME_TO_DOMAIN   From:name looks like To:domain
                T_PDS_LTC_AHACKER   Litecoin Hacker
                 T_PDS_LTC_HACKER   Litecoin Hacker
   T_PDS_NO_FULL_NAME_SPOOFED_URL   HTML message short, T_SPOOFED_URL and T_KHOP_NO_FULL_NAME
