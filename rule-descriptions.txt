@@ -234,6 +234,7 @@
                  CHARSET_FARAWAY   List zawiera typ znaków oznaczaj±cy jêzyk obcy
                  CHARSET_FARAWAY   Message utilisant un jeu de caractères exotique
                  CHARSET_FARAWAY   Zeichensatz deutet auf fremde Sprache hin
+                 CK_HELO_GENERIC   Relay used name indicative of a Dynamic Pool or Generic rPTR
                   CN_B2B_SPAMMER   Chinese company introducing itself
                   CN_PHISH_JP_01   Apparent Chinese phishing of Japanese target
                   CN_PHISH_JP_02   JP "password" + .cn URL - possible Chinese phishing
@@ -292,7 +293,6 @@
             DATE_IN_FUTURE_48_96   Date: est 48 à 96 heures après la date de l'en-tête Received:
             DATE_IN_FUTURE_48_96   Date: is 48 to 96 hours after Received: date
             DATE_IN_FUTURE_48_96   Date: is 48 tot 96 uur na Received: datum
-             DATE_IN_FUTURE_96_Q   Date: is 4 days to 4 months after Received: date
             DATE_IN_FUTURE_96_XX   Absendezeit mehr als 96 Stunden nach Datum in "Received"-Kopfzeilen
             DATE_IN_FUTURE_96_XX   Data: jest od 96 lub wiêcej godzin po dacie z Received:
             DATE_IN_FUTURE_96_XX   Date: é 96 horas ou mais depois do Received:
@@ -946,6 +946,7 @@
           HDR_ORDER_FTSDMCXX_BAT   Header order similar to spam (FTSDMCXX/boundary variant)
        HDR_ORDER_FTSDMCXX_DIRECT   Header order similar to spam (FTSDMCXX/boundary variant) + direct-to-MX
        HDR_ORDER_FTSDMCXX_NORDNS   Header order similar to spam (FTSDMCXX/boundary variant) + no rDNS
+              HDRS_LCASE_IMGONLY   Odd capitalization of message headers + image-only HTML
                       HDRS_MISSP   Misspaced headers
               HEADER_COUNT_CTYPE   Kopfzeile "Content-Type" mehrfach vorhanden
               HEADER_COUNT_CTYPE   Meerdere Content-Type headers gevonden
@@ -1218,6 +1219,7 @@
            HTML_TAG_BALANCE_BODY   HTML posiada niepozamykane znaczniki w "body"
            HTML_TAG_BALANCE_BODY   HTML possui uma tag "body" que não foi aberta ou fechada
            HTML_TAG_BALANCE_BODY   Le tag de fermeture de "body" HTML est manquant
+         HTML_TAG_BALANCE_CENTER   Malformatted HTML
            HTML_TAG_BALANCE_HEAD   Anzahl "head"-Tags nicht ausgeglichen
            HTML_TAG_BALANCE_HEAD   HTML bevat ongebalanceerde "head" tags
            HTML_TAG_BALANCE_HEAD   HTML has unbalanced "head" tags
@@ -1360,6 +1362,7 @@
               MARKETING_PARTNERS   Prétend que vous vous êtes enregistré auprès d'un "partenaire" quelconque
               MARKETING_PARTNERS   Twierdzi, ¿e jeste¶ zarejestrowany jako partner
               MARKETING_PARTNERS   Zegt dat je je bij een partner bedrijf hebt geregistreerd
+                   MAY_BE_FORGED   Relay IP's reverse DNS does not resolve to IP
             MICROSOFT_EXECUTABLE   Mensagem contém um programa executável Microsoft
             MICROSOFT_EXECUTABLE   Message includes Microsoft executable program
                      MILLION_EUR   Talks about millions of euros
@@ -1636,7 +1639,6 @@
                NUMERIC_HTTP_ADDR   Utiliza um endereço em número IP na URL
                NUMERIC_HTTP_ADDR   U¿ywa kropkowo-dziesiêtnego adresu IP w URL
                     OBFU_BITCOIN   Obfuscated BitCoin references
-                OBFU_HTML_ATTACH   HTML attachment with non-text MIME type
                   OBFU_JVSCR_ESC   Injects content using obfuscated javascript
              OBFUSCATING_COMMENT   Commentaires HTML inutiles destinés à camoufler le texte
              OBFUSCATING_COMMENT   HTML commentaar om het bericht te verdoezelen
@@ -2160,6 +2162,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               SUBJ_ILLEGAL_CHARS   Subject: has too many raw illegal characters
               SUBJ_ILLEGAL_CHARS   Temat: zawiera zbyt wiele niedozwolonych znaków
                    SUBJ_ODD_CASE   Oddly mixed-case Subject: header
+              SUBJ_UNNEEDED_HTML   Unneeded HTML formatting in Subject:
                   SUBJ_YOUR_DEBT   Assunto contém "Your Bills" ou algo parecido
                   SUBJ_YOUR_DEBT   Betreff dreht sich um Rechnungen oder Kredite
                   SUBJ_YOUR_DEBT   Le sujet contient "Your Bills" (vos factures) ou similaire
@@ -2191,6 +2194,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                  T_CDISP_SZ_MANY   Suspicious MIME header
                      T_CTE_BAS64   Malformated Content-Type-Encoding
                     T_CTYPE_NULL   Malformed Content-Type header
+           T_DATE_IN_FUTURE_96_Q   Date: is 4 days to 4 months after Received: date
          T_DATE_IN_FUTURE_Q_PLUS   Date: is over 4 months after Received: date
              T_DOC_ATTACH_NO_EXT   Document attachment with suspicious name
               T_DOS_ZIP_HARDCORE   hardcore.zip file attached; quite certainly a virus
@@ -2219,7 +2223,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                          THIS_AD   "This ad" and variants
            THIS_IS_ADV_SUSP_NTLD   This is an advertisement from a suspicious TLD
                    T_HTML_ATTACH   HTML attachment to bypass scanning?
-       T_HTML_TAG_BALANCE_CENTER   Malformatted HTML
                     T_ISO_ATTACH   ISO attachment - possible malware delivery
          T_KAM_HTML_FONT_INVALID   Test for Invalidly Named or Formatted Colors in HTML
           T_LARGE_PCT_AFTER_MANY   Many large percentages after...
@@ -2236,6 +2239,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
              T_OBFU_ATTACH_MISSP   Obfuscated attachment type and misspaced From
                T_OBFU_DOC_ATTACH   MS Document attachment with generic MIME type
                T_OBFU_GIF_ATTACH   GIF attachment with generic MIME type
+              T_OBFU_HTML_ATTACH   HTML attachment with non-text MIME type
             T_OBFU_HTML_ATT_MALW   HTML attachment with incorrect MIME type - possible malware
                T_OBFU_JPG_ATTACH   JPG attachment with generic MIME type
                T_OBFU_PDF_ATTACH   PDF attachment with generic MIME type
