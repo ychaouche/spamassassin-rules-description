@@ -947,6 +947,7 @@
        HDR_ORDER_FTSDMCXX_DIRECT   Header order similar to spam (FTSDMCXX/boundary variant) + direct-to-MX
        HDR_ORDER_FTSDMCXX_NORDNS   Header order similar to spam (FTSDMCXX/boundary variant) + no rDNS
               HDRS_LCASE_IMGONLY   Odd capitalization of message headers + image-only HTML
+                      HDRS_LCASE   Odd capitalization of message header
                       HDRS_MISSP   Misspaced headers
               HEADER_COUNT_CTYPE   Kopfzeile "Content-Type" mehrfach vorhanden
               HEADER_COUNT_CTYPE   Meerdere Content-Type headers gevonden
@@ -1219,7 +1220,6 @@
            HTML_TAG_BALANCE_BODY   HTML posiada niepozamykane znaczniki w "body"
            HTML_TAG_BALANCE_BODY   HTML possui uma tag "body" que não foi aberta ou fechada
            HTML_TAG_BALANCE_BODY   Le tag de fermeture de "body" HTML est manquant
-         HTML_TAG_BALANCE_CENTER   Malformatted HTML
            HTML_TAG_BALANCE_HEAD   Anzahl "head"-Tags nicht ausgeglichen
            HTML_TAG_BALANCE_HEAD   HTML bevat ongebalanceerde "head" tags
            HTML_TAG_BALANCE_HEAD   HTML has unbalanced "head" tags
@@ -1311,6 +1311,7 @@
         __KAM_BODY_LENGTH_LT_128   The length of the body of the email is less than 128 bytes.
         __KAM_BODY_LENGTH_LT_256   The length of the body of the email is less than 256 bytes.
         __KAM_BODY_LENGTH_LT_512   The length of the body of the email is less than 512 bytes.
+                  KHOP_FAKE_EBAY   Sender falsely claims to be from eBay
                 KHOP_HELO_FCRDNS   Relay HELO differs from its IP's reverse DNS
               KOREAN_UCE_SUBJECT   Assunto contém um texto comum de UCE (unsolicited commercial email) em coreano
               KOREAN_UCE_SUBJECT   Betreff enthält koreanische Werbungskennzeichnung
@@ -1365,7 +1366,6 @@
                    MAY_BE_FORGED   Relay IP's reverse DNS does not resolve to IP
             MICROSOFT_EXECUTABLE   Mensagem contém um programa executável Microsoft
             MICROSOFT_EXECUTABLE   Message includes Microsoft executable program
-                     MILLION_EUR   Talks about millions of euros
                  MILLION_HUNDRED   Million "One to Nine" Hundred
                      MILLION_USD   Erwähnt Millonen von Dollar
                      MILLION_USD   Fala sobre milhões de dólares
@@ -1573,6 +1573,7 @@
                       NA_DOLLARS   Praat over een miljoen Noord-Amerikaanse dollars
                       NA_DOLLARS   Talks about a million North American dollars
                       NA_DOLLARS   Talks about a million North American dollars
+                 NAME_EMAIL_DIFF   Sender NAME is an unrelated email address
         NEWEGG_IMG_NOT_RCVD_NEGG   Newegg hosted image but message not from Newegg
                     NICE_REPLY_A   Looks like a legit reply (A)
             NML_ADSP_CUSTOM_HIGH   ADSP custom_high foi atingida, e não foi de uma mailing list
@@ -2162,7 +2163,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               SUBJ_ILLEGAL_CHARS   Subject: has too many raw illegal characters
               SUBJ_ILLEGAL_CHARS   Temat: zawiera zbyt wiele niedozwolonych znaków
                    SUBJ_ODD_CASE   Oddly mixed-case Subject: header
-              SUBJ_UNNEEDED_HTML   Unneeded HTML formatting in Subject:
                   SUBJ_YOUR_DEBT   Assunto contém "Your Bills" ou algo parecido
                   SUBJ_YOUR_DEBT   Betreff dreht sich um Rechnungen oder Kredite
                   SUBJ_YOUR_DEBT   Le sujet contient "Your Bills" (vos factures) ou similaire
@@ -2219,10 +2219,10 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
        T_GB_STORAGE_GOOGLE_EMAIL   Google storage cloud abuse
                     T_GB_WEBFORM   Webform with url shortener
               T_GB_YOUTUBE_EMAIL   Youtube attribution links abuse
-                    T_HDRS_LCASE   Odd capitalization of message header
                          THIS_AD   "This ad" and variants
            THIS_IS_ADV_SUSP_NTLD   This is an advertisement from a suspicious TLD
                    T_HTML_ATTACH   HTML attachment to bypass scanning?
+       T_HTML_TAG_BALANCE_CENTER   Malformatted HTML
                     T_ISO_ATTACH   ISO attachment - possible malware delivery
          T_KAM_HTML_FONT_INVALID   Test for Invalidly Named or Formatted Colors in HTML
           T_LARGE_PCT_AFTER_MANY   Many large percentages after...
@@ -2339,6 +2339,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               TVD_SILLY_URI_OBFU   URI obfuscation that can fool a URIBL or a uri rule
         TVD_SPACED_SUBJECT_WORD3   Entire subject is "UPPERlowerUPPER" with no whitespace
                TVD_SPACE_ENCODED   Space ratio & encoded subject
+           TVD_SPACE_RATIO_MINFP   Space ratio (vertical text obfuscation?)
                       TVD_STOCK1   Spam related to stock trading
                 TVD_SUBJ_ACC_NUM   Subject has spammy looking monetary reference
               TVD_SUBJ_FINGER_03   Entire subject is enclosed in asterisks "* like so *"
