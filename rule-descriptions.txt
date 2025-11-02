@@ -1363,7 +1363,6 @@
               MARKETING_PARTNERS   Prétend que vous vous êtes enregistré auprès d'un "partenaire" quelconque
               MARKETING_PARTNERS   Twierdzi, ¿e jeste¶ zarejestrowany jako partner
               MARKETING_PARTNERS   Zegt dat je je bij een partner bedrijf hebt geregistreerd
-                   MAY_BE_FORGED   Relay IP's reverse DNS does not resolve to IP
             MICROSOFT_EXECUTABLE   Mensagem contém um programa executável Microsoft
             MICROSOFT_EXECUTABLE   Message includes Microsoft executable program
                  MILLION_HUNDRED   Million "One to Nine" Hundred
@@ -1676,7 +1675,6 @@
                       PDS_BTC_ID   FP reduced Bitcoin ID
                    PDS_BTC_MSGID   Bitcoin ID with T_MSGID_NOFQDN2
                     PDS_BTC_NTLD   Bitcoin suspect NTLD
-         PDS_FRNOM_TODOM_DBL_URL   From Name to domain, double URL
                PDS_FROM_2_EMAILS   From header has multiple different addresses
                PDS_HELO_SPF_FAIL   High profile HELO that fails SPF
              PDS_NAKED_TO_NUMERO   Naked-to, numberonly domain
@@ -2025,6 +2023,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                     SHORTCIRCUIT   Nem todas as regras foram executadas por causa de um problema em uma delas
                     SHORTCIRCUIT   Not all rules were run, due to a shortcircuited rule
              SHORTENER_SHORT_IMG   Short HTML + image + URL shortener
+            SHORTENER_SHORT_SUBJ   URL shortener (avoiding URIBL?) + short subject
      SHORT_HELO_AND_INLINE_IMAGE   Short HELO string, with inline image
              SHORT_IMG_SUSP_NTLD   Short HTML + image + suspicious TLD
                  SHY_OBFU_EXPIRE   Obfuscation, probable phishing
@@ -2275,7 +2274,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
          T_PDS_EMPTYSUBJ_URISHRT   Empty subject with little more than URI shortener
   T_PDS_FREEMAIL_REPLYTO_URISHRT   Freemail replyto with URI shortener
      T_PDS_FROM_2_EMAILS_SHRTNER   From 2 emails short email with little more than a URI shortener
-       T_PDS_FROM_NAME_TO_DOMAIN   From:name looks like To:domain
                T_PDS_LTC_AHACKER   Litecoin Hacker
                 T_PDS_LTC_HACKER   Litecoin Hacker
   T_PDS_NO_FULL_NAME_SPOOFED_URL   HTML message short, T_SPOOFED_URL and T_KHOP_NO_FULL_NAME
@@ -2339,7 +2337,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               TVD_SILLY_URI_OBFU   URI obfuscation that can fool a URIBL or a uri rule
         TVD_SPACED_SUBJECT_WORD3   Entire subject is "UPPERlowerUPPER" with no whitespace
                TVD_SPACE_ENCODED   Space ratio & encoded subject
-           TVD_SPACE_RATIO_MINFP   Space ratio (vertical text obfuscation?)
                       TVD_STOCK1   Spam related to stock trading
                 TVD_SUBJ_ACC_NUM   Subject has spammy looking monetary reference
               TVD_SUBJ_FINGER_03   Entire subject is enclosed in asterisks "* like so *"
