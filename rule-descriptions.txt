@@ -1311,6 +1311,7 @@
         __KAM_BODY_LENGTH_LT_128   The length of the body of the email is less than 128 bytes.
         __KAM_BODY_LENGTH_LT_256   The length of the body of the email is less than 256 bytes.
         __KAM_BODY_LENGTH_LT_512   The length of the body of the email is less than 512 bytes.
+                  KHOP_FAKE_EBAY   Sender falsely claims to be from eBay
                 KHOP_HELO_FCRDNS   Relay HELO differs from its IP's reverse DNS
               KOREAN_UCE_SUBJECT   Assunto contém um texto comum de UCE (unsolicited commercial email) em coreano
               KOREAN_UCE_SUBJECT   Betreff enthält koreanische Werbungskennzeichnung
@@ -2480,7 +2481,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
            URI_HOST_IN_WHITELIST   DEPRECATED: See URI_HOST_IN_WELCOMELIST
              URI_IMG_CWINDOWSNET   Non-MSFT image hosted by Microsoft Azure infra, possible phishing
                 URI_IMG_WP_REDIR   Image via WordPress "accelerator" proxy
-                URI_INFURAIPFSIO   References Interplanetary File System PtP content via infura-ipfs.io, likely phishing
                       URI_IPFSIO   References Interplanetary File System PtP content via ipfs.io, likely phishing
                         URI_IPFS   References Interplanetary File System PtP content, probable phishing
                  URI_LONG_REPEAT   Long identical host+domain
