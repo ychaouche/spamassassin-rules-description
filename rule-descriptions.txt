@@ -786,7 +786,6 @@
             FROM_SUSPICIOUS_NTLD   From abused NTLD
                      FROM_UNBAL1   From with unbalanced angle brackets, '>' missing
                      FROM_UNBAL2   From with unbalanced angle brackets, '<' missing
-                   FROM_WSP_LEAD   Leading whitespace after '<' in From header field
                   FROM_WSP_TRAIL   Trailing whitespace before '>' in From header field
                     FSL_BULK_SIG   Bulk signature with no Unsubscribe
                FSL_CTYPE_WIN1251   Content-Type only seen in 419 spam
@@ -948,6 +947,7 @@
        HDR_ORDER_FTSDMCXX_DIRECT   Header order similar to spam (FTSDMCXX/boundary variant) + direct-to-MX
        HDR_ORDER_FTSDMCXX_NORDNS   Header order similar to spam (FTSDMCXX/boundary variant) + no rDNS
               HDRS_LCASE_IMGONLY   Odd capitalization of message headers + image-only HTML
+                      HDRS_LCASE   Odd capitalization of message header
                       HDRS_MISSP   Misspaced headers
               HEADER_COUNT_CTYPE   Kopfzeile "Content-Type" mehrfach vorhanden
               HEADER_COUNT_CTYPE   Meerdere Content-Type headers gevonden
@@ -1311,7 +1311,6 @@
         __KAM_BODY_LENGTH_LT_128   The length of the body of the email is less than 128 bytes.
         __KAM_BODY_LENGTH_LT_256   The length of the body of the email is less than 256 bytes.
         __KAM_BODY_LENGTH_LT_512   The length of the body of the email is less than 512 bytes.
-                  KHOP_FAKE_EBAY   Sender falsely claims to be from eBay
                 KHOP_HELO_FCRDNS   Relay HELO differs from its IP's reverse DNS
               KOREAN_UCE_SUBJECT   Assunto contém um texto comum de UCE (unsolicited commercial email) em coreano
               KOREAN_UCE_SUBJECT   Betreff enthält koreanische Werbungskennzeichnung
@@ -1364,6 +1363,7 @@
               MARKETING_PARTNERS   Prétend que vous vous êtes enregistré auprès d'un "partenaire" quelconque
               MARKETING_PARTNERS   Twierdzi, ¿e jeste¶ zarejestrowany jako partner
               MARKETING_PARTNERS   Zegt dat je je bij een partner bedrijf hebt geregistreerd
+                   MAY_BE_FORGED   Relay IP's reverse DNS does not resolve to IP
             MICROSOFT_EXECUTABLE   Mensagem contém um programa executável Microsoft
             MICROSOFT_EXECUTABLE   Message includes Microsoft executable program
                  MILLION_HUNDRED   Million "One to Nine" Hundred
@@ -2161,6 +2161,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               SUBJ_ILLEGAL_CHARS   Subject: has too many raw illegal characters
               SUBJ_ILLEGAL_CHARS   Temat: zawiera zbyt wiele niedozwolonych znaków
                    SUBJ_ODD_CASE   Oddly mixed-case Subject: header
+              SUBJ_UNNEEDED_HTML   Unneeded HTML formatting in Subject:
                   SUBJ_YOUR_DEBT   Assunto contém "Your Bills" ou algo parecido
                   SUBJ_YOUR_DEBT   Betreff dreht sich um Rechnungen oder Kredite
                   SUBJ_YOUR_DEBT   Le sujet contient "Your Bills" (vos factures) ou similaire
@@ -2217,7 +2218,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
        T_GB_STORAGE_GOOGLE_EMAIL   Google storage cloud abuse
                     T_GB_WEBFORM   Webform with url shortener
               T_GB_YOUTUBE_EMAIL   Youtube attribution links abuse
-                    T_HDRS_LCASE   Odd capitalization of message header
                          THIS_AD   "This ad" and variants
            THIS_IS_ADV_SUSP_NTLD   This is an advertisement from a suspicious TLD
                    T_HTML_ATTACH   HTML attachment to bypass scanning?
