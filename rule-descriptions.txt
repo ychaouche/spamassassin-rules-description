@@ -243,7 +243,6 @@
                   CN_PHISH_JP_06   JP "mastercard" + .cn URL - possible Chinese phishing
                   CN_PHISH_JP_07   JP "update payment information" + .cn URL - possible Chinese phishing
                COMMENT_GIBBERISH   Nonsense in long HTML comment
-                    COMPENSATION   "Compensation"
                 CONFIRMED_FORGED   Cabeçalho Received é forjado
                 CONFIRMED_FORGED   Gefälschte "Received"-Kopfzeilen
                 CONFIRMED_FORGED   Les en-têtes "Received:" ont été falsifiés
@@ -758,6 +757,7 @@
               FROM_MISSP_REPLYTO   From misspaced, has Reply-To
             FROM_MISSP_TO_UNDISC   From misspaced, To undisclosed
                  FROM_MISSP_USER   From misspaced, from "User"
+               FROM_MULTI_NORDNS   Multiple From addresses + no rDNS
                  FROM_NEWDOM_BTC   Newdomain with Bitcoin ID
                     FROM_NO_USER   Adressteil vor dem @-Zeichen fehlt im Absender
                     FROM_NO_USER   From: has no local-part before @ sign
@@ -784,7 +784,6 @@
            FROM_STARTS_WITH_NUMS   Van: begint met nummers
          FROM_SUSPICIOUS_NTLD_FP   From abused NTLD
             FROM_SUSPICIOUS_NTLD   From abused NTLD
-                     FROM_UNBAL1   From with unbalanced angle brackets, '>' missing
                      FROM_UNBAL2   From with unbalanced angle brackets, '<' missing
                   FROM_WSP_TRAIL   Trailing whitespace before '>' in From header field
                     FSL_BULK_SIG   Bulk signature with no Unsubscribe
@@ -1354,7 +1353,6 @@
                   MALWARE_NORDNS   Malware bragging + no rDNS
                 MALWARE_PASSWORD   Malware bragging + "password"
                      MALW_ATTACH   Attachment filename suspicious, probable malware exploit
-                 MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                MANY_SPAN_IN_TEXT   Many <SPAN> tags embedded within text
                      MANY_SUBDOM   Lots and lots of subdomain parts in a URI
               MARKETING_PARTNERS   Afirma que você se cadastrou com um parceiro
@@ -1363,7 +1361,6 @@
               MARKETING_PARTNERS   Prétend que vous vous êtes enregistré auprès d'un "partenaire" quelconque
               MARKETING_PARTNERS   Twierdzi, ¿e jeste¶ zarejestrowany jako partner
               MARKETING_PARTNERS   Zegt dat je je bij een partner bedrijf hebt geregistreerd
-                   MAY_BE_FORGED   Relay IP's reverse DNS does not resolve to IP
             MICROSOFT_EXECUTABLE   Mensagem contém um programa executável Microsoft
             MICROSOFT_EXECUTABLE   Message includes Microsoft executable program
                  MILLION_HUNDRED   Million "One to Nine" Hundred
@@ -1675,7 +1672,6 @@
             PDS_BAD_THREAD_QP_64   Bad thread header - short QP
                       PDS_BTC_ID   FP reduced Bitcoin ID
                    PDS_BTC_MSGID   Bitcoin ID with T_MSGID_NOFQDN2
-                    PDS_BTC_NTLD   Bitcoin suspect NTLD
                PDS_FROM_2_EMAILS   From header has multiple different addresses
                PDS_HELO_SPF_FAIL   High profile HELO that fails SPF
              PDS_NAKED_TO_NUMERO   Naked-to, numberonly domain
@@ -2161,7 +2157,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               SUBJ_ILLEGAL_CHARS   Subject: has too many raw illegal characters
               SUBJ_ILLEGAL_CHARS   Temat: zawiera zbyt wiele niedozwolonych znaków
                    SUBJ_ODD_CASE   Oddly mixed-case Subject: header
-              SUBJ_UNNEEDED_HTML   Unneeded HTML formatting in Subject:
                   SUBJ_YOUR_DEBT   Assunto contém "Your Bills" ou algo parecido
                   SUBJ_YOUR_DEBT   Betreff dreht sich um Rechnungen oder Kredite
                   SUBJ_YOUR_DEBT   Le sujet contient "Your Bills" (vos factures) ou similaire
@@ -2191,6 +2186,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
       TARINGANET_IMG_NOT_RCVD_TN   media.taringa.net hosted image but message not from taringa.net
             TBIRD_SUSP_MIME_BDRY   Unlikely Thunderbird MIME boundary
                  T_CDISP_SZ_MANY   Suspicious MIME header
+                  T_COMPENSATION   "Compensation"
                      T_CTE_BAS64   Malformated Content-Type-Encoding
                     T_CTYPE_NULL   Malformed Content-Type header
            T_DATE_IN_FUTURE_96_Q   Date: is 4 days to 4 months after Received: date
@@ -2208,7 +2204,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
           T_FREEMAIL_DOC_PDF_BCC   MS document or PDF attachment, from freemail, all recipients hidden
               T_FREEMAIL_DOC_PDF   MS document or PDF attachment, from freemail
             T_FREEMAIL_RVW_ATTCH   Please review attached document, from freemail
-             T_FROM_MULTI_NORDNS   Multiple From addresses + no rDNS
           T_FROM_MULTI_SHORT_IMG   Multiple From addresses + short message with image
             T_FROMNAME_EQUALS_TO   From:name matches To:
         T_FROMNAME_SPOOFED_EMAIL   From:name looks like a spoofed email
@@ -2228,6 +2223,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                 T_LOTTO_AGENT_FM   Claims Agent
               T_LOTTO_AGENT_RPLY   Claims Agent
                      T_LOTTO_URI   Claims Department URL
+               T_MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                T_MANY_PILL_PRICE   Prices for many pills
                      T_MIME_MALF   Malformed MIME: headers in body
                  T_MONEY_PERCENT   X% of a lot of money for you
@@ -2270,6 +2266,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               TO_TOO_MANY_WFH_01   Work-from-Home + many recipients
                T_PDS_BTC_AHACKER   Bitcoin Hacker
                 T_PDS_BTC_HACKER   Bitcoin Hacker
+                  T_PDS_BTC_NTLD   Bitcoin suspect NTLD
          T_PDS_EMPTYSUBJ_URISHRT   Empty subject with little more than URI shortener
   T_PDS_FREEMAIL_REPLYTO_URISHRT   Freemail replyto with URI shortener
      T_PDS_FROM_2_EMAILS_SHRTNER   From 2 emails short email with little more than a URI shortener
@@ -2450,7 +2447,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                   URIBL_WS_SURBL   Enthält URL in WS-Liste (www.surbl.org)
                URIBL_ZEN_BLOCKED   ADMINISTRATOR NOTICE: The query to zen.spamhaus.org was blocked. See https://www.spamhaus.org/returnc/vol/
        URIBL_ZEN_BLOCKED_OPENDNS   ADMINISTRATOR NOTICE: The query to zen.spamhaus.org was blocked due to usage of an open resolver. See https://www.spamhaus.org/returnc/pub/
-                      URI_BUFFLY   buff.ly redirector URI
               URI_CLOUDFLAREIPFS   References Interplanetary File System PtP content via CloudFlare, likely phishing
                   URI_DASHGOVEDU   Suspicious domain name
                         URI_DATA   "data:" URI - possible malware or phish
