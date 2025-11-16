@@ -165,6 +165,7 @@
                BITCOIN_EXTORT_01   Extortion spam, pay via BitCoin
                BITCOIN_EXTORT_02   Extortion spam, pay via BitCoin
                    BITCOIN_IMGUR   Bitcoin + hosted image
+               BITCOIN_MALF_HTML   Bitcoin + malformed HTML
                  BITCOIN_MALWARE   BitCoin + malware bragging
                BITCOIN_OBFU_SUBJ   Bitcoin + obfuscated subject
                     BITCOIN_ONAN   BitCoin + [censored]
@@ -234,7 +235,6 @@
                  CHARSET_FARAWAY   List zawiera typ znaków oznaczaj±cy jêzyk obcy
                  CHARSET_FARAWAY   Message utilisant un jeu de caractères exotique
                  CHARSET_FARAWAY   Zeichensatz deutet auf fremde Sprache hin
-                 CK_HELO_GENERIC   Relay used name indicative of a Dynamic Pool or Generic rPTR
                   CN_B2B_SPAMMER   Chinese company introducing itself
                   CN_PHISH_JP_01   Apparent Chinese phishing of Japanese target
                   CN_PHISH_JP_02   JP "password" + .cn URL - possible Chinese phishing
@@ -243,6 +243,7 @@
                   CN_PHISH_JP_06   JP "mastercard" + .cn URL - possible Chinese phishing
                   CN_PHISH_JP_07   JP "update payment information" + .cn URL - possible Chinese phishing
                COMMENT_GIBBERISH   Nonsense in long HTML comment
+                    COMPENSATION   "Compensation"
                 CONFIRMED_FORGED   Cabeçalho Received é forjado
                 CONFIRMED_FORGED   Gefälschte "Received"-Kopfzeilen
                 CONFIRMED_FORGED   Les en-têtes "Received:" ont été falsifiés
@@ -377,7 +378,6 @@
                 DC_PNG_UNO_LARGO   Message contains a single large inline gif
                 DC_PNG_UNO_LARGO   Message contains a single large png image
                DC_SCREENSHOT_JPG   Contains image matching common screen resolution
-                DEAR_BENEFICIARY   Dear Beneficiary:
                       DEAR_EMAIL   Message contains Dear email address
                      DEAR_FRIEND   Anonyme Anrede ("dear friend")
                      DEAR_FRIEND   Beste vriend, klinkt niet erg bekend...
@@ -720,6 +720,7 @@
               FREE_QUOTE_INSTANT   Gratis offerte
               FREE_QUOTE_INSTANT   Kostenlos ein schnelles Preisangebot, ohne Verpflichtung
       FRNAME_IN_MSG_XPRIO_NO_SUB   From name in message + X-Priority + short or no subject
+             FROM_2_EMAILS_SHORT   Short body and From looks like 2 different emails
               __FROM_41_FREEMAIL   Sent from Africa + freemail provider
                     FROM_ADDR_WS   Malformed From address
                 FROM_BANK_NOAUTH   From Bank domain but no SPF or DKIM
@@ -1310,6 +1311,7 @@
         __KAM_BODY_LENGTH_LT_128   The length of the body of the email is less than 128 bytes.
         __KAM_BODY_LENGTH_LT_256   The length of the body of the email is less than 256 bytes.
         __KAM_BODY_LENGTH_LT_512   The length of the body of the email is less than 512 bytes.
+                  KHOP_FAKE_EBAY   Sender falsely claims to be from eBay
                 KHOP_HELO_FCRDNS   Relay HELO differs from its IP's reverse DNS
               KOREAN_UCE_SUBJECT   Assunto contém um texto comum de UCE (unsolicited commercial email) em coreano
               KOREAN_UCE_SUBJECT   Betreff enthält koreanische Werbungskennzeichnung
@@ -1353,6 +1355,7 @@
                   MALWARE_NORDNS   Malware bragging + no rDNS
                 MALWARE_PASSWORD   Malware bragging + "password"
                      MALW_ATTACH   Attachment filename suspicious, probable malware exploit
+                 MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                MANY_SPAN_IN_TEXT   Many <SPAN> tags embedded within text
                      MANY_SUBDOM   Lots and lots of subdomain parts in a URI
               MARKETING_PARTNERS   Afirma que você se cadastrou com um parceiro
@@ -1981,7 +1984,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
              REPTO_419_FRAUD_CNS   Reply-To is known advance fee fraud collector mailbox
         REPTO_419_FRAUD_GM_LOOSE   Ends-in-digits Reply-To is similar to known advance fee fraud collector mailbox
               REPTO_419_FRAUD_GM   Reply-To is known advance fee fraud collector mailbox
-        REPTO_419_FRAUD_HM_LOOSE   Ends-in-digits Reply-To is similar to known advance fee fraud collector mailbox
               REPTO_419_FRAUD_HM   Reply-To is known advance fee fraud collector mailbox
         REPTO_419_FRAUD_OL_LOOSE   Ends-in-digits Reply-To is similar to known advance fee fraud collector mailbox
               REPTO_419_FRAUD_OL   Reply-To is known advance fee fraud collector mailbox
@@ -2002,13 +2004,15 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
             REPTO_QUOTE_QUALCOMM   Qualcomm/Eudora não usa o formato de citação usado no email
                REPTO_QUOTE_YAHOO   Yahoo! doesn't do quoting like this
                REPTO_QUOTE_YAHOO   Yahoo! não usa o formato de citação usado no email
-                       RISK_FREE   No risk!
                        RUDE_HTML   Mensagem diz que seu cliente de email não suporta HTML
                        RUDE_HTML   Spammer message says you need an HTML mailer
              RUSSIAN_UCE_SUBJECT   Subject contains a Russian UCE tag
                  SCC_BOGUS_CTE_1   Bogus Content-Transfer-Encoding header
+                   SCC_CANSPAM_2   Interesting compliance language
+              __SCC_HTML_ODDDIV8   Idiosyncratic HTML structure used by spammers
                 SCC_ISEMM_LID_1B   Genericized spammer fingerprint
                  SCC_ISEMM_LID_1   Fingerprint of a particular spammer using an old spamware
+                SCC_META_ODDDIV8   ODDDIV8 is most odd many times.
              SCC_NEWBIE_HASBEENS   Abused gTLDs seen in spam from Google Apps.
                 SCC_SPECIAL_GUID   Unique in a similar way
             SENDGRID_REDIR_PHISH   Redirect URI via Sendgrid + phishing signs
@@ -2176,7 +2180,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                SUSPICIOUS_RECIPS   Lista de destinatários possui endereços semelhantes
                SUSPICIOUS_RECIPS   Similar addresses in recipient list
                SUSPICIOUS_RECIPS   Vergelijkbare adressen in de ontvangerslijst
-            SUSP_UTF8_WORD_COMBO   Words using only suspicious UTF-8 characters + other signs
              SUSP_UTF8_WORD_FROM   Word in From name using only suspicious UTF-8 characters
              SUSP_UTF8_WORD_SUBJ   Word in Subject using only suspicious UTF-8 characters
                         SYSADMIN   Supposedly from your IT department
@@ -2186,11 +2189,11 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
       TARINGANET_IMG_NOT_RCVD_TN   media.taringa.net hosted image but message not from taringa.net
             TBIRD_SUSP_MIME_BDRY   Unlikely Thunderbird MIME boundary
                  T_CDISP_SZ_MANY   Suspicious MIME header
-                  T_COMPENSATION   "Compensation"
                      T_CTE_BAS64   Malformated Content-Type-Encoding
                     T_CTYPE_NULL   Malformed Content-Type header
            T_DATE_IN_FUTURE_96_Q   Date: is 4 days to 4 months after Received: date
          T_DATE_IN_FUTURE_Q_PLUS   Date: is over 4 months after Received: date
+              T_DEAR_BENEFICIARY   Dear Beneficiary:
              T_DOC_ATTACH_NO_EXT   Document attachment with suspicious name
               T_DOS_ZIP_HARDCORE   hardcore.zip file attached; quite certainly a virus
  T_DRUGS_ERECTILE_SHORT_SHORTNER   Short erectile drugs advert with T_URL_SHORTENER
@@ -2223,7 +2226,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                 T_LOTTO_AGENT_FM   Claims Agent
               T_LOTTO_AGENT_RPLY   Claims Agent
                      T_LOTTO_URI   Claims Department URL
-               T_MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                T_MANY_PILL_PRICE   Prices for many pills
                      T_MIME_MALF   Malformed MIME: headers in body
                  T_MONEY_PERCENT   X% of a lot of money for you
@@ -2334,6 +2336,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               TVD_SILLY_URI_OBFU   URI obfuscation that can fool a URIBL or a uri rule
         TVD_SPACED_SUBJECT_WORD3   Entire subject is "UPPERlowerUPPER" with no whitespace
                TVD_SPACE_ENCODED   Space ratio & encoded subject
+           TVD_SPACE_RATIO_MINFP   Space ratio (vertical text obfuscation?)
                       TVD_STOCK1   Spam related to stock trading
                 TVD_SUBJ_ACC_NUM   Subject has spammy looking monetary reference
               TVD_SUBJ_FINGER_03   Entire subject is enclosed in asterisks "* like so *"
