@@ -210,7 +210,6 @@
                 BODY_ENHANCEMENT   Informatie over het vergroten van lichaamsdelen
                 BODY_ENHANCEMENT   Informationen zur Penis-/Brustvergrößerung
                 BODY_ENHANCEMENT   Information on growing body parts
-                BODY_SINGLE_WORD   Message body is only one word (no spaces)
                    BODY_URI_ONLY   Message body is only a URI in one line of text or for an image
               BOGUS_MIME_VERSION   Mime version header is bogus
                   BOGUS_MSM_HDRS   Apparently bogus Microsoft email headers
@@ -755,7 +754,6 @@
              FROM_MISSP_FREEMAIL   From misspaced + freemail provider
                  FROM_MISSP_MSFT   From misspaced + supposed Microsoft tool
                 FROM_MISSP_PHISH   Malformed, claims to be from financial organization - possible phish
-              FROM_MISSP_REPLYTO   From misspaced, has Reply-To
             FROM_MISSP_TO_UNDISC   From misspaced, To undisclosed
                  FROM_MISSP_USER   From misspaced, from "User"
                FROM_MULTI_NORDNS   Multiple From addresses + no rDNS
@@ -1311,7 +1309,6 @@
         __KAM_BODY_LENGTH_LT_128   The length of the body of the email is less than 128 bytes.
         __KAM_BODY_LENGTH_LT_256   The length of the body of the email is less than 256 bytes.
         __KAM_BODY_LENGTH_LT_512   The length of the body of the email is less than 512 bytes.
-                  KHOP_FAKE_EBAY   Sender falsely claims to be from eBay
                 KHOP_HELO_FCRDNS   Relay HELO differs from its IP's reverse DNS
               KOREAN_UCE_SUBJECT   Assunto contém um texto comum de UCE (unsolicited commercial email) em coreano
               KOREAN_UCE_SUBJECT   Betreff enthält koreanische Werbungskennzeichnung
@@ -1354,7 +1351,6 @@
                   MALWARE_NORDNS   Malware bragging + no rDNS
                 MALWARE_PASSWORD   Malware bragging + "password"
                      MALW_ATTACH   Attachment filename suspicious, probable malware exploit
-                 MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                MANY_SPAN_IN_TEXT   Many <SPAN> tags embedded within text
                      MANY_SUBDOM   Lots and lots of subdomain parts in a URI
               MARKETING_PARTNERS   Afirma que você se cadastrou com um parceiro
@@ -1363,7 +1359,6 @@
               MARKETING_PARTNERS   Prétend que vous vous êtes enregistré auprès d'un "partenaire" quelconque
               MARKETING_PARTNERS   Twierdzi, ¿e jeste¶ zarejestrowany jako partner
               MARKETING_PARTNERS   Zegt dat je je bij een partner bedrijf hebt geregistreerd
-                   MAY_BE_FORGED   Relay IP's reverse DNS does not resolve to IP
             MICROSOFT_EXECUTABLE   Mensagem contém um programa executável Microsoft
             MICROSOFT_EXECUTABLE   Message includes Microsoft executable program
                  MILLION_HUNDRED   Million "One to Nine" Hundred
@@ -1512,7 +1507,6 @@
                    MONEY_FRAUD_8   Lots of money and very many fraud phrases
             MONEY_FREEMAIL_REPTO   Lots of money from someone using free email?
                    MONEY_FROM_41   Lots of money from Africa
-                MONEY_FROM_MISSP   Lots of money and misspaced From
                     MONEY_NOHTML   Lots of money in plain text
                         MORE_SEX   Fala sobre um maior desejo por sexo
                         MORE_SEX   Parle d'augmenter le désir sexuel
@@ -2229,6 +2223,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                 T_LOTTO_AGENT_FM   Claims Agent
               T_LOTTO_AGENT_RPLY   Claims Agent
                      T_LOTTO_URI   Claims Department URL
+               T_MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                T_MANY_PILL_PRICE   Prices for many pills
                      T_MIME_MALF   Malformed MIME: headers in body
                  T_MONEY_PERCENT   X% of a lot of money for you
@@ -2482,6 +2477,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
            URI_HOST_IN_WHITELIST   DEPRECATED: See URI_HOST_IN_WELCOMELIST
              URI_IMG_CWINDOWSNET   Non-MSFT image hosted by Microsoft Azure infra, possible phishing
                 URI_IMG_WP_REDIR   Image via WordPress "accelerator" proxy
+                URI_INFURAIPFSIO   References Interplanetary File System PtP content via infura-ipfs.io, likely phishing
                       URI_IPFSIO   References Interplanetary File System PtP content via ipfs.io, likely phishing
                         URI_IPFS   References Interplanetary File System PtP content, probable phishing
                  URI_LONG_REPEAT   Long identical host+domain
