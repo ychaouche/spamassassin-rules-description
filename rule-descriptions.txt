@@ -65,6 +65,7 @@
                              AWL   Absenderadresse in der automatischen weißen Liste
                              AWL   Adjusted score from AWL reputation of From: address
                              AWL   Endereço do From: está na auto welcomelist
+                  AXB_X_FF_SEZ_S   Forefront sez this is spam
     AXB_XMAILER_MIMEOLE_OL_024C2   Yet another X header trait
     AXB_XMAILER_MIMEOLE_OL_1ECD5   Yet another X header trait##} AXB_XMAILER_MIMEOLE_OL_1ECD5
                       BAD_CREDIT   Contient "Eliminate Bad Credit"
@@ -784,6 +785,7 @@
            FROM_STARTS_WITH_NUMS   Van: begint met nummers
          FROM_SUSPICIOUS_NTLD_FP   From abused NTLD
             FROM_SUSPICIOUS_NTLD   From abused NTLD
+                   FROM_WSP_LEAD   Leading whitespace after '<' in From header field
                   FROM_WSP_TRAIL   Trailing whitespace before '>' in From header field
                     FSL_BULK_SIG   Bulk signature with no Unsubscribe
                FSL_CTYPE_WIN1251   Content-Type only seen in 419 spam
@@ -1359,6 +1361,7 @@
               MARKETING_PARTNERS   Prétend que vous vous êtes enregistré auprès d'un "partenaire" quelconque
               MARKETING_PARTNERS   Twierdzi, ¿e jeste¶ zarejestrowany jako partner
               MARKETING_PARTNERS   Zegt dat je je bij een partner bedrijf hebt geregistreerd
+                   MAY_BE_FORGED   Relay IP's reverse DNS does not resolve to IP
             MICROSOFT_EXECUTABLE   Mensagem contém um programa executável Microsoft
             MICROSOFT_EXECUTABLE   Message includes Microsoft executable program
                  MILLION_HUNDRED   Million "One to Nine" Hundred
@@ -2237,7 +2240,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                T_OBFU_JPG_ATTACH   JPG attachment with generic MIME type
                T_OBFU_PDF_ATTACH   PDF attachment with generic MIME type
               TO_EQ_FM_DIRECT_MX   To == From and direct-to-MX
-           TO_EQ_FM_DOM_HTML_IMG   To domain == From domain and HTML image link
           TO_EQ_FM_DOM_HTML_ONLY   To domain == From domain and HTML only
            TO_EQ_FM_DOM_SPF_FAIL   To domain == From domain and external SPF failed
             TO_EQ_FM_HTML_DIRECT   To == From and HTML only, direct-to-MX
@@ -2480,6 +2482,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                       URI_IPFSIO   References Interplanetary File System PtP content via ipfs.io, likely phishing
                         URI_IPFS   References Interplanetary File System PtP content, probable phishing
                  URI_LONG_REPEAT   Long identical host+domain
+                  URI_MALWARE_BH   Possible BlackHole malware links / phishing
                 URI_MALWARE_SCMS   Link to malware exploit download (.SettingContent-ms file)
                      URI_NOVOWEL   Hostname da URI contém uma longa seqüência sem vogal
                      URI_NOVOWEL   URI hostname has long non-vowel sequence
