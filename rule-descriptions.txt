@@ -445,7 +445,6 @@
                     DOS_OE_TO_MX   Delivered direct to MX with OE headers
               DOS_OE_TO_MX_IMAGE   Direct to MX with OE headers and an image
                DOS_OUTLOOK_TO_MX   Delivered direct to MX with Outlook headers
-         DOS_OUTLOOK_TO_MX_IMAGE   Direct to MX with Outlook headers and an image
              DOS_RCVD_IP_TWICE_C   Received from the same IP twice in a row (only one external relay; empty or IP helo)
                    DOS_STOCK_BAT   Probable pump and dump stock spam
                 DOS_URI_ASTERISK   Found an asterisk in a URI
@@ -869,7 +868,6 @@
                 FUZZY_WELLSFARGO   Obfuscated "Wells Fargo"
                      FUZZY_XPILL   Attempt to obfuscate words in spam
                      FUZZY_XPILL   Tentativa de esconder palavras na mensagem
-                      GAPPY_HTML   HTML body with much useless whitespace
          GAPPY_SALES_LEADS_FREEM   Obfuscated marketing text, freemail or CHN replyto
                    GAPPY_SUBJECT   Assunto contém T.e.x.t.o-E.s.t.r.a.n.h.o
                    GAPPY_SUBJECT   Betreff enthält Text mit "L.ü.c.k.e.n"
@@ -1361,7 +1359,6 @@
               MARKETING_PARTNERS   Prétend que vous vous êtes enregistré auprès d'un "partenaire" quelconque
               MARKETING_PARTNERS   Twierdzi, ¿e jeste¶ zarejestrowany jako partner
               MARKETING_PARTNERS   Zegt dat je je bij een partner bedrijf hebt geregistreerd
-                   MAY_BE_FORGED   Relay IP's reverse DNS does not resolve to IP
             MICROSOFT_EXECUTABLE   Mensagem contém um programa executável Microsoft
             MICROSOFT_EXECUTABLE   Message includes Microsoft executable program
                  MILLION_HUNDRED   Million "One to Nine" Hundred
@@ -1672,9 +1669,9 @@
             PDS_BAD_THREAD_QP_64   Bad thread header - short QP
                       PDS_BTC_ID   FP reduced Bitcoin ID
                    PDS_BTC_MSGID   Bitcoin ID with T_MSGID_NOFQDN2
+            PDS_DBL_URL_LINKBAIT   Linkbait double-url
                PDS_FROM_2_EMAILS   From header has multiple different addresses
                PDS_HELO_SPF_FAIL   High profile HELO that fails SPF
-             PDS_NAKED_TO_NUMERO   Naked-to, numberonly domain
                PDS_OTHER_BAD_TLD   Untrustworthy TLDs
            PDS_PHPE_URISHORTENER   URI Shortener with PHP eval
                     PDS_PHP_EVAL   PHP header shows eval'd code
@@ -2181,7 +2178,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                SUSPICIOUS_RECIPS   Similar addresses in recipient list
                SUSPICIOUS_RECIPS   Vergelijkbare adressen in de ontvangerslijst
              SUSP_UTF8_WORD_FROM   Word in From name using only suspicious UTF-8 characters
-             SUSP_UTF8_WORD_SUBJ   Word in Subject using only suspicious UTF-8 characters
                         SYSADMIN   Supposedly from your IT department
              T_ACH_CANCELLED_EXE   "ACH cancelled" probable malware
        TAGSTAT_IMG_NOT_RCVD_TGST   Tagstat hosted image but message not from Tagstat
@@ -2194,6 +2190,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
            T_DATE_IN_FUTURE_96_Q   Date: is 4 days to 4 months after Received: date
          T_DATE_IN_FUTURE_Q_PLUS   Date: is over 4 months after Received: date
              T_DOC_ATTACH_NO_EXT   Document attachment with suspicious name
+       T_DOS_OUTLOOK_TO_MX_IMAGE   Direct to MX with Outlook headers and an image
               T_DOS_ZIP_HARDCORE   hardcore.zip file attached; quite certainly a virus
  T_DRUGS_ERECTILE_SHORT_SHORTNER   Short erectile drugs advert with T_URL_SHORTENER
                   TEQF_USR_IMAGE   To and from user nearly same + image
