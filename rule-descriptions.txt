@@ -243,7 +243,6 @@
                   CN_PHISH_JP_06   JP "mastercard" + .cn URL - possible Chinese phishing
                   CN_PHISH_JP_07   JP "update payment information" + .cn URL - possible Chinese phishing
                COMMENT_GIBBERISH   Nonsense in long HTML comment
-                    COMPENSATION   "Compensation"
                 CONFIRMED_FORGED   Cabeçalho Received é forjado
                 CONFIRMED_FORGED   Gefälschte "Received"-Kopfzeilen
                 CONFIRMED_FORGED   Les en-têtes "Received:" ont été falsifiés
@@ -1309,7 +1308,6 @@
         __KAM_BODY_LENGTH_LT_128   The length of the body of the email is less than 128 bytes.
         __KAM_BODY_LENGTH_LT_256   The length of the body of the email is less than 256 bytes.
         __KAM_BODY_LENGTH_LT_512   The length of the body of the email is less than 512 bytes.
-                  KHOP_FAKE_EBAY   Sender falsely claims to be from eBay
                 KHOP_HELO_FCRDNS   Relay HELO differs from its IP's reverse DNS
               KOREAN_UCE_SUBJECT   Assunto contém um texto comum de UCE (unsolicited commercial email) em coreano
               KOREAN_UCE_SUBJECT   Betreff enthält koreanische Werbungskennzeichnung
@@ -1352,7 +1350,6 @@
                   MALWARE_NORDNS   Malware bragging + no rDNS
                 MALWARE_PASSWORD   Malware bragging + "password"
                      MALW_ATTACH   Attachment filename suspicious, probable malware exploit
-                 MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                MANY_SPAN_IN_TEXT   Many <SPAN> tags embedded within text
                      MANY_SUBDOM   Lots and lots of subdomain parts in a URI
               MARKETING_PARTNERS   Afirma que você se cadastrou com um parceiro
@@ -1361,7 +1358,6 @@
               MARKETING_PARTNERS   Prétend que vous vous êtes enregistré auprès d'un "partenaire" quelconque
               MARKETING_PARTNERS   Twierdzi, ¿e jeste¶ zarejestrowany jako partner
               MARKETING_PARTNERS   Zegt dat je je bij een partner bedrijf hebt geregistreerd
-                   MAY_BE_FORGED   Relay IP's reverse DNS does not resolve to IP
             MICROSOFT_EXECUTABLE   Mensagem contém um programa executável Microsoft
             MICROSOFT_EXECUTABLE   Message includes Microsoft executable program
                  MILLION_HUNDRED   Million "One to Nine" Hundred
@@ -2014,7 +2010,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                 SCC_ISEMM_LID_1B   Genericized spammer fingerprint
                  SCC_ISEMM_LID_1   Fingerprint of a particular spammer using an old spamware
                 SCC_META_ODDDIV8   ODDDIV8 is most odd many times.
-             SCC_NEWBIE_HASBEENS   Abused gTLDs seen in spam from Google Apps.
                 SCC_SPECIAL_GUID   Unique in a similar way
             SENDGRID_REDIR_PHISH   Redirect URI via Sendgrid + phishing signs
                    SEO_SUSP_NTLD   SEO offer from suspicious TLD
@@ -2188,6 +2183,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
       TARINGANET_IMG_NOT_RCVD_TN   media.taringa.net hosted image but message not from taringa.net
             TBIRD_SUSP_MIME_BDRY   Unlikely Thunderbird MIME boundary
                  T_CDISP_SZ_MANY   Suspicious MIME header
+                  T_COMPENSATION   "Compensation"
                      T_CTE_BAS64   Malformated Content-Type-Encoding
                     T_CTYPE_NULL   Malformed Content-Type header
            T_DATE_IN_FUTURE_96_Q   Date: is 4 days to 4 months after Received: date
@@ -2225,6 +2221,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                 T_LOTTO_AGENT_FM   Claims Agent
               T_LOTTO_AGENT_RPLY   Claims Agent
                      T_LOTTO_URI   Claims Department URL
+               T_MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                T_MANY_PILL_PRICE   Prices for many pills
                      T_MIME_MALF   Malformed MIME: headers in body
                  T_MONEY_PERCENT   X% of a lot of money for you
@@ -2239,7 +2236,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                T_OBFU_JPG_ATTACH   JPG attachment with generic MIME type
                T_OBFU_PDF_ATTACH   PDF attachment with generic MIME type
               TO_EQ_FM_DIRECT_MX   To == From and direct-to-MX
-           TO_EQ_FM_DOM_HTML_IMG   To domain == From domain and HTML image link
           TO_EQ_FM_DOM_HTML_ONLY   To domain == From domain and HTML only
            TO_EQ_FM_DOM_SPF_FAIL   To domain == From domain and external SPF failed
             TO_EQ_FM_HTML_DIRECT   To == From and HTML only, direct-to-MX
@@ -2335,6 +2331,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               TVD_SILLY_URI_OBFU   URI obfuscation that can fool a URIBL or a uri rule
         TVD_SPACED_SUBJECT_WORD3   Entire subject is "UPPERlowerUPPER" with no whitespace
                TVD_SPACE_ENCODED   Space ratio & encoded subject
+           TVD_SPACE_RATIO_MINFP   Space ratio (vertical text obfuscation?)
                       TVD_STOCK1   Spam related to stock trading
                 TVD_SUBJ_ACC_NUM   Subject has spammy looking monetary reference
               TVD_SUBJ_FINGER_03   Entire subject is enclosed in asterisks "* like so *"
@@ -2495,7 +2492,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                  URI_OPTOUT_USME   Opt-out URI, unusual TLD
                        URI_PHISH   Phishing using web form
                    URI_PHP_REDIR   PHP redirect to different URL (link obfuscation)
-                     URI_SNIP_LY   snip.ly URI: third-party website rewriting, possible phishing
                    URI_TRUNCATED   Mensagem possui uma URI que foi truncada
                    URI_TRUNCATED   Message contained a URI which was truncated
                      URI_TRY_3LD   "Try it" URI, suspicious hostname
