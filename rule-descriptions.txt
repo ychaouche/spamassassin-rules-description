@@ -754,8 +754,10 @@
              FROM_MISSP_FREEMAIL   From misspaced + freemail provider
                  FROM_MISSP_MSFT   From misspaced + supposed Microsoft tool
                 FROM_MISSP_PHISH   Malformed, claims to be from financial organization - possible phish
+              FROM_MISSP_REPLYTO   From misspaced, has Reply-To
             FROM_MISSP_TO_UNDISC   From misspaced, To undisclosed
                  FROM_MISSP_USER   From misspaced, from "User"
+                FROM_MISSP_XPRIO   Misspaced FROM + X-Priority
                FROM_MULTI_NORDNS   Multiple From addresses + no rDNS
                  FROM_NEWDOM_BTC   Newdomain with Bitcoin ID
                     FROM_NO_USER   Adressteil vor dem @-Zeichen fehlt im Absender
@@ -943,7 +945,6 @@
           HDR_ORDER_FTSDMCXX_BAT   Header order similar to spam (FTSDMCXX/boundary variant)
        HDR_ORDER_FTSDMCXX_DIRECT   Header order similar to spam (FTSDMCXX/boundary variant) + direct-to-MX
        HDR_ORDER_FTSDMCXX_NORDNS   Header order similar to spam (FTSDMCXX/boundary variant) + no rDNS
-              HDRS_LCASE_IMGONLY   Odd capitalization of message headers + image-only HTML
                       HDRS_LCASE   Odd capitalization of message header
                       HDRS_MISSP   Misspaced headers
               HEADER_COUNT_CTYPE   Kopfzeile "Content-Type" mehrfach vorhanden
@@ -1308,6 +1309,7 @@
         __KAM_BODY_LENGTH_LT_128   The length of the body of the email is less than 128 bytes.
         __KAM_BODY_LENGTH_LT_256   The length of the body of the email is less than 256 bytes.
         __KAM_BODY_LENGTH_LT_512   The length of the body of the email is less than 512 bytes.
+                  KHOP_FAKE_EBAY   Sender falsely claims to be from eBay
                 KHOP_HELO_FCRDNS   Relay HELO differs from its IP's reverse DNS
               KOREAN_UCE_SUBJECT   Assunto contém um texto comum de UCE (unsolicited commercial email) em coreano
               KOREAN_UCE_SUBJECT   Betreff enthält koreanische Werbungskennzeichnung
@@ -1745,7 +1747,6 @@ PDS_TONAME_EQ_TOLOCAL_FREEM_FORGE   Forged replyto and __PDS_TONAME_EQ_TOLOCAL
                  RATWARE_MS_HASH   Detectado como email em massa já conhecido (msgid ms hash)
                  RATWARE_NAME_ID   Bulk email fingerprint (msgid from) found
                  RATWARE_NAME_ID   Detectado como email em massa já conhecido (msgid from)
-                 RATWARE_NO_RDNS   Suspicious MsgID and MIME boundary + no rDNS
             RATWARE_OE_MALFORMED   En-tête X-Mailer indique No de version Outlook Express malformé
             RATWARE_OE_MALFORMED   Kopfzeilen enthalten gefälschte Hinweise auf Outlook Express
             RATWARE_OE_MALFORMED   Nag³ówek X-Mailer podaje z³± wersjê Outlook Express
@@ -2007,6 +2008,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                  SCC_BOGUS_CTE_1   Bogus Content-Transfer-Encoding header
                    SCC_CANSPAM_2   Interesting compliance language
               __SCC_HTML_ODDDIV8   Idiosyncratic HTML structure used by spammers
+                SCC_ISEMM_LID_1A   Fingerprint of a particular spammer using an old spamware
                 SCC_ISEMM_LID_1B   Genericized spammer fingerprint
                  SCC_ISEMM_LID_1   Fingerprint of a particular spammer using an old spamware
                 SCC_META_ODDDIV8   ODDDIV8 is most odd many times.
@@ -2236,6 +2238,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                T_OBFU_JPG_ATTACH   JPG attachment with generic MIME type
                T_OBFU_PDF_ATTACH   PDF attachment with generic MIME type
               TO_EQ_FM_DIRECT_MX   To == From and direct-to-MX
+           TO_EQ_FM_DOM_HTML_IMG   To domain == From domain and HTML image link
           TO_EQ_FM_DOM_HTML_ONLY   To domain == From domain and HTML only
            TO_EQ_FM_DOM_SPF_FAIL   To domain == From domain and external SPF failed
             TO_EQ_FM_HTML_DIRECT   To == From and HTML only, direct-to-MX
@@ -2331,7 +2334,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               TVD_SILLY_URI_OBFU   URI obfuscation that can fool a URIBL or a uri rule
         TVD_SPACED_SUBJECT_WORD3   Entire subject is "UPPERlowerUPPER" with no whitespace
                TVD_SPACE_ENCODED   Space ratio & encoded subject
-           TVD_SPACE_RATIO_MINFP   Space ratio (vertical text obfuscation?)
                       TVD_STOCK1   Spam related to stock trading
                 TVD_SUBJ_ACC_NUM   Subject has spammy looking monetary reference
               TVD_SUBJ_FINGER_03   Entire subject is enclosed in asterisks "* like so *"
@@ -2459,6 +2461,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                  URI_FIREBASEAPP   Link to hosted firebase web application, possible phishing
               URI_FLKIPFSXYZIPFS   References Interplanetary File System PtP content via flk-ipfs.xyz, likely phishing
                     URI_GLITCHME   References glitch.me content, possible phishing
+             URI_GOOGDRAWPREVIEW   Link to image at Google Docs, possible phishing
        URI_GOOGDRAWPREVIEW_MINFP   Link to image at Google Docs, probable phishing
                 URI_GOOGLE_PROXY   Accessing a blacklisted URI or obscuring source of phish via Google proxy?
              URI_GOOG_STO_SPAMMY   Link to spammy content hosted by google storage
