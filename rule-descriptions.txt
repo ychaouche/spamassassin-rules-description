@@ -65,7 +65,6 @@
                              AWL   Absenderadresse in der automatischen weißen Liste
                              AWL   Adjusted score from AWL reputation of From: address
                              AWL   Endereço do From: está na auto welcomelist
-                  AXB_X_FF_SEZ_S   Forefront sez this is spam
     AXB_XMAILER_MIMEOLE_OL_024C2   Yet another X header trait
     AXB_XMAILER_MIMEOLE_OL_1ECD5   Yet another X header trait##} AXB_XMAILER_MIMEOLE_OL_1ECD5
                       BAD_CREDIT   Contient "Eliminate Bad Credit"
@@ -201,6 +200,7 @@
                       BODY_8BITS   Contient plusieurs caractères 8-bits consécutifs
                       BODY_8BITS   Nachrichtentext enthält Folge von 8 oder mehr 8-Bit-Zeichen
                       BODY_8BITS   Tre¶æ zawiera 8 kolejnych 8mio bitowych znaków
+   BODY_EMAIL_419_FRAUD_GM_LOOSE   Ends-in-digits email address in body is likely advance fee fraud collector mailbox
                BODY_ENHANCEMENT2   Arnaque prétendant augmenter la taile de votre pénis
                BODY_ENHANCEMENT2   Informação sobre como aumentar partes do corpo
                BODY_ENHANCEMENT2   Informatie over het vergroten van lichaamsdelen
@@ -244,6 +244,7 @@
                   CN_PHISH_JP_06   JP "mastercard" + .cn URL - possible Chinese phishing
                   CN_PHISH_JP_07   JP "update payment information" + .cn URL - possible Chinese phishing
                COMMENT_GIBBERISH   Nonsense in long HTML comment
+                    COMPENSATION   "Compensation"
                 CONFIRMED_FORGED   Cabeçalho Received é forjado
                 CONFIRMED_FORGED   Gefälschte "Received"-Kopfzeilen
                 CONFIRMED_FORGED   Les en-têtes "Received:" ont été falsifiés
@@ -858,8 +859,6 @@
                   FUZZY_SOFTWARE   Tentativa de esconder palavras na mensagem
                  FUZZY_THOUSANDS   Attempt to obfuscate words in spam
                  FUZZY_THOUSANDS   Tentativa de esconder palavras na mensagem
-                     FUZZY_TRUMP   Obfuscated "Trump"
-               FUZZY_TRUSTWALLET   Obfuscated "Trust Wallet", probable phishing
                FUZZY_UNSUBSCRIBE   Obfuscated "unsubscribe"
                      FUZZY_VIOXX   Attempt to obfuscate words in spam
                      FUZZY_VIOXX   Tentativa de esconder palavras na mensagem
@@ -2014,6 +2013,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                  SCC_ISEMM_LID_1   Fingerprint of a particular spammer using an old spamware
                 SCC_META_ODDDIV8   ODDDIV8 is most odd many times.
                 SCC_SPECIAL_GUID   Unique in a similar way
+                SCRIPT_GIBBERISH   Nonsense in HTML <SCRIPT> tag
             SENDGRID_REDIR_PHISH   Redirect URI via Sendgrid + phishing signs
                    SEO_SUSP_NTLD   SEO offer from suspicious TLD
          SERGIO_SUBJECT_VIAGRA01   Viagra garbled subject
@@ -2021,7 +2021,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                     SHORTCIRCUIT   Nem todas as regras foram executadas por causa de um problema em uma delas
                     SHORTCIRCUIT   Not all rules were run, due to a shortcircuited rule
              SHORTENER_SHORT_IMG   Short HTML + image + URL shortener
-            SHORTENER_SHORT_SUBJ   URL shortener (avoiding URIBL?) + short subject
      SHORT_HELO_AND_INLINE_IMAGE   Short HELO string, with inline image
              SHORT_IMG_SUSP_NTLD   Short HTML + image + suspicious TLD
                  SHY_OBFU_EXPIRE   Obfuscation, probable phishing
@@ -2186,7 +2185,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
       TARINGANET_IMG_NOT_RCVD_TN   media.taringa.net hosted image but message not from taringa.net
             TBIRD_SUSP_MIME_BDRY   Unlikely Thunderbird MIME boundary
                  T_CDISP_SZ_MANY   Suspicious MIME header
-                  T_COMPENSATION   "Compensation"
                      T_CTE_BAS64   Malformated Content-Type-Encoding
                     T_CTYPE_NULL   Malformed Content-Type header
            T_DATE_IN_FUTURE_96_Q   Date: is 4 days to 4 months after Received: date
@@ -2209,6 +2207,8 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
             T_FROMNAME_EQUALS_TO   From:name matches To:
         T_FROMNAME_SPOOFED_EMAIL   From:name looks like a spoofed email
                   T_FUZZY_OPTOUT   Obfuscated opt-out text
+                   T_FUZZY_TRUMP   Obfuscated "Trump"
+             T_FUZZY_TRUSTWALLET   Obfuscated "Trust Wallet", probable phishing
               T_GB_FROM_METAMASK   Metamask spam
   T_GB_FROMNAME_SPOOFED_EMAIL_IP   From:name looks like a spoofed email from a spoofed ip
        T_GB_STORAGE_GOOGLE_EMAIL   Google storage cloud abuse
@@ -2239,6 +2239,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                T_OBFU_JPG_ATTACH   JPG attachment with generic MIME type
                T_OBFU_PDF_ATTACH   PDF attachment with generic MIME type
               TO_EQ_FM_DIRECT_MX   To == From and direct-to-MX
+           TO_EQ_FM_DOM_HTML_IMG   To domain == From domain and HTML image link
           TO_EQ_FM_DOM_HTML_ONLY   To domain == From domain and HTML only
            TO_EQ_FM_DOM_SPF_FAIL   To domain == From domain and external SPF failed
             TO_EQ_FM_HTML_DIRECT   To == From and HTML only, direct-to-MX
@@ -2334,7 +2335,6 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               TVD_SILLY_URI_OBFU   URI obfuscation that can fool a URIBL or a uri rule
         TVD_SPACED_SUBJECT_WORD3   Entire subject is "UPPERlowerUPPER" with no whitespace
                TVD_SPACE_ENCODED   Space ratio & encoded subject
-           TVD_SPACE_RATIO_MINFP   Space ratio (vertical text obfuscation?)
                       TVD_STOCK1   Spam related to stock trading
                 TVD_SUBJ_ACC_NUM   Subject has spammy looking monetary reference
               TVD_SUBJ_FINGER_03   Entire subject is enclosed in asterisks "* like so *"
