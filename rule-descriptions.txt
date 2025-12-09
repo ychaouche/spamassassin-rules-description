@@ -756,6 +756,7 @@
              FROM_MISSP_FREEMAIL   From misspaced + freemail provider
                  FROM_MISSP_MSFT   From misspaced + supposed Microsoft tool
                 FROM_MISSP_PHISH   Malformed, claims to be from financial organization - possible phish
+              FROM_MISSP_REPLYTO   From misspaced, has Reply-To
             FROM_MISSP_TO_UNDISC   From misspaced, To undisclosed
                  FROM_MISSP_USER   From misspaced, from "User"
                 FROM_MISSP_XPRIO   Misspaced FROM + X-Priority
@@ -1354,15 +1355,16 @@
                      MALW_ATTACH   Attachment filename suspicious, probable malware exploit
                  MANY_HDRS_LCASE   Odd capitalization of multiple message headers
                MANY_SPAN_IN_TEXT   Many <SPAN> tags embedded within text
-                     MANY_SUBDOM   Lots and lots of subdomain parts in a URI
               MARKETING_PARTNERS   Afirma que você se cadastrou com um parceiro
               MARKETING_PARTNERS   Angeblich haben Sie sich bei einem Partnerunternehmen registriert
               MARKETING_PARTNERS   Claims you registered with a partner
               MARKETING_PARTNERS   Prétend que vous vous êtes enregistré auprès d'un "partenaire" quelconque
               MARKETING_PARTNERS   Twierdzi, ¿e jeste¶ zarejestrowany jako partner
               MARKETING_PARTNERS   Zegt dat je je bij een partner bedrijf hebt geregistreerd
+                   MAY_BE_FORGED   Relay IP's reverse DNS does not resolve to IP
             MICROSOFT_EXECUTABLE   Mensagem contém um programa executável Microsoft
             MICROSOFT_EXECUTABLE   Message includes Microsoft executable program
+                     MILLION_EUR   Talks about millions of euros
                  MILLION_HUNDRED   Million "One to Nine" Hundred
                      MILLION_USD   Erwähnt Millonen von Dollar
                      MILLION_USD   Fala sobre milhões de dólares
@@ -2159,6 +2161,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
               SUBJ_ILLEGAL_CHARS   Subject: contient trop de caractères bruts invalides
               SUBJ_ILLEGAL_CHARS   Subject: has too many raw illegal characters
               SUBJ_ILLEGAL_CHARS   Temat: zawiera zbyt wiele niedozwolonych znaków
+              SUBJ_UNNEEDED_HTML   Unneeded HTML formatting in Subject:
                   SUBJ_YOUR_DEBT   Assunto contém "Your Bills" ou algo parecido
                   SUBJ_YOUR_DEBT   Betreff dreht sich um Rechnungen oder Kredite
                   SUBJ_YOUR_DEBT   Le sujet contient "Your Bills" (vos factures) ou similaire
@@ -2239,6 +2242,7 @@ RCVD_IN_VALIDITY_CERTIFIED_BLOCKED   ADMINISTRATOR NOTICE: The query to Validity
                T_OBFU_JPG_ATTACH   JPG attachment with generic MIME type
                T_OBFU_PDF_ATTACH   PDF attachment with generic MIME type
               TO_EQ_FM_DIRECT_MX   To == From and direct-to-MX
+           TO_EQ_FM_DOM_HTML_IMG   To domain == From domain and HTML image link
           TO_EQ_FM_DOM_HTML_ONLY   To domain == From domain and HTML only
            TO_EQ_FM_DOM_SPF_FAIL   To domain == From domain and external SPF failed
             TO_EQ_FM_HTML_DIRECT   To == From and HTML only, direct-to-MX
